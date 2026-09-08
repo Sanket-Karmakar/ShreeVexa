@@ -1,12 +1,22 @@
 "use client";
 
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Search } from 'lucide-react';
+import { Search, Menu, X } from 'lucide-react';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
   const pathname = usePathname();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <header className={styles.header}>
@@ -41,6 +51,25 @@ export default function Navbar() {
           <Link href="/contact" className="btn-primary">
             Get in Touch <span className={styles.arrow}>→</span>
           </Link>
+          <button className={styles.mobileMenuBtn} onClick={toggleMobileMenu} aria-label="Toggle menu">
+            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      <div className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
+        <div className="container">
+          <nav className={styles.mobileNavLinks}>
+            <Link href="/" className={`${styles.mobileNavLink} ${pathname === '/' ? styles.active : ''}`} onClick={closeMobileMenu}>Home</Link>
+            <Link href="/about" className={`${styles.mobileNavLink} ${pathname === '/about' ? styles.active : ''}`} onClick={closeMobileMenu}>About Us</Link>
+            <Link href="/products" className={`${styles.mobileNavLink} ${pathname === '/products' ? styles.active : ''}`} onClick={closeMobileMenu}>Products</Link>
+            <Link href="/brands" className={`${styles.mobileNavLink} ${pathname === '/brands' ? styles.active : ''}`} onClick={closeMobileMenu}>Brands</Link>
+            <Link href="/licensing" className={`${styles.mobileNavLink} ${pathname === '/licensing' ? styles.active : ''}`} onClick={closeMobileMenu}>Software Licensing</Link>
+            <Link href="/solutions" className={`${styles.mobileNavLink} ${pathname === '/solutions' ? styles.active : ''}`} onClick={closeMobileMenu}>Solutions</Link>
+            <Link href="/services" className={`${styles.mobileNavLink} ${pathname === '/services' ? styles.active : ''}`} onClick={closeMobileMenu}>Services</Link>
+            <Link href="/contact" className={`${styles.mobileNavLink} ${pathname === '/contact' ? styles.active : ''}`} onClick={closeMobileMenu}>Contact</Link>
+          </nav>
         </div>
       </div>
     </header>
