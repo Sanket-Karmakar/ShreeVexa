@@ -1,0 +1,396 @@
+.contact {
+  width: 100%;
+}
+
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background-color: #0d1424;
+  color: white;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 6rem 0;
+}
+
+.heroRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100%;
+  background-color: #0b111e;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.heroImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 550px;
+}
+
+.heroTagContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.heroTag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.heroLine {
+  display: block;
+  width: 40px;
+  height: 2px;
+  background: var(--primary);
+}
+
+.title {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  letter-spacing: -1px;
+  color: white;
+}
+
+.accent {
+  color: var(--primary);
+}
+
+.desc {
+  font-size: 1.125rem;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 550px;
+}
+
+.heroFeatures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.heroFeature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: white;
+}
+
+.iconAccent {
+  color: var(--primary);
+}
+
+/* Methods Section */
+.methodsSection {
+  background-color: white;
+  padding: 4rem 0;
+}
+
+.methodsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.methodCard {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+  transition: all 0.3s ease;
+}
+
+.methodCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,102,255,0.08);
+  border-color: rgba(0,102,255,0.2);
+}
+
+.methodIconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.03);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.methodLabel {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.methodValue {
+  display: block;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--secondary);
+  line-height: 1.3;
+}
+
+/* Main Grid */
+.sectionTag {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.sectionDesc {
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 4rem;
+}
+
+.formContainer, .officeContainer {
+  background: white;
+  padding: 3rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--secondary);
+}
+
+.formGroup input, .formGroup textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  background-color: #f8fafc;
+}
+
+.formGroup input:focus, .formGroup textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0,102,255,0.1);
+  background-color: white;
+}
+
+/* Office Details */
+.officeImagePlaceholder {
+  height: 200px;
+  background: linear-gradient(135deg, #0b1120, #1e293b);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 2.5rem;
+}
+
+.placeholderLogo {
+  width: 60px;
+  height: 60px;
+  background: var(--primary);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.officeDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.officeDetailItem {
+  display: flex;
+  gap: 1rem;
+}
+
+.detailIcon {
+  color: var(--primary);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.officeDetailItem strong {
+  display: block;
+  color: var(--secondary);
+  margin-bottom: 0.25rem;
+}
+
+.officeDetailItem p {
+  color: var(--text-muted);
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+/* FAQ */
+.faqHeader {
+  margin-bottom: 1rem;
+}
+
+.linkAccent {
+  color: var(--primary);
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.faqGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.faqItem {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.faqItem:hover {
+  border-color: var(--primary);
+}
+
+.faqItem h4 {
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.faqIcon {
+  color: var(--primary);
+}
+
+/* CTA */
+.cta {
+  padding: 4rem 0;
+  background: white;
+}
+
+.ctaInner {
+  background: var(--primary);
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-image: linear-gradient(135deg, #0066FF, #004Cbf);
+}
+
+.ctaTag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.8);
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.ctaContent h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.ctaContent p {
+  color: rgba(255,255,255,0.9);
+  max-width: 500px;
+}
+
+.ctaActions {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .heroRight {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    margin-top: 4rem;
+  }
+  .heroContent {
+    max-width: 100%;
+  }
+  .methodsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+  .ctaInner {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+  .methodsGrid {
+    grid-template-columns: 1fr;
+  }
+  .faqGrid {
+    grid-template-columns: 1fr;
+  }
+}
