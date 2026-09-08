@@ -117,4 +117,7 @@ ul {
   .section-title {
     font-size: 2rem;
   }
+  .container {
+    text-align: center;
+  }
 }
