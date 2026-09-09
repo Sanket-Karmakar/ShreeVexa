@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { Variants } from "framer-motion";
 
 export const EASING: [number, number, number, number] = [0.22, 1, 0.36, 1];
-export const VIEWPORT = { once: true, amount: "some" };
+export const VIEWPORT = { once: true, amount: "some" as const };
 
 // Profiles
 const desktopMotion = {
