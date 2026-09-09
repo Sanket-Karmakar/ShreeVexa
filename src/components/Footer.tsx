@@ -4,9 +4,10 @@ import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, ArrowUp } from 'lucide-react';
 import { motion } from 'framer-motion';
 import styles from './Footer.module.css';
-import { footerReveal, staggerItem, VIEWPORT, buttonInteraction } from '@/lib/motion';
+import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
 
 export default function Footer() {
+  const { fadeUp, fadeIn, staggerContainer, staggerItem, heroContainer, heroItem, navReveal, drawerReveal, footerReveal, cardHover, imageHover, buttonInteraction, logoHover } = useResponsiveMotion();
   return (
     <motion.footer 
       className={styles.footer}

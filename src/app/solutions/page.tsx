@@ -4,17 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Laptop, Server, Shield, MonitorSmartphone, Printer, CreditCard, HardDrive, Presentation, Lightbulb, Building2, GraduationCap, Stethoscope, Store, Factory, Landmark, Target, Settings, Users, Star } from "lucide-react";
 import styles from "./page.module.css";
-import { 
-  EASING,
-  fadeUp,
-  staggerContainer,
-  staggerItem,
-  heroContainer,
-  heroItem,
-  cardHover,
-  VIEWPORT,
-  buttonInteraction 
-} from "@/lib/motion";
+import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
 
 const solutions = [
   { name: "End-user Computing Solutions", desc: "Reliable and high-performance devices for modern workplaces.", icon: Laptop, color: "#3b82f6" },
@@ -38,6 +28,7 @@ const industries = [
 ];
 
 export default function Solutions() {
+  const { fadeUp, fadeIn, staggerContainer, staggerItem, heroContainer, heroItem, navReveal, drawerReveal, footerReveal, cardHover, imageHover, buttonInteraction, logoHover } = useResponsiveMotion();
   return (
     <div className={styles.solutions}>
       {/* Hero Section */}

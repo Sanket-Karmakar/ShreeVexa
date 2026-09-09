@@ -4,17 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, ShoppingCart, Info } from "lucide-react";
 import styles from "./page.module.css";
-import { 
-  EASING,
-  fadeUp,
-  staggerContainer,
-  staggerItem,
-  heroContainer,
-  heroItem,
-  logoHover,
-  VIEWPORT,
-  buttonInteraction 
-} from "@/lib/motion";
+import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
 
 const brands = [
   "Dell", "HP", "Lenovo", "ASUS", "Acer", "Apple", "Logitech", "Microsoft", 
@@ -24,6 +14,7 @@ const brands = [
 ];
 
 export default function Brands() {
+  const { fadeUp, fadeIn, staggerContainer, staggerItem, heroContainer, heroItem, navReveal, drawerReveal, footerReveal, cardHover, imageHover, buttonInteraction, logoHover } = useResponsiveMotion();
   return (
     <div className={styles.brands}>
       {/* Hero Section */}

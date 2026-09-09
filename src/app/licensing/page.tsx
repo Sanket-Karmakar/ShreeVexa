@@ -4,17 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, Shield, Cloud, HardDrive, Mail, LayoutGrid, Monitor, FileText, Lock, Briefcase } from "lucide-react";
 import styles from "./page.module.css";
-import { 
-  EASING,
-  fadeUp,
-  staggerContainer,
-  staggerItem,
-  heroContainer,
-  heroItem,
-  cardHover,
-  VIEWPORT,
-  buttonInteraction 
-} from "@/lib/motion";
+import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
 
 const softwareList = [
   { name: "Microsoft 365", desc: "Productivity tools for modern work.", icon: LayoutGrid, color: "#e87a25" },
@@ -32,6 +22,7 @@ const softwareList = [
 ];
 
 export default function Licensing() {
+  const { fadeUp, fadeIn, staggerContainer, staggerItem, heroContainer, heroItem, navReveal, drawerReveal, footerReveal, cardHover, imageHover, buttonInteraction, logoHover } = useResponsiveMotion();
   return (
     <div className={styles.licensing}>
       {/* Hero Section */}

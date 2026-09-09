@@ -4,17 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { Laptop, Monitor, Keyboard, Mouse, Headphones, Camera, Printer, Scan, BatteryCharging, Projector, Tv, Network, HardDrive, Server, Cctv, Fingerprint, Lock, Barcode, CreditCard, Presentation, ArrowRight } from "lucide-react";
 import styles from "./page.module.css";
-import { 
-  EASING,
-  fadeUp,
-  staggerContainer,
-  staggerItem,
-  heroContainer,
-  heroItem,
-  cardHover,
-  VIEWPORT,
-  buttonInteraction 
-} from "@/lib/motion";
+import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
 
 const categories = [
   { name: "Laptops", icon: Laptop },
@@ -42,6 +32,7 @@ const categories = [
 ];
 
 export default function Products() {
+  const { fadeUp, fadeIn, staggerContainer, staggerItem, heroContainer, heroItem, navReveal, drawerReveal, footerReveal, cardHover, imageHover, buttonInteraction, logoHover } = useResponsiveMotion();
   return (
     <div className={styles.products}>
       {/* Hero Section */}

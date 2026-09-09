@@ -4,17 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Settings, Wrench, Headphones, Network, Shield, Printer, Database, Lightbulb, Blocks, CheckCircle2, Clock, HeartHandshake } from "lucide-react";
 import styles from "./page.module.css";
-import { 
-  EASING,
-  fadeUp,
-  staggerContainer,
-  staggerItem,
-  heroContainer,
-  heroItem,
-  cardHover,
-  VIEWPORT,
-  buttonInteraction 
-} from "@/lib/motion";
+import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
 
 const services = [
   { 
@@ -83,6 +73,7 @@ const services = [
 ];
 
 export default function Services() {
+  const { fadeUp, fadeIn, staggerContainer, staggerItem, heroContainer, heroItem, navReveal, drawerReveal, footerReveal, cardHover, imageHover, buttonInteraction, logoHover } = useResponsiveMotion();
   return (
     <div className={styles.services}>
       {/* Hero Section */}

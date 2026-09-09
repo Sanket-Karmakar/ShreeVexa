@@ -4,19 +4,10 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import styles from "./page.module.css";
 import { CheckCircle2, Laptop, Server, MonitorSmartphone, Shield, Headphones, Users, ArrowRight, Building2 } from "lucide-react";
-import { 
-  EASING,
-  fadeUp,
-  staggerContainer,
-  staggerItem,
-  heroContainer,
-  heroItem,
-  cardHover,
-  VIEWPORT,
-  buttonInteraction 
-} from "@/lib/motion";
+import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
 
 export default function Home() {
+  const { fadeUp, fadeIn, staggerContainer, staggerItem, heroContainer, heroItem, navReveal, drawerReveal, footerReveal, cardHover, imageHover, buttonInteraction, logoHover } = useResponsiveMotion();
   return (
     <div className={styles.home}>
       {/* Hero Section */}

@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import { Search, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import styles from './Navbar.module.css';
-import { navReveal, drawerReveal, staggerContainer, staggerItem, buttonInteraction } from '@/lib/motion';
+import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
 
 const navLinks = [
   { path: '/', label: 'Home' },
@@ -20,6 +20,7 @@ const navLinks = [
 ];
 
 export default function Navbar() {
+  const { fadeUp, fadeIn, staggerContainer, staggerItem, heroContainer, heroItem, navReveal, drawerReveal, footerReveal, cardHover, imageHover, buttonInteraction, logoHover } = useResponsiveMotion();
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { scrollY } = useScroll();
