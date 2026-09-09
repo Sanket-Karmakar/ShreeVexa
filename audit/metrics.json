@@ -1,0 +1,802 @@
+[
+  {
+    "route": "/",
+    "viewport": "320x568",
+    "perf": "{\"connectStart\":1788912548636,\"secureConnectionStart\":0,\"unloadEventEnd\":0,\"domainLookupStart\":1788912548635,\"domainLookupEnd\":1788912548636,\"responseStart\":1788912548712,\"connectEnd\":1788912548636,\"responseEnd\":1788912548713,\"requestStart\":1788912548636,\"domLoading\":1788912548714,\"redirectStart\":0,\"loadEventEnd\":1788912548839,\"domComplete\":1788912548839,\"navigationStart\":1788912548634,\"loadEventStart\":1788912548839,\"domContentLoadedEventEnd\":1788912548727,\"unloadEventStart\":0,\"redirectEnd\":0,\"domInteractive\":1788912548727,\"fetchStart\":1788912548634,\"domContentLoadedEventStart\":1788912548727}"
+  },
+  {
+    "route": "/",
+    "viewport": "568x320",
+    "perf": "{\"connectStart\":1788912550514,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912550566,\"domainLookupStart\":1788912550514,\"domainLookupEnd\":1788912550514,\"responseStart\":1788912550565,\"connectEnd\":1788912550514,\"responseEnd\":1788912550567,\"requestStart\":1788912550514,\"domLoading\":1788912550568,\"redirectStart\":0,\"loadEventEnd\":1788912550608,\"domComplete\":1788912550608,\"navigationStart\":1788912550513,\"loadEventStart\":1788912550608,\"domContentLoadedEventEnd\":1788912550583,\"unloadEventStart\":1788912550566,\"redirectEnd\":0,\"domInteractive\":1788912550583,\"fetchStart\":1788912550514,\"domContentLoadedEventStart\":1788912550583}"
+  },
+  {
+    "route": "/",
+    "viewport": "360x800",
+    "perf": "{\"connectStart\":1788912551632,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912551684,\"domainLookupStart\":1788912551632,\"domainLookupEnd\":1788912551632,\"responseStart\":1788912551682,\"connectEnd\":1788912551632,\"responseEnd\":1788912551684,\"requestStart\":1788912551633,\"domLoading\":1788912551685,\"redirectStart\":0,\"loadEventEnd\":1788912551714,\"domComplete\":1788912551714,\"navigationStart\":1788912551632,\"loadEventStart\":1788912551714,\"domContentLoadedEventEnd\":1788912551700,\"unloadEventStart\":1788912551684,\"redirectEnd\":0,\"domInteractive\":1788912551700,\"fetchStart\":1788912551632,\"domContentLoadedEventStart\":1788912551700}"
+  },
+  {
+    "route": "/",
+    "viewport": "800x360",
+    "perf": "{\"connectStart\":1788912552773,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912552823,\"domainLookupStart\":1788912552773,\"domainLookupEnd\":1788912552773,\"responseStart\":1788912552822,\"connectEnd\":1788912552773,\"responseEnd\":1788912552823,\"requestStart\":1788912552773,\"domLoading\":1788912552824,\"redirectStart\":0,\"loadEventEnd\":1788912552854,\"domComplete\":1788912552854,\"navigationStart\":1788912552772,\"loadEventStart\":1788912552854,\"domContentLoadedEventEnd\":1788912552840,\"unloadEventStart\":1788912552823,\"redirectEnd\":0,\"domInteractive\":1788912552840,\"fetchStart\":1788912552773,\"domContentLoadedEventStart\":1788912552840}"
+  },
+  {
+    "route": "/",
+    "viewport": "375x812",
+    "perf": "{\"connectStart\":1788912553943,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912553990,\"domainLookupStart\":1788912553943,\"domainLookupEnd\":1788912553943,\"responseStart\":1788912553989,\"connectEnd\":1788912553943,\"responseEnd\":1788912553990,\"requestStart\":1788912553943,\"domLoading\":1788912553991,\"redirectStart\":0,\"loadEventEnd\":1788912554015,\"domComplete\":1788912554015,\"navigationStart\":1788912553943,\"loadEventStart\":1788912554015,\"domContentLoadedEventEnd\":1788912554005,\"unloadEventStart\":1788912553990,\"redirectEnd\":0,\"domInteractive\":1788912554005,\"fetchStart\":1788912553943,\"domContentLoadedEventStart\":1788912554005}"
+  },
+  {
+    "route": "/",
+    "viewport": "812x375",
+    "perf": "{\"connectStart\":1788912555079,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912555130,\"domainLookupStart\":1788912555079,\"domainLookupEnd\":1788912555079,\"responseStart\":1788912555129,\"connectEnd\":1788912555079,\"responseEnd\":1788912555132,\"requestStart\":1788912555080,\"domLoading\":1788912555131,\"redirectStart\":0,\"loadEventEnd\":1788912555191,\"domComplete\":1788912555191,\"navigationStart\":1788912555079,\"loadEventStart\":1788912555191,\"domContentLoadedEventEnd\":1788912555147,\"unloadEventStart\":1788912555130,\"redirectEnd\":0,\"domInteractive\":1788912555147,\"fetchStart\":1788912555079,\"domContentLoadedEventStart\":1788912555147}"
+  },
+  {
+    "route": "/",
+    "viewport": "390x844",
+    "perf": "{\"connectStart\":1788912556264,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912556309,\"domainLookupStart\":1788912556264,\"domainLookupEnd\":1788912556264,\"responseStart\":1788912556308,\"connectEnd\":1788912556264,\"responseEnd\":1788912556309,\"requestStart\":1788912556264,\"domLoading\":1788912556310,\"redirectStart\":0,\"loadEventEnd\":1788912556378,\"domComplete\":1788912556378,\"navigationStart\":1788912556264,\"loadEventStart\":1788912556378,\"domContentLoadedEventEnd\":1788912556364,\"unloadEventStart\":1788912556309,\"redirectEnd\":0,\"domInteractive\":1788912556364,\"fetchStart\":1788912556264,\"domContentLoadedEventStart\":1788912556364}"
+  },
+  {
+    "route": "/",
+    "viewport": "844x390",
+    "perf": "{\"connectStart\":1788912557446,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912557498,\"domainLookupStart\":1788912557446,\"domainLookupEnd\":1788912557446,\"responseStart\":1788912557494,\"connectEnd\":1788912557446,\"responseEnd\":1788912557496,\"requestStart\":1788912557446,\"domLoading\":1788912557499,\"redirectStart\":0,\"loadEventEnd\":1788912557533,\"domComplete\":1788912557533,\"navigationStart\":1788912557446,\"loadEventStart\":1788912557533,\"domContentLoadedEventEnd\":1788912557514,\"unloadEventStart\":1788912557498,\"redirectEnd\":0,\"domInteractive\":1788912557514,\"fetchStart\":1788912557446,\"domContentLoadedEventStart\":1788912557514}"
+  },
+  {
+    "route": "/",
+    "viewport": "412x915",
+    "perf": "{\"connectStart\":1788912558633,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912558676,\"domainLookupStart\":1788912558633,\"domainLookupEnd\":1788912558633,\"responseStart\":1788912558675,\"connectEnd\":1788912558633,\"responseEnd\":1788912558677,\"requestStart\":1788912558634,\"domLoading\":1788912558678,\"redirectStart\":0,\"loadEventEnd\":1788912558708,\"domComplete\":1788912558708,\"navigationStart\":1788912558633,\"loadEventStart\":1788912558708,\"domContentLoadedEventEnd\":1788912558692,\"unloadEventStart\":1788912558676,\"redirectEnd\":0,\"domInteractive\":1788912558692,\"fetchStart\":1788912558633,\"domContentLoadedEventStart\":1788912558692}"
+  },
+  {
+    "route": "/",
+    "viewport": "915x412",
+    "perf": "{\"connectStart\":1788912559781,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912559817,\"domainLookupStart\":1788912559781,\"domainLookupEnd\":1788912559781,\"responseStart\":1788912559815,\"connectEnd\":1788912559781,\"responseEnd\":1788912559817,\"requestStart\":1788912559781,\"domLoading\":1788912559818,\"redirectStart\":0,\"loadEventEnd\":1788912559849,\"domComplete\":1788912559849,\"navigationStart\":1788912559780,\"loadEventStart\":1788912559849,\"domContentLoadedEventEnd\":1788912559832,\"unloadEventStart\":1788912559817,\"redirectEnd\":0,\"domInteractive\":1788912559832,\"fetchStart\":1788912559781,\"domContentLoadedEventStart\":1788912559832}"
+  },
+  {
+    "route": "/",
+    "viewport": "430x932",
+    "perf": "{\"connectStart\":1788912560934,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912560981,\"domainLookupStart\":1788912560934,\"domainLookupEnd\":1788912560934,\"responseStart\":1788912560980,\"connectEnd\":1788912560934,\"responseEnd\":1788912560982,\"requestStart\":1788912560935,\"domLoading\":1788912560982,\"redirectStart\":0,\"loadEventEnd\":1788912561013,\"domComplete\":1788912561013,\"navigationStart\":1788912560934,\"loadEventStart\":1788912561013,\"domContentLoadedEventEnd\":1788912560996,\"unloadEventStart\":1788912560981,\"redirectEnd\":0,\"domInteractive\":1788912560996,\"fetchStart\":1788912560934,\"domContentLoadedEventStart\":1788912560996}"
+  },
+  {
+    "route": "/",
+    "viewport": "932x430",
+    "perf": "{\"connectStart\":1788912562084,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912562133,\"domainLookupStart\":1788912562084,\"domainLookupEnd\":1788912562084,\"responseStart\":1788912562132,\"connectEnd\":1788912562084,\"responseEnd\":1788912562134,\"requestStart\":1788912562085,\"domLoading\":1788912562134,\"redirectStart\":0,\"loadEventEnd\":1788912562191,\"domComplete\":1788912562191,\"navigationStart\":1788912562084,\"loadEventStart\":1788912562191,\"domContentLoadedEventEnd\":1788912562150,\"unloadEventStart\":1788912562133,\"redirectEnd\":0,\"domInteractive\":1788912562150,\"fetchStart\":1788912562084,\"domContentLoadedEventStart\":1788912562150}"
+  },
+  {
+    "route": "/",
+    "viewport": "768x1024",
+    "perf": "{\"connectStart\":1788912563267,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912563310,\"domainLookupStart\":1788912563267,\"domainLookupEnd\":1788912563267,\"responseStart\":1788912563309,\"connectEnd\":1788912563267,\"responseEnd\":1788912563310,\"requestStart\":1788912563267,\"domLoading\":1788912563311,\"redirectStart\":0,\"loadEventEnd\":1788912563339,\"domComplete\":1788912563339,\"navigationStart\":1788912563267,\"loadEventStart\":1788912563339,\"domContentLoadedEventEnd\":1788912563325,\"unloadEventStart\":1788912563310,\"redirectEnd\":0,\"domInteractive\":1788912563325,\"fetchStart\":1788912563267,\"domContentLoadedEventStart\":1788912563325}"
+  },
+  {
+    "route": "/",
+    "viewport": "820x1180",
+    "perf": "{\"connectStart\":1788912564461,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912564504,\"domainLookupStart\":1788912564461,\"domainLookupEnd\":1788912564461,\"responseStart\":1788912564503,\"connectEnd\":1788912564461,\"responseEnd\":1788912564504,\"requestStart\":1788912564462,\"domLoading\":1788912564506,\"redirectStart\":0,\"loadEventEnd\":1788912564535,\"domComplete\":1788912564535,\"navigationStart\":1788912564461,\"loadEventStart\":1788912564535,\"domContentLoadedEventEnd\":1788912564519,\"unloadEventStart\":1788912564504,\"redirectEnd\":0,\"domInteractive\":1788912564519,\"fetchStart\":1788912564461,\"domContentLoadedEventStart\":1788912564519}"
+  },
+  {
+    "route": "/",
+    "viewport": "912x1368",
+    "perf": "{\"connectStart\":1788912565716,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912565763,\"domainLookupStart\":1788912565716,\"domainLookupEnd\":1788912565716,\"responseStart\":1788912565762,\"connectEnd\":1788912565716,\"responseEnd\":1788912565764,\"requestStart\":1788912565716,\"domLoading\":1788912565764,\"redirectStart\":0,\"loadEventEnd\":1788912565793,\"domComplete\":1788912565793,\"navigationStart\":1788912565716,\"loadEventStart\":1788912565793,\"domContentLoadedEventEnd\":1788912565778,\"unloadEventStart\":1788912565763,\"redirectEnd\":0,\"domInteractive\":1788912565778,\"fetchStart\":1788912565716,\"domContentLoadedEventStart\":1788912565778}"
+  },
+  {
+    "route": "/",
+    "viewport": "1024x1366",
+    "perf": "{\"connectStart\":1788912566974,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912567018,\"domainLookupStart\":1788912566974,\"domainLookupEnd\":1788912566974,\"responseStart\":1788912567017,\"connectEnd\":1788912566974,\"responseEnd\":1788912567019,\"requestStart\":1788912566975,\"domLoading\":1788912567020,\"redirectStart\":0,\"loadEventEnd\":1788912567054,\"domComplete\":1788912567054,\"navigationStart\":1788912566974,\"loadEventStart\":1788912567054,\"domContentLoadedEventEnd\":1788912567046,\"unloadEventStart\":1788912567018,\"redirectEnd\":0,\"domInteractive\":1788912567046,\"fetchStart\":1788912566974,\"domContentLoadedEventStart\":1788912567046}"
+  },
+  {
+    "route": "/",
+    "viewport": "1280x800",
+    "perf": "{\"connectStart\":1788912568272,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912568316,\"domainLookupStart\":1788912568272,\"domainLookupEnd\":1788912568272,\"responseStart\":1788912568315,\"connectEnd\":1788912568272,\"responseEnd\":1788912568316,\"requestStart\":1788912568272,\"domLoading\":1788912568317,\"redirectStart\":0,\"loadEventEnd\":1788912568346,\"domComplete\":1788912568346,\"navigationStart\":1788912568271,\"loadEventStart\":1788912568346,\"domContentLoadedEventEnd\":1788912568332,\"unloadEventStart\":1788912568316,\"redirectEnd\":0,\"domInteractive\":1788912568332,\"fetchStart\":1788912568272,\"domContentLoadedEventStart\":1788912568332}"
+  },
+  {
+    "route": "/",
+    "viewport": "1440x900",
+    "perf": "{\"connectStart\":1788912568725,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912568766,\"domainLookupStart\":1788912568725,\"domainLookupEnd\":1788912568725,\"responseStart\":1788912568765,\"connectEnd\":1788912568725,\"responseEnd\":1788912568767,\"requestStart\":1788912568725,\"domLoading\":1788912568768,\"redirectStart\":0,\"loadEventEnd\":1788912568803,\"domComplete\":1788912568803,\"navigationStart\":1788912568725,\"loadEventStart\":1788912568803,\"domContentLoadedEventEnd\":1788912568781,\"unloadEventStart\":1788912568766,\"redirectEnd\":0,\"domInteractive\":1788912568781,\"fetchStart\":1788912568725,\"domContentLoadedEventStart\":1788912568781}"
+  },
+  {
+    "route": "/",
+    "viewport": "1728x1117",
+    "perf": "{\"connectStart\":1788912569216,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912569265,\"domainLookupStart\":1788912569216,\"domainLookupEnd\":1788912569216,\"responseStart\":1788912569264,\"connectEnd\":1788912569216,\"responseEnd\":1788912569266,\"requestStart\":1788912569217,\"domLoading\":1788912569267,\"redirectStart\":0,\"loadEventEnd\":1788912569294,\"domComplete\":1788912569294,\"navigationStart\":1788912569216,\"loadEventStart\":1788912569294,\"domContentLoadedEventEnd\":1788912569279,\"unloadEventStart\":1788912569265,\"redirectEnd\":0,\"domInteractive\":1788912569279,\"fetchStart\":1788912569216,\"domContentLoadedEventStart\":1788912569279}"
+  },
+  {
+    "route": "/",
+    "viewport": "1920x1080",
+    "perf": "{\"connectStart\":1788912569816,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912569852,\"domainLookupStart\":1788912569816,\"domainLookupEnd\":1788912569816,\"responseStart\":1788912569849,\"connectEnd\":1788912569816,\"responseEnd\":1788912569850,\"requestStart\":1788912569816,\"domLoading\":1788912569853,\"redirectStart\":0,\"loadEventEnd\":1788912569881,\"domComplete\":1788912569881,\"navigationStart\":1788912569816,\"loadEventStart\":1788912569881,\"domContentLoadedEventEnd\":1788912569866,\"unloadEventStart\":1788912569852,\"redirectEnd\":0,\"domInteractive\":1788912569866,\"fetchStart\":1788912569816,\"domContentLoadedEventStart\":1788912569866}"
+  },
+  {
+    "route": "/about",
+    "viewport": "320x568",
+    "perf": "{\"connectStart\":1788912570457,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912570519,\"domainLookupStart\":1788912570457,\"domainLookupEnd\":1788912570457,\"responseStart\":1788912570516,\"connectEnd\":1788912570457,\"responseEnd\":1788912570518,\"requestStart\":1788912570457,\"domLoading\":1788912570521,\"redirectStart\":0,\"loadEventEnd\":1788912570579,\"domComplete\":1788912570579,\"navigationStart\":1788912570457,\"loadEventStart\":1788912570579,\"domContentLoadedEventEnd\":1788912570538,\"unloadEventStart\":1788912570519,\"redirectEnd\":0,\"domInteractive\":1788912570538,\"fetchStart\":1788912570457,\"domContentLoadedEventStart\":1788912570538}"
+  },
+  {
+    "route": "/about",
+    "viewport": "568x320",
+    "perf": "{\"connectStart\":1788912571568,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912571615,\"domainLookupStart\":1788912571568,\"domainLookupEnd\":1788912571568,\"responseStart\":1788912571614,\"connectEnd\":1788912571568,\"responseEnd\":1788912571615,\"requestStart\":1788912571569,\"domLoading\":1788912571616,\"redirectStart\":0,\"loadEventEnd\":1788912571649,\"domComplete\":1788912571649,\"navigationStart\":1788912571568,\"loadEventStart\":1788912571649,\"domContentLoadedEventEnd\":1788912571630,\"unloadEventStart\":1788912571615,\"redirectEnd\":0,\"domInteractive\":1788912571630,\"fetchStart\":1788912571568,\"domContentLoadedEventStart\":1788912571630}"
+  },
+  {
+    "route": "/about",
+    "viewport": "360x800",
+    "perf": "{\"connectStart\":1788912572729,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912572776,\"domainLookupStart\":1788912572729,\"domainLookupEnd\":1788912572729,\"responseStart\":1788912572775,\"connectEnd\":1788912572729,\"responseEnd\":1788912572776,\"requestStart\":1788912572730,\"domLoading\":1788912572777,\"redirectStart\":0,\"loadEventEnd\":1788912572815,\"domComplete\":1788912572815,\"navigationStart\":1788912572729,\"loadEventStart\":1788912572815,\"domContentLoadedEventEnd\":1788912572791,\"unloadEventStart\":1788912572776,\"redirectEnd\":0,\"domInteractive\":1788912572791,\"fetchStart\":1788912572729,\"domContentLoadedEventStart\":1788912572791}"
+  },
+  {
+    "route": "/about",
+    "viewport": "800x360",
+    "perf": "{\"connectStart\":1788912573862,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912573903,\"domainLookupStart\":1788912573862,\"domainLookupEnd\":1788912573862,\"responseStart\":1788912573902,\"connectEnd\":1788912573862,\"responseEnd\":1788912573903,\"requestStart\":1788912573862,\"domLoading\":1788912573904,\"redirectStart\":0,\"loadEventEnd\":1788912573937,\"domComplete\":1788912573937,\"navigationStart\":1788912573862,\"loadEventStart\":1788912573937,\"domContentLoadedEventEnd\":1788912573918,\"unloadEventStart\":1788912573903,\"redirectEnd\":0,\"domInteractive\":1788912573918,\"fetchStart\":1788912573862,\"domContentLoadedEventStart\":1788912573918}"
+  },
+  {
+    "route": "/about",
+    "viewport": "375x812",
+    "perf": "{\"connectStart\":1788912575038,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912575072,\"domainLookupStart\":1788912575038,\"domainLookupEnd\":1788912575038,\"responseStart\":1788912575070,\"connectEnd\":1788912575038,\"responseEnd\":1788912575072,\"requestStart\":1788912575038,\"domLoading\":1788912575073,\"redirectStart\":0,\"loadEventEnd\":1788912575104,\"domComplete\":1788912575104,\"navigationStart\":1788912575037,\"loadEventStart\":1788912575104,\"domContentLoadedEventEnd\":1788912575085,\"unloadEventStart\":1788912575072,\"redirectEnd\":0,\"domInteractive\":1788912575085,\"fetchStart\":1788912575038,\"domContentLoadedEventStart\":1788912575085}"
+  },
+  {
+    "route": "/about",
+    "viewport": "812x375",
+    "perf": "{\"connectStart\":1788912576140,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912576180,\"domainLookupStart\":1788912576140,\"domainLookupEnd\":1788912576140,\"responseStart\":1788912576179,\"connectEnd\":1788912576140,\"responseEnd\":1788912576180,\"requestStart\":1788912576140,\"domLoading\":1788912576181,\"redirectStart\":0,\"loadEventEnd\":1788912576214,\"domComplete\":1788912576214,\"navigationStart\":1788912576140,\"loadEventStart\":1788912576214,\"domContentLoadedEventEnd\":1788912576195,\"unloadEventStart\":1788912576180,\"redirectEnd\":0,\"domInteractive\":1788912576195,\"fetchStart\":1788912576140,\"domContentLoadedEventStart\":1788912576195}"
+  },
+  {
+    "route": "/about",
+    "viewport": "390x844",
+    "perf": "{\"connectStart\":1788912577313,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912577356,\"domainLookupStart\":1788912577313,\"domainLookupEnd\":1788912577313,\"responseStart\":1788912577354,\"connectEnd\":1788912577313,\"responseEnd\":1788912577356,\"requestStart\":1788912577314,\"domLoading\":1788912577357,\"redirectStart\":0,\"loadEventEnd\":1788912577388,\"domComplete\":1788912577388,\"navigationStart\":1788912577313,\"loadEventStart\":1788912577388,\"domContentLoadedEventEnd\":1788912577368,\"unloadEventStart\":1788912577356,\"redirectEnd\":0,\"domInteractive\":1788912577368,\"fetchStart\":1788912577313,\"domContentLoadedEventStart\":1788912577368}"
+  },
+  {
+    "route": "/about",
+    "viewport": "844x390",
+    "perf": "{\"connectStart\":1788912578459,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912578510,\"domainLookupStart\":1788912578459,\"domainLookupEnd\":1788912578459,\"responseStart\":1788912578508,\"connectEnd\":1788912578459,\"responseEnd\":1788912578521,\"requestStart\":1788912578459,\"domLoading\":1788912578512,\"redirectStart\":0,\"loadEventEnd\":1788912578563,\"domComplete\":1788912578563,\"navigationStart\":1788912578459,\"loadEventStart\":1788912578563,\"domContentLoadedEventEnd\":1788912578528,\"unloadEventStart\":1788912578510,\"redirectEnd\":0,\"domInteractive\":1788912578528,\"fetchStart\":1788912578459,\"domContentLoadedEventStart\":1788912578528}"
+  },
+  {
+    "route": "/about",
+    "viewport": "412x915",
+    "perf": "{\"connectStart\":1788912579661,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912579700,\"domainLookupStart\":1788912579661,\"domainLookupEnd\":1788912579661,\"responseStart\":1788912579699,\"connectEnd\":1788912579661,\"responseEnd\":1788912579700,\"requestStart\":1788912579662,\"domLoading\":1788912579701,\"redirectStart\":0,\"loadEventEnd\":1788912579732,\"domComplete\":1788912579732,\"navigationStart\":1788912579661,\"loadEventStart\":1788912579732,\"domContentLoadedEventEnd\":1788912579714,\"unloadEventStart\":1788912579700,\"redirectEnd\":0,\"domInteractive\":1788912579714,\"fetchStart\":1788912579661,\"domContentLoadedEventStart\":1788912579714}"
+  },
+  {
+    "route": "/about",
+    "viewport": "915x412",
+    "perf": "{\"connectStart\":1788912580802,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912580842,\"domainLookupStart\":1788912580802,\"domainLookupEnd\":1788912580802,\"responseStart\":1788912580841,\"connectEnd\":1788912580802,\"responseEnd\":1788912580842,\"requestStart\":1788912580803,\"domLoading\":1788912580843,\"redirectStart\":0,\"loadEventEnd\":1788912580920,\"domComplete\":1788912580920,\"navigationStart\":1788912580802,\"loadEventStart\":1788912580920,\"domContentLoadedEventEnd\":1788912580856,\"unloadEventStart\":1788912580842,\"redirectEnd\":0,\"domInteractive\":1788912580856,\"fetchStart\":1788912580802,\"domContentLoadedEventStart\":1788912580856}"
+  },
+  {
+    "route": "/about",
+    "viewport": "430x932",
+    "perf": "{\"connectStart\":1788912582025,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912582063,\"domainLookupStart\":1788912582025,\"domainLookupEnd\":1788912582025,\"responseStart\":1788912582062,\"connectEnd\":1788912582025,\"responseEnd\":1788912582063,\"requestStart\":1788912582026,\"domLoading\":1788912582064,\"redirectStart\":0,\"loadEventEnd\":1788912582093,\"domComplete\":1788912582093,\"navigationStart\":1788912582025,\"loadEventStart\":1788912582093,\"domContentLoadedEventEnd\":1788912582076,\"unloadEventStart\":1788912582063,\"redirectEnd\":0,\"domInteractive\":1788912582076,\"fetchStart\":1788912582025,\"domContentLoadedEventStart\":1788912582076}"
+  },
+  {
+    "route": "/about",
+    "viewport": "932x430",
+    "perf": "{\"connectStart\":1788912583147,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912583185,\"domainLookupStart\":1788912583147,\"domainLookupEnd\":1788912583147,\"responseStart\":1788912583184,\"connectEnd\":1788912583147,\"responseEnd\":1788912583185,\"requestStart\":1788912583147,\"domLoading\":1788912583186,\"redirectStart\":0,\"loadEventEnd\":1788912583216,\"domComplete\":1788912583216,\"navigationStart\":1788912583147,\"loadEventStart\":1788912583216,\"domContentLoadedEventEnd\":1788912583198,\"unloadEventStart\":1788912583185,\"redirectEnd\":0,\"domInteractive\":1788912583198,\"fetchStart\":1788912583147,\"domContentLoadedEventStart\":1788912583198}"
+  },
+  {
+    "route": "/about",
+    "viewport": "768x1024",
+    "perf": "{\"connectStart\":1788912584335,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912584375,\"domainLookupStart\":1788912584335,\"domainLookupEnd\":1788912584335,\"responseStart\":1788912584374,\"connectEnd\":1788912584335,\"responseEnd\":1788912584375,\"requestStart\":1788912584335,\"domLoading\":1788912584376,\"redirectStart\":0,\"loadEventEnd\":1788912584405,\"domComplete\":1788912584405,\"navigationStart\":1788912584335,\"loadEventStart\":1788912584405,\"domContentLoadedEventEnd\":1788912584387,\"unloadEventStart\":1788912584375,\"redirectEnd\":0,\"domInteractive\":1788912584387,\"fetchStart\":1788912584335,\"domContentLoadedEventStart\":1788912584387}"
+  },
+  {
+    "route": "/about",
+    "viewport": "820x1180",
+    "perf": "{\"connectStart\":1788912585573,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912585613,\"domainLookupStart\":1788912585573,\"domainLookupEnd\":1788912585573,\"responseStart\":1788912585612,\"connectEnd\":1788912585573,\"responseEnd\":1788912585613,\"requestStart\":1788912585573,\"domLoading\":1788912585614,\"redirectStart\":0,\"loadEventEnd\":1788912585644,\"domComplete\":1788912585644,\"navigationStart\":1788912585573,\"loadEventStart\":1788912585644,\"domContentLoadedEventEnd\":1788912585626,\"unloadEventStart\":1788912585613,\"redirectEnd\":0,\"domInteractive\":1788912585626,\"fetchStart\":1788912585573,\"domContentLoadedEventStart\":1788912585626}"
+  },
+  {
+    "route": "/about",
+    "viewport": "912x1368",
+    "perf": "{\"connectStart\":1788912586856,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912586895,\"domainLookupStart\":1788912586856,\"domainLookupEnd\":1788912586856,\"responseStart\":1788912586894,\"connectEnd\":1788912586856,\"responseEnd\":1788912586895,\"requestStart\":1788912586856,\"domLoading\":1788912586896,\"redirectStart\":0,\"loadEventEnd\":1788912586928,\"domComplete\":1788912586928,\"navigationStart\":1788912586856,\"loadEventStart\":1788912586928,\"domContentLoadedEventEnd\":1788912586907,\"unloadEventStart\":1788912586895,\"redirectEnd\":0,\"domInteractive\":1788912586907,\"fetchStart\":1788912586856,\"domContentLoadedEventStart\":1788912586907}"
+  },
+  {
+    "route": "/about",
+    "viewport": "1024x1366",
+    "perf": "{\"connectStart\":1788912588205,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912588242,\"domainLookupStart\":1788912588205,\"domainLookupEnd\":1788912588205,\"responseStart\":1788912588241,\"connectEnd\":1788912588205,\"responseEnd\":1788912588242,\"requestStart\":1788912588205,\"domLoading\":1788912588243,\"redirectStart\":0,\"loadEventEnd\":1788912588269,\"domComplete\":1788912588269,\"navigationStart\":1788912588205,\"loadEventStart\":1788912588269,\"domContentLoadedEventEnd\":1788912588254,\"unloadEventStart\":1788912588242,\"redirectEnd\":0,\"domInteractive\":1788912588254,\"fetchStart\":1788912588205,\"domContentLoadedEventStart\":1788912588254}"
+  },
+  {
+    "route": "/about",
+    "viewport": "1280x800",
+    "perf": "{\"connectStart\":1788912589607,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912589644,\"domainLookupStart\":1788912589607,\"domainLookupEnd\":1788912589607,\"responseStart\":1788912589643,\"connectEnd\":1788912589607,\"responseEnd\":1788912589644,\"requestStart\":1788912589608,\"domLoading\":1788912589645,\"redirectStart\":0,\"loadEventEnd\":1788912589675,\"domComplete\":1788912589675,\"navigationStart\":1788912589607,\"loadEventStart\":1788912589675,\"domContentLoadedEventEnd\":1788912589657,\"unloadEventStart\":1788912589644,\"redirectEnd\":0,\"domInteractive\":1788912589657,\"fetchStart\":1788912589607,\"domContentLoadedEventStart\":1788912589657}"
+  },
+  {
+    "route": "/about",
+    "viewport": "1440x900",
+    "perf": "{\"connectStart\":1788912589949,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912589984,\"domainLookupStart\":1788912589949,\"domainLookupEnd\":1788912589949,\"responseStart\":1788912589983,\"connectEnd\":1788912589949,\"responseEnd\":1788912589984,\"requestStart\":1788912589950,\"domLoading\":1788912589985,\"redirectStart\":0,\"loadEventEnd\":1788912590014,\"domComplete\":1788912590014,\"navigationStart\":1788912589949,\"loadEventStart\":1788912590014,\"domContentLoadedEventEnd\":1788912589996,\"unloadEventStart\":1788912589984,\"redirectEnd\":0,\"domInteractive\":1788912589996,\"fetchStart\":1788912589949,\"domContentLoadedEventStart\":1788912589996}"
+  },
+  {
+    "route": "/about",
+    "viewport": "1728x1117",
+    "perf": "{\"connectStart\":1788912590374,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912590409,\"domainLookupStart\":1788912590374,\"domainLookupEnd\":1788912590374,\"responseStart\":1788912590408,\"connectEnd\":1788912590374,\"responseEnd\":1788912590409,\"requestStart\":1788912590375,\"domLoading\":1788912590410,\"redirectStart\":0,\"loadEventEnd\":1788912590436,\"domComplete\":1788912590436,\"navigationStart\":1788912590374,\"loadEventStart\":1788912590436,\"domContentLoadedEventEnd\":1788912590422,\"unloadEventStart\":1788912590409,\"redirectEnd\":0,\"domInteractive\":1788912590422,\"fetchStart\":1788912590374,\"domContentLoadedEventStart\":1788912590422}"
+  },
+  {
+    "route": "/about",
+    "viewport": "1920x1080",
+    "perf": "{\"connectStart\":1788912590911,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912590947,\"domainLookupStart\":1788912590911,\"domainLookupEnd\":1788912590911,\"responseStart\":1788912590946,\"connectEnd\":1788912590911,\"responseEnd\":1788912590948,\"requestStart\":1788912590912,\"domLoading\":1788912590948,\"redirectStart\":0,\"loadEventEnd\":1788912590974,\"domComplete\":1788912590974,\"navigationStart\":1788912590911,\"loadEventStart\":1788912590974,\"domContentLoadedEventEnd\":1788912590960,\"unloadEventStart\":1788912590947,\"redirectEnd\":0,\"domInteractive\":1788912590960,\"fetchStart\":1788912590911,\"domContentLoadedEventStart\":1788912590960}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "320x568",
+    "perf": "{\"connectStart\":1788912591463,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912591514,\"domainLookupStart\":1788912591463,\"domainLookupEnd\":1788912591463,\"responseStart\":1788912591511,\"connectEnd\":1788912591463,\"responseEnd\":1788912591515,\"requestStart\":1788912591464,\"domLoading\":1788912591516,\"redirectStart\":0,\"loadEventEnd\":1788912591568,\"domComplete\":1788912591568,\"navigationStart\":1788912591463,\"loadEventStart\":1788912591568,\"domContentLoadedEventEnd\":1788912591535,\"unloadEventStart\":1788912591514,\"redirectEnd\":0,\"domInteractive\":1788912591535,\"fetchStart\":1788912591463,\"domContentLoadedEventStart\":1788912591535}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "568x320",
+    "perf": "{\"connectStart\":1788912592597,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912592640,\"domainLookupStart\":1788912592597,\"domainLookupEnd\":1788912592597,\"responseStart\":1788912592639,\"connectEnd\":1788912592597,\"responseEnd\":1788912592641,\"requestStart\":1788912592597,\"domLoading\":1788912592642,\"redirectStart\":0,\"loadEventEnd\":1788912592674,\"domComplete\":1788912592674,\"navigationStart\":1788912592597,\"loadEventStart\":1788912592674,\"domContentLoadedEventEnd\":1788912592655,\"unloadEventStart\":1788912592640,\"redirectEnd\":0,\"domInteractive\":1788912592655,\"fetchStart\":1788912592597,\"domContentLoadedEventStart\":1788912592655}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "360x800",
+    "perf": "{\"connectStart\":1788912593755,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912593795,\"domainLookupStart\":1788912593755,\"domainLookupEnd\":1788912593755,\"responseStart\":1788912593794,\"connectEnd\":1788912593755,\"responseEnd\":1788912593795,\"requestStart\":1788912593756,\"domLoading\":1788912593796,\"redirectStart\":0,\"loadEventEnd\":1788912593831,\"domComplete\":1788912593831,\"navigationStart\":1788912593755,\"loadEventStart\":1788912593831,\"domContentLoadedEventEnd\":1788912593809,\"unloadEventStart\":1788912593795,\"redirectEnd\":0,\"domInteractive\":1788912593809,\"fetchStart\":1788912593755,\"domContentLoadedEventStart\":1788912593809}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "800x360",
+    "perf": "{\"connectStart\":1788912594931,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912594971,\"domainLookupStart\":1788912594931,\"domainLookupEnd\":1788912594931,\"responseStart\":1788912594970,\"connectEnd\":1788912594931,\"responseEnd\":1788912594971,\"requestStart\":1788912594931,\"domLoading\":1788912594972,\"redirectStart\":0,\"loadEventEnd\":1788912594999,\"domComplete\":1788912594999,\"navigationStart\":1788912594931,\"loadEventStart\":1788912594999,\"domContentLoadedEventEnd\":1788912594984,\"unloadEventStart\":1788912594971,\"redirectEnd\":0,\"domInteractive\":1788912594984,\"fetchStart\":1788912594931,\"domContentLoadedEventStart\":1788912594984}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "375x812",
+    "perf": "{\"connectStart\":1788912596135,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912596159,\"domainLookupStart\":1788912596135,\"domainLookupEnd\":1788912596135,\"responseStart\":1788912596157,\"connectEnd\":1788912596135,\"responseEnd\":1788912596158,\"requestStart\":1788912596135,\"domLoading\":1788912596160,\"redirectStart\":0,\"loadEventEnd\":1788912596185,\"domComplete\":1788912596185,\"navigationStart\":1788912596135,\"loadEventStart\":1788912596185,\"domContentLoadedEventEnd\":1788912596171,\"unloadEventStart\":1788912596159,\"redirectEnd\":0,\"domInteractive\":1788912596171,\"fetchStart\":1788912596135,\"domContentLoadedEventStart\":1788912596171}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "812x375",
+    "perf": "{\"connectStart\":1788912597274,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912597297,\"domainLookupStart\":1788912597274,\"domainLookupEnd\":1788912597274,\"responseStart\":1788912597296,\"connectEnd\":1788912597274,\"responseEnd\":1788912597298,\"requestStart\":1788912597275,\"domLoading\":1788912597298,\"redirectStart\":0,\"loadEventEnd\":1788912597326,\"domComplete\":1788912597326,\"navigationStart\":1788912597274,\"loadEventStart\":1788912597326,\"domContentLoadedEventEnd\":1788912597310,\"unloadEventStart\":1788912597297,\"redirectEnd\":0,\"domInteractive\":1788912597310,\"fetchStart\":1788912597274,\"domContentLoadedEventStart\":1788912597310}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "390x844",
+    "perf": "{\"connectStart\":1788912598513,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912598552,\"domainLookupStart\":1788912598513,\"domainLookupEnd\":1788912598513,\"responseStart\":1788912598551,\"connectEnd\":1788912598513,\"responseEnd\":1788912598552,\"requestStart\":1788912598513,\"domLoading\":1788912598553,\"redirectStart\":0,\"loadEventEnd\":1788912598583,\"domComplete\":1788912598583,\"navigationStart\":1788912598513,\"loadEventStart\":1788912598583,\"domContentLoadedEventEnd\":1788912598564,\"unloadEventStart\":1788912598552,\"redirectEnd\":0,\"domInteractive\":1788912598564,\"fetchStart\":1788912598513,\"domContentLoadedEventStart\":1788912598564}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "844x390",
+    "perf": "{\"connectStart\":1788912599704,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912599770,\"domainLookupStart\":1788912599704,\"domainLookupEnd\":1788912599704,\"responseStart\":1788912599769,\"connectEnd\":1788912599704,\"responseEnd\":1788912599771,\"requestStart\":1788912599705,\"domLoading\":1788912599772,\"redirectStart\":0,\"loadEventEnd\":1788912599804,\"domComplete\":1788912599804,\"navigationStart\":1788912599704,\"loadEventStart\":1788912599804,\"domContentLoadedEventEnd\":1788912599785,\"unloadEventStart\":1788912599770,\"redirectEnd\":0,\"domInteractive\":1788912599785,\"fetchStart\":1788912599704,\"domContentLoadedEventStart\":1788912599785}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "412x915",
+    "perf": "{\"connectStart\":1788912600957,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912600994,\"domainLookupStart\":1788912600957,\"domainLookupEnd\":1788912600957,\"responseStart\":1788912600993,\"connectEnd\":1788912600957,\"responseEnd\":1788912600994,\"requestStart\":1788912600957,\"domLoading\":1788912600995,\"redirectStart\":0,\"loadEventEnd\":1788912601025,\"domComplete\":1788912601025,\"navigationStart\":1788912600957,\"loadEventStart\":1788912601025,\"domContentLoadedEventEnd\":1788912601006,\"unloadEventStart\":1788912600994,\"redirectEnd\":0,\"domInteractive\":1788912601006,\"fetchStart\":1788912600957,\"domContentLoadedEventStart\":1788912601006}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "915x412",
+    "perf": "{\"connectStart\":1788912602161,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912602201,\"domainLookupStart\":1788912602161,\"domainLookupEnd\":1788912602161,\"responseStart\":1788912602200,\"connectEnd\":1788912602161,\"responseEnd\":1788912602202,\"requestStart\":1788912602162,\"domLoading\":1788912602202,\"redirectStart\":0,\"loadEventEnd\":1788912602233,\"domComplete\":1788912602233,\"navigationStart\":1788912602161,\"loadEventStart\":1788912602233,\"domContentLoadedEventEnd\":1788912602215,\"unloadEventStart\":1788912602201,\"redirectEnd\":0,\"domInteractive\":1788912602215,\"fetchStart\":1788912602161,\"domContentLoadedEventStart\":1788912602215}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "430x932",
+    "perf": "{\"connectStart\":1788912603352,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912603401,\"domainLookupStart\":1788912603352,\"domainLookupEnd\":1788912603352,\"responseStart\":1788912603399,\"connectEnd\":1788912603352,\"responseEnd\":1788912603401,\"requestStart\":1788912603352,\"domLoading\":1788912603402,\"redirectStart\":0,\"loadEventEnd\":1788912603431,\"domComplete\":1788912603431,\"navigationStart\":1788912603352,\"loadEventStart\":1788912603431,\"domContentLoadedEventEnd\":1788912603413,\"unloadEventStart\":1788912603401,\"redirectEnd\":0,\"domInteractive\":1788912603413,\"fetchStart\":1788912603352,\"domContentLoadedEventStart\":1788912603413}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "932x430",
+    "perf": "{\"connectStart\":1788912604584,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912604635,\"domainLookupStart\":1788912604584,\"domainLookupEnd\":1788912604584,\"responseStart\":1788912604634,\"connectEnd\":1788912604584,\"responseEnd\":1788912604635,\"requestStart\":1788912604584,\"domLoading\":1788912604636,\"redirectStart\":0,\"loadEventEnd\":1788912604670,\"domComplete\":1788912604670,\"navigationStart\":1788912604584,\"loadEventStart\":1788912604670,\"domContentLoadedEventEnd\":1788912604649,\"unloadEventStart\":1788912604635,\"redirectEnd\":0,\"domInteractive\":1788912604649,\"fetchStart\":1788912604584,\"domContentLoadedEventStart\":1788912604649}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "768x1024",
+    "perf": "{\"connectStart\":1788912605819,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912605863,\"domainLookupStart\":1788912605819,\"domainLookupEnd\":1788912605819,\"responseStart\":1788912605862,\"connectEnd\":1788912605819,\"responseEnd\":1788912605863,\"requestStart\":1788912605819,\"domLoading\":1788912605864,\"redirectStart\":0,\"loadEventEnd\":1788912605894,\"domComplete\":1788912605894,\"navigationStart\":1788912605819,\"loadEventStart\":1788912605894,\"domContentLoadedEventEnd\":1788912605875,\"unloadEventStart\":1788912605863,\"redirectEnd\":0,\"domInteractive\":1788912605875,\"fetchStart\":1788912605819,\"domContentLoadedEventStart\":1788912605875}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "820x1180",
+    "perf": "{\"connectStart\":1788912607143,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912607184,\"domainLookupStart\":1788912607143,\"domainLookupEnd\":1788912607143,\"responseStart\":1788912607183,\"connectEnd\":1788912607143,\"responseEnd\":1788912607185,\"requestStart\":1788912607143,\"domLoading\":1788912607185,\"redirectStart\":0,\"loadEventEnd\":1788912607213,\"domComplete\":1788912607213,\"navigationStart\":1788912607143,\"loadEventStart\":1788912607213,\"domContentLoadedEventEnd\":1788912607197,\"unloadEventStart\":1788912607184,\"redirectEnd\":0,\"domInteractive\":1788912607197,\"fetchStart\":1788912607143,\"domContentLoadedEventStart\":1788912607197}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "912x1368",
+    "perf": "{\"connectStart\":1788912608462,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912608491,\"domainLookupStart\":1788912608462,\"domainLookupEnd\":1788912608462,\"responseStart\":1788912608490,\"connectEnd\":1788912608462,\"responseEnd\":1788912608491,\"requestStart\":1788912608462,\"domLoading\":1788912608492,\"redirectStart\":0,\"loadEventEnd\":1788912608519,\"domComplete\":1788912608519,\"navigationStart\":1788912608462,\"loadEventStart\":1788912608519,\"domContentLoadedEventEnd\":1788912608504,\"unloadEventStart\":1788912608491,\"redirectEnd\":0,\"domInteractive\":1788912608504,\"fetchStart\":1788912608462,\"domContentLoadedEventStart\":1788912608504}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "1024x1366",
+    "perf": "{\"connectStart\":1788912609819,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912609852,\"domainLookupStart\":1788912609819,\"domainLookupEnd\":1788912609819,\"responseStart\":1788912609851,\"connectEnd\":1788912609819,\"responseEnd\":1788912609854,\"requestStart\":1788912609820,\"domLoading\":1788912609854,\"redirectStart\":0,\"loadEventEnd\":1788912609882,\"domComplete\":1788912609882,\"navigationStart\":1788912609819,\"loadEventStart\":1788912609882,\"domContentLoadedEventEnd\":1788912609866,\"unloadEventStart\":1788912609852,\"redirectEnd\":0,\"domInteractive\":1788912609866,\"fetchStart\":1788912609819,\"domContentLoadedEventStart\":1788912609866}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "1280x800",
+    "perf": "{\"connectStart\":1788912611184,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912611226,\"domainLookupStart\":1788912611184,\"domainLookupEnd\":1788912611184,\"responseStart\":1788912611224,\"connectEnd\":1788912611184,\"responseEnd\":1788912611225,\"requestStart\":1788912611185,\"domLoading\":1788912611228,\"redirectStart\":0,\"loadEventEnd\":1788912611255,\"domComplete\":1788912611255,\"navigationStart\":1788912611184,\"loadEventStart\":1788912611255,\"domContentLoadedEventEnd\":1788912611240,\"unloadEventStart\":1788912611226,\"redirectEnd\":0,\"domInteractive\":1788912611240,\"fetchStart\":1788912611184,\"domContentLoadedEventStart\":1788912611240}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "1440x900",
+    "perf": "{\"connectStart\":1788912611604,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912611646,\"domainLookupStart\":1788912611604,\"domainLookupEnd\":1788912611604,\"responseStart\":1788912611645,\"connectEnd\":1788912611604,\"responseEnd\":1788912611646,\"requestStart\":1788912611605,\"domLoading\":1788912611647,\"redirectStart\":0,\"loadEventEnd\":1788912611675,\"domComplete\":1788912611675,\"navigationStart\":1788912611604,\"loadEventStart\":1788912611675,\"domContentLoadedEventEnd\":1788912611658,\"unloadEventStart\":1788912611646,\"redirectEnd\":0,\"domInteractive\":1788912611658,\"fetchStart\":1788912611604,\"domContentLoadedEventStart\":1788912611658}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "1728x1117",
+    "perf": "{\"connectStart\":1788912612082,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912612121,\"domainLookupStart\":1788912612082,\"domainLookupEnd\":1788912612082,\"responseStart\":1788912612120,\"connectEnd\":1788912612082,\"responseEnd\":1788912612121,\"requestStart\":1788912612083,\"domLoading\":1788912612122,\"redirectStart\":0,\"loadEventEnd\":1788912612148,\"domComplete\":1788912612148,\"navigationStart\":1788912612082,\"loadEventStart\":1788912612148,\"domContentLoadedEventEnd\":1788912612134,\"unloadEventStart\":1788912612121,\"redirectEnd\":0,\"domInteractive\":1788912612134,\"fetchStart\":1788912612082,\"domContentLoadedEventStart\":1788912612134}"
+  },
+  {
+    "route": "/brands",
+    "viewport": "1920x1080",
+    "perf": "{\"connectStart\":1788912612637,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912612672,\"domainLookupStart\":1788912612637,\"domainLookupEnd\":1788912612637,\"responseStart\":1788912612669,\"connectEnd\":1788912612637,\"responseEnd\":1788912612679,\"requestStart\":1788912612638,\"domLoading\":1788912612673,\"redirectStart\":0,\"loadEventEnd\":1788912612702,\"domComplete\":1788912612702,\"navigationStart\":1788912612637,\"loadEventStart\":1788912612702,\"domContentLoadedEventEnd\":1788912612691,\"unloadEventStart\":1788912612672,\"redirectEnd\":0,\"domInteractive\":1788912612691,\"fetchStart\":1788912612637,\"domContentLoadedEventStart\":1788912612691}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "320x568",
+    "perf": "{\"connectStart\":1788912613212,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912613245,\"domainLookupStart\":1788912613212,\"domainLookupEnd\":1788912613212,\"responseStart\":1788912613243,\"connectEnd\":1788912613212,\"responseEnd\":1788912613244,\"requestStart\":1788912613213,\"domLoading\":1788912613246,\"redirectStart\":0,\"loadEventEnd\":1788912613271,\"domComplete\":1788912613271,\"navigationStart\":1788912613212,\"loadEventStart\":1788912613271,\"domContentLoadedEventEnd\":1788912613262,\"unloadEventStart\":1788912613245,\"redirectEnd\":0,\"domInteractive\":1788912613262,\"fetchStart\":1788912613212,\"domContentLoadedEventStart\":1788912613262}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "568x320",
+    "perf": "{\"connectStart\":1788912614309,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912614337,\"domainLookupStart\":1788912614309,\"domainLookupEnd\":1788912614309,\"responseStart\":1788912614335,\"connectEnd\":1788912614309,\"responseEnd\":1788912614337,\"requestStart\":1788912614309,\"domLoading\":1788912614338,\"redirectStart\":0,\"loadEventEnd\":1788912614370,\"domComplete\":1788912614370,\"navigationStart\":1788912614309,\"loadEventStart\":1788912614370,\"domContentLoadedEventEnd\":1788912614350,\"unloadEventStart\":1788912614337,\"redirectEnd\":0,\"domInteractive\":1788912614350,\"fetchStart\":1788912614309,\"domContentLoadedEventStart\":1788912614350}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "360x800",
+    "perf": "{\"connectStart\":1788912615447,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912615475,\"domainLookupStart\":1788912615447,\"domainLookupEnd\":1788912615447,\"responseStart\":1788912615474,\"connectEnd\":1788912615447,\"responseEnd\":1788912615476,\"requestStart\":1788912615447,\"domLoading\":1788912615477,\"redirectStart\":0,\"loadEventEnd\":1788912615507,\"domComplete\":1788912615507,\"navigationStart\":1788912615447,\"loadEventStart\":1788912615507,\"domContentLoadedEventEnd\":1788912615492,\"unloadEventStart\":1788912615475,\"redirectEnd\":0,\"domInteractive\":1788912615492,\"fetchStart\":1788912615447,\"domContentLoadedEventStart\":1788912615492}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "800x360",
+    "perf": "{\"connectStart\":1788912616595,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912616621,\"domainLookupStart\":1788912616595,\"domainLookupEnd\":1788912616595,\"responseStart\":1788912616620,\"connectEnd\":1788912616595,\"responseEnd\":1788912616621,\"requestStart\":1788912616595,\"domLoading\":1788912616622,\"redirectStart\":0,\"loadEventEnd\":1788912616647,\"domComplete\":1788912616647,\"navigationStart\":1788912616595,\"loadEventStart\":1788912616647,\"domContentLoadedEventEnd\":1788912616633,\"unloadEventStart\":1788912616621,\"redirectEnd\":0,\"domInteractive\":1788912616633,\"fetchStart\":1788912616595,\"domContentLoadedEventStart\":1788912616633}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "375x812",
+    "perf": "{\"connectStart\":1788912617787,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912617814,\"domainLookupStart\":1788912617787,\"domainLookupEnd\":1788912617787,\"responseStart\":1788912617813,\"connectEnd\":1788912617787,\"responseEnd\":1788912617818,\"requestStart\":1788912617787,\"domLoading\":1788912617815,\"redirectStart\":0,\"loadEventEnd\":1788912617865,\"domComplete\":1788912617865,\"navigationStart\":1788912617787,\"loadEventStart\":1788912617865,\"domContentLoadedEventEnd\":1788912617829,\"unloadEventStart\":1788912617814,\"redirectEnd\":0,\"domInteractive\":1788912617829,\"fetchStart\":1788912617787,\"domContentLoadedEventStart\":1788912617829}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "812x375",
+    "perf": "{\"connectStart\":1788912618947,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912618971,\"domainLookupStart\":1788912618947,\"domainLookupEnd\":1788912618947,\"responseStart\":1788912618970,\"connectEnd\":1788912618947,\"responseEnd\":1788912618972,\"requestStart\":1788912618947,\"domLoading\":1788912618972,\"redirectStart\":0,\"loadEventEnd\":1788912619002,\"domComplete\":1788912619002,\"navigationStart\":1788912618947,\"loadEventStart\":1788912619002,\"domContentLoadedEventEnd\":1788912618983,\"unloadEventStart\":1788912618971,\"redirectEnd\":0,\"domInteractive\":1788912618983,\"fetchStart\":1788912618947,\"domContentLoadedEventStart\":1788912618983}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "390x844",
+    "perf": "{\"connectStart\":1788912620087,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912620113,\"domainLookupStart\":1788912620087,\"domainLookupEnd\":1788912620087,\"responseStart\":1788912620112,\"connectEnd\":1788912620087,\"responseEnd\":1788912620113,\"requestStart\":1788912620088,\"domLoading\":1788912620114,\"redirectStart\":0,\"loadEventEnd\":1788912620143,\"domComplete\":1788912620143,\"navigationStart\":1788912620087,\"loadEventStart\":1788912620143,\"domContentLoadedEventEnd\":1788912620125,\"unloadEventStart\":1788912620113,\"redirectEnd\":0,\"domInteractive\":1788912620125,\"fetchStart\":1788912620087,\"domContentLoadedEventStart\":1788912620125}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "844x390",
+    "perf": "{\"connectStart\":1788912621213,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912621238,\"domainLookupStart\":1788912621213,\"domainLookupEnd\":1788912621213,\"responseStart\":1788912621237,\"connectEnd\":1788912621213,\"responseEnd\":1788912621238,\"requestStart\":1788912621213,\"domLoading\":1788912621239,\"redirectStart\":0,\"loadEventEnd\":1788912621266,\"domComplete\":1788912621266,\"navigationStart\":1788912621213,\"loadEventStart\":1788912621266,\"domContentLoadedEventEnd\":1788912621252,\"unloadEventStart\":1788912621238,\"redirectEnd\":0,\"domInteractive\":1788912621252,\"fetchStart\":1788912621213,\"domContentLoadedEventStart\":1788912621252}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "412x915",
+    "perf": "{\"connectStart\":1788912622370,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912622399,\"domainLookupStart\":1788912622370,\"domainLookupEnd\":1788912622370,\"responseStart\":1788912622398,\"connectEnd\":1788912622370,\"responseEnd\":1788912622399,\"requestStart\":1788912622371,\"domLoading\":1788912622400,\"redirectStart\":0,\"loadEventEnd\":1788912622429,\"domComplete\":1788912622429,\"navigationStart\":1788912622370,\"loadEventStart\":1788912622429,\"domContentLoadedEventEnd\":1788912622413,\"unloadEventStart\":1788912622399,\"redirectEnd\":0,\"domInteractive\":1788912622413,\"fetchStart\":1788912622370,\"domContentLoadedEventStart\":1788912622413}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "915x412",
+    "perf": "{\"connectStart\":1788912623514,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912623543,\"domainLookupStart\":1788912623514,\"domainLookupEnd\":1788912623514,\"responseStart\":1788912623542,\"connectEnd\":1788912623514,\"responseEnd\":1788912623543,\"requestStart\":1788912623515,\"domLoading\":1788912623544,\"redirectStart\":0,\"loadEventEnd\":1788912623574,\"domComplete\":1788912623574,\"navigationStart\":1788912623514,\"loadEventStart\":1788912623574,\"domContentLoadedEventEnd\":1788912623555,\"unloadEventStart\":1788912623543,\"redirectEnd\":0,\"domInteractive\":1788912623555,\"fetchStart\":1788912623514,\"domContentLoadedEventStart\":1788912623555}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "430x932",
+    "perf": "{\"connectStart\":1788912624692,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912624722,\"domainLookupStart\":1788912624692,\"domainLookupEnd\":1788912624692,\"responseStart\":1788912624721,\"connectEnd\":1788912624692,\"responseEnd\":1788912624722,\"requestStart\":1788912624692,\"domLoading\":1788912624724,\"redirectStart\":0,\"loadEventEnd\":1788912624754,\"domComplete\":1788912624754,\"navigationStart\":1788912624692,\"loadEventStart\":1788912624754,\"domContentLoadedEventEnd\":1788912624736,\"unloadEventStart\":1788912624722,\"redirectEnd\":0,\"domInteractive\":1788912624736,\"fetchStart\":1788912624692,\"domContentLoadedEventStart\":1788912624736}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "932x430",
+    "perf": "{\"connectStart\":1788912625806,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912625833,\"domainLookupStart\":1788912625806,\"domainLookupEnd\":1788912625806,\"responseStart\":1788912625832,\"connectEnd\":1788912625806,\"responseEnd\":1788912625833,\"requestStart\":1788912625807,\"domLoading\":1788912625834,\"redirectStart\":0,\"loadEventEnd\":1788912625864,\"domComplete\":1788912625864,\"navigationStart\":1788912625806,\"loadEventStart\":1788912625864,\"domContentLoadedEventEnd\":1788912625846,\"unloadEventStart\":1788912625833,\"redirectEnd\":0,\"domInteractive\":1788912625846,\"fetchStart\":1788912625806,\"domContentLoadedEventStart\":1788912625846}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "768x1024",
+    "perf": "{\"connectStart\":1788912627016,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912627042,\"domainLookupStart\":1788912627016,\"domainLookupEnd\":1788912627016,\"responseStart\":1788912627041,\"connectEnd\":1788912627016,\"responseEnd\":1788912627042,\"requestStart\":1788912627016,\"domLoading\":1788912627043,\"redirectStart\":0,\"loadEventEnd\":1788912627070,\"domComplete\":1788912627070,\"navigationStart\":1788912627015,\"loadEventStart\":1788912627070,\"domContentLoadedEventEnd\":1788912627055,\"unloadEventStart\":1788912627042,\"redirectEnd\":0,\"domInteractive\":1788912627055,\"fetchStart\":1788912627016,\"domContentLoadedEventStart\":1788912627055}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "820x1180",
+    "perf": "{\"connectStart\":1788912628226,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912628277,\"domainLookupStart\":1788912628226,\"domainLookupEnd\":1788912628226,\"responseStart\":1788912628276,\"connectEnd\":1788912628226,\"responseEnd\":1788912628278,\"requestStart\":1788912628227,\"domLoading\":1788912628278,\"redirectStart\":0,\"loadEventEnd\":1788912628309,\"domComplete\":1788912628309,\"navigationStart\":1788912628225,\"loadEventStart\":1788912628309,\"domContentLoadedEventEnd\":1788912628291,\"unloadEventStart\":1788912628277,\"redirectEnd\":0,\"domInteractive\":1788912628291,\"fetchStart\":1788912628226,\"domContentLoadedEventStart\":1788912628291}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "912x1368",
+    "perf": "{\"connectStart\":1788912629488,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912629522,\"domainLookupStart\":1788912629488,\"domainLookupEnd\":1788912629488,\"responseStart\":1788912629520,\"connectEnd\":1788912629488,\"responseEnd\":1788912629522,\"requestStart\":1788912629489,\"domLoading\":1788912629523,\"redirectStart\":0,\"loadEventEnd\":1788912629556,\"domComplete\":1788912629556,\"navigationStart\":1788912629488,\"loadEventStart\":1788912629556,\"domContentLoadedEventEnd\":1788912629534,\"unloadEventStart\":1788912629522,\"redirectEnd\":0,\"domInteractive\":1788912629534,\"fetchStart\":1788912629488,\"domContentLoadedEventStart\":1788912629534}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "1024x1366",
+    "perf": "{\"connectStart\":1788912630801,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912630845,\"domainLookupStart\":1788912630801,\"domainLookupEnd\":1788912630801,\"responseStart\":1788912630843,\"connectEnd\":1788912630801,\"responseEnd\":1788912630845,\"requestStart\":1788912630802,\"domLoading\":1788912630846,\"redirectStart\":0,\"loadEventEnd\":1788912630874,\"domComplete\":1788912630874,\"navigationStart\":1788912630801,\"loadEventStart\":1788912630874,\"domContentLoadedEventEnd\":1788912630859,\"unloadEventStart\":1788912630845,\"redirectEnd\":0,\"domInteractive\":1788912630859,\"fetchStart\":1788912630801,\"domContentLoadedEventStart\":1788912630859}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "1280x800",
+    "perf": "{\"connectStart\":1788912632127,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912632170,\"domainLookupStart\":1788912632127,\"domainLookupEnd\":1788912632127,\"responseStart\":1788912632169,\"connectEnd\":1788912632127,\"responseEnd\":1788912632171,\"requestStart\":1788912632127,\"domLoading\":1788912632171,\"redirectStart\":0,\"loadEventEnd\":1788912632202,\"domComplete\":1788912632202,\"navigationStart\":1788912632127,\"loadEventStart\":1788912632202,\"domContentLoadedEventEnd\":1788912632186,\"unloadEventStart\":1788912632170,\"redirectEnd\":0,\"domInteractive\":1788912632186,\"fetchStart\":1788912632127,\"domContentLoadedEventStart\":1788912632186}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "1440x900",
+    "perf": "{\"connectStart\":1788912632575,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912632632,\"domainLookupStart\":1788912632575,\"domainLookupEnd\":1788912632575,\"responseStart\":1788912632631,\"connectEnd\":1788912632575,\"responseEnd\":1788912632632,\"requestStart\":1788912632575,\"domLoading\":1788912632633,\"redirectStart\":0,\"loadEventEnd\":1788912632659,\"domComplete\":1788912632659,\"navigationStart\":1788912632575,\"loadEventStart\":1788912632659,\"domContentLoadedEventEnd\":1788912632645,\"unloadEventStart\":1788912632632,\"redirectEnd\":0,\"domInteractive\":1788912632645,\"fetchStart\":1788912632575,\"domContentLoadedEventStart\":1788912632645}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "1728x1117",
+    "perf": "{\"connectStart\":1788912633079,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912633124,\"domainLookupStart\":1788912633079,\"domainLookupEnd\":1788912633079,\"responseStart\":1788912633121,\"connectEnd\":1788912633079,\"responseEnd\":1788912633122,\"requestStart\":1788912633079,\"domLoading\":1788912633125,\"redirectStart\":0,\"loadEventEnd\":1788912633149,\"domComplete\":1788912633149,\"navigationStart\":1788912633079,\"loadEventStart\":1788912633149,\"domContentLoadedEventEnd\":1788912633137,\"unloadEventStart\":1788912633124,\"redirectEnd\":0,\"domInteractive\":1788912633137,\"fetchStart\":1788912633079,\"domContentLoadedEventStart\":1788912633137}"
+  },
+  {
+    "route": "/contact",
+    "viewport": "1920x1080",
+    "perf": "{\"connectStart\":1788912633658,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912633703,\"domainLookupStart\":1788912633658,\"domainLookupEnd\":1788912633658,\"responseStart\":1788912633702,\"connectEnd\":1788912633658,\"responseEnd\":1788912633703,\"requestStart\":1788912633659,\"domLoading\":1788912633704,\"redirectStart\":0,\"loadEventEnd\":1788912633730,\"domComplete\":1788912633730,\"navigationStart\":1788912633658,\"loadEventStart\":1788912633730,\"domContentLoadedEventEnd\":1788912633717,\"unloadEventStart\":1788912633703,\"redirectEnd\":0,\"domInteractive\":1788912633717,\"fetchStart\":1788912633658,\"domContentLoadedEventStart\":1788912633717}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "320x568",
+    "perf": "{\"connectStart\":1788912634282,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912634350,\"domainLookupStart\":1788912634282,\"domainLookupEnd\":1788912634282,\"responseStart\":1788912634347,\"connectEnd\":1788912634282,\"responseEnd\":1788912634349,\"requestStart\":1788912634283,\"domLoading\":1788912634352,\"redirectStart\":0,\"loadEventEnd\":1788912634378,\"domComplete\":1788912634378,\"navigationStart\":1788912634282,\"loadEventStart\":1788912634378,\"domContentLoadedEventEnd\":1788912634368,\"unloadEventStart\":1788912634350,\"redirectEnd\":0,\"domInteractive\":1788912634368,\"fetchStart\":1788912634282,\"domContentLoadedEventStart\":1788912634368}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "568x320",
+    "perf": "{\"connectStart\":1788912635500,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912635562,\"domainLookupStart\":1788912635500,\"domainLookupEnd\":1788912635500,\"responseStart\":1788912635561,\"connectEnd\":1788912635500,\"responseEnd\":1788912635563,\"requestStart\":1788912635500,\"domLoading\":1788912635564,\"redirectStart\":0,\"loadEventEnd\":1788912635596,\"domComplete\":1788912635596,\"navigationStart\":1788912635500,\"loadEventStart\":1788912635596,\"domContentLoadedEventEnd\":1788912635579,\"unloadEventStart\":1788912635562,\"redirectEnd\":0,\"domInteractive\":1788912635579,\"fetchStart\":1788912635500,\"domContentLoadedEventStart\":1788912635579}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "360x800",
+    "perf": "{\"connectStart\":1788912636794,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912636854,\"domainLookupStart\":1788912636794,\"domainLookupEnd\":1788912636794,\"responseStart\":1788912636853,\"connectEnd\":1788912636794,\"responseEnd\":1788912636855,\"requestStart\":1788912636794,\"domLoading\":1788912636856,\"redirectStart\":0,\"loadEventEnd\":1788912636894,\"domComplete\":1788912636894,\"navigationStart\":1788912636794,\"loadEventStart\":1788912636894,\"domContentLoadedEventEnd\":1788912636870,\"unloadEventStart\":1788912636854,\"redirectEnd\":0,\"domInteractive\":1788912636870,\"fetchStart\":1788912636794,\"domContentLoadedEventStart\":1788912636870}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "800x360",
+    "perf": "{\"connectStart\":1788912638026,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912638082,\"domainLookupStart\":1788912638026,\"domainLookupEnd\":1788912638026,\"responseStart\":1788912638081,\"connectEnd\":1788912638026,\"responseEnd\":1788912638082,\"requestStart\":1788912638026,\"domLoading\":1788912638083,\"redirectStart\":0,\"loadEventEnd\":1788912638108,\"domComplete\":1788912638108,\"navigationStart\":1788912638026,\"loadEventStart\":1788912638108,\"domContentLoadedEventEnd\":1788912638097,\"unloadEventStart\":1788912638082,\"redirectEnd\":0,\"domInteractive\":1788912638097,\"fetchStart\":1788912638026,\"domContentLoadedEventStart\":1788912638097}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "375x812",
+    "perf": "{\"connectStart\":1788912639302,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912639358,\"domainLookupStart\":1788912639302,\"domainLookupEnd\":1788912639302,\"responseStart\":1788912639357,\"connectEnd\":1788912639302,\"responseEnd\":1788912639358,\"requestStart\":1788912639302,\"domLoading\":1788912639359,\"redirectStart\":0,\"loadEventEnd\":1788912639388,\"domComplete\":1788912639388,\"navigationStart\":1788912639302,\"loadEventStart\":1788912639388,\"domContentLoadedEventEnd\":1788912639373,\"unloadEventStart\":1788912639358,\"redirectEnd\":0,\"domInteractive\":1788912639373,\"fetchStart\":1788912639302,\"domContentLoadedEventStart\":1788912639373}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "812x375",
+    "perf": "{\"connectStart\":1788912640477,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912640530,\"domainLookupStart\":1788912640477,\"domainLookupEnd\":1788912640477,\"responseStart\":1788912640529,\"connectEnd\":1788912640477,\"responseEnd\":1788912640531,\"requestStart\":1788912640478,\"domLoading\":1788912640531,\"redirectStart\":0,\"loadEventEnd\":1788912640564,\"domComplete\":1788912640564,\"navigationStart\":1788912640477,\"loadEventStart\":1788912640564,\"domContentLoadedEventEnd\":1788912640544,\"unloadEventStart\":1788912640530,\"redirectEnd\":0,\"domInteractive\":1788912640544,\"fetchStart\":1788912640477,\"domContentLoadedEventStart\":1788912640544}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "390x844",
+    "perf": "{\"connectStart\":1788912641748,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912641802,\"domainLookupStart\":1788912641748,\"domainLookupEnd\":1788912641748,\"responseStart\":1788912641801,\"connectEnd\":1788912641748,\"responseEnd\":1788912641803,\"requestStart\":1788912641748,\"domLoading\":1788912641804,\"redirectStart\":0,\"loadEventEnd\":1788912641828,\"domComplete\":1788912641828,\"navigationStart\":1788912641748,\"loadEventStart\":1788912641828,\"domContentLoadedEventEnd\":1788912641817,\"unloadEventStart\":1788912641802,\"redirectEnd\":0,\"domInteractive\":1788912641817,\"fetchStart\":1788912641748,\"domContentLoadedEventStart\":1788912641817}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "844x390",
+    "perf": "{\"connectStart\":1788912642973,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912643025,\"domainLookupStart\":1788912642973,\"domainLookupEnd\":1788912642973,\"responseStart\":1788912643022,\"connectEnd\":1788912642973,\"responseEnd\":1788912643023,\"requestStart\":1788912642974,\"domLoading\":1788912643026,\"redirectStart\":0,\"loadEventEnd\":1788912643057,\"domComplete\":1788912643057,\"navigationStart\":1788912642973,\"loadEventStart\":1788912643057,\"domContentLoadedEventEnd\":1788912643041,\"unloadEventStart\":1788912643025,\"redirectEnd\":0,\"domInteractive\":1788912643041,\"fetchStart\":1788912642973,\"domContentLoadedEventStart\":1788912643041}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "412x915",
+    "perf": "{\"connectStart\":1788912644244,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912644290,\"domainLookupStart\":1788912644244,\"domainLookupEnd\":1788912644244,\"responseStart\":1788912644289,\"connectEnd\":1788912644244,\"responseEnd\":1788912644291,\"requestStart\":1788912644244,\"domLoading\":1788912644292,\"redirectStart\":0,\"loadEventEnd\":1788912644325,\"domComplete\":1788912644325,\"navigationStart\":1788912644244,\"loadEventStart\":1788912644325,\"domContentLoadedEventEnd\":1788912644310,\"unloadEventStart\":1788912644290,\"redirectEnd\":0,\"domInteractive\":1788912644310,\"fetchStart\":1788912644244,\"domContentLoadedEventStart\":1788912644310}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "915x412",
+    "perf": "{\"connectStart\":1788912645477,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912645524,\"domainLookupStart\":1788912645477,\"domainLookupEnd\":1788912645477,\"responseStart\":1788912645523,\"connectEnd\":1788912645477,\"responseEnd\":1788912645525,\"requestStart\":1788912645478,\"domLoading\":1788912645525,\"redirectStart\":0,\"loadEventEnd\":1788912645554,\"domComplete\":1788912645554,\"navigationStart\":1788912645477,\"loadEventStart\":1788912645554,\"domContentLoadedEventEnd\":1788912645539,\"unloadEventStart\":1788912645524,\"redirectEnd\":0,\"domInteractive\":1788912645539,\"fetchStart\":1788912645477,\"domContentLoadedEventStart\":1788912645539}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "430x932",
+    "perf": "{\"connectStart\":1788912646758,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912646807,\"domainLookupStart\":1788912646758,\"domainLookupEnd\":1788912646758,\"responseStart\":1788912646806,\"connectEnd\":1788912646758,\"responseEnd\":1788912646807,\"requestStart\":1788912646759,\"domLoading\":1788912646808,\"redirectStart\":0,\"loadEventEnd\":1788912646839,\"domComplete\":1788912646839,\"navigationStart\":1788912646758,\"loadEventStart\":1788912646839,\"domContentLoadedEventEnd\":1788912646821,\"unloadEventStart\":1788912646807,\"redirectEnd\":0,\"domInteractive\":1788912646821,\"fetchStart\":1788912646758,\"domContentLoadedEventStart\":1788912646821}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "932x430",
+    "perf": "{\"connectStart\":1788912647991,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912648041,\"domainLookupStart\":1788912647991,\"domainLookupEnd\":1788912647991,\"responseStart\":1788912648040,\"connectEnd\":1788912647991,\"responseEnd\":1788912648042,\"requestStart\":1788912647991,\"domLoading\":1788912648043,\"redirectStart\":0,\"loadEventEnd\":1788912648067,\"domComplete\":1788912648067,\"navigationStart\":1788912647991,\"loadEventStart\":1788912648067,\"domContentLoadedEventEnd\":1788912648056,\"unloadEventStart\":1788912648041,\"redirectEnd\":0,\"domInteractive\":1788912648056,\"fetchStart\":1788912647991,\"domContentLoadedEventStart\":1788912648056}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "768x1024",
+    "perf": "{\"connectStart\":1788912649291,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912649331,\"domainLookupStart\":1788912649291,\"domainLookupEnd\":1788912649291,\"responseStart\":1788912649330,\"connectEnd\":1788912649291,\"responseEnd\":1788912649331,\"requestStart\":1788912649291,\"domLoading\":1788912649332,\"redirectStart\":0,\"loadEventEnd\":1788912649360,\"domComplete\":1788912649360,\"navigationStart\":1788912649291,\"loadEventStart\":1788912649360,\"domContentLoadedEventEnd\":1788912649344,\"unloadEventStart\":1788912649331,\"redirectEnd\":0,\"domInteractive\":1788912649344,\"fetchStart\":1788912649291,\"domContentLoadedEventStart\":1788912649344}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "820x1180",
+    "perf": "{\"connectStart\":1788912650663,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912650704,\"domainLookupStart\":1788912650663,\"domainLookupEnd\":1788912650663,\"responseStart\":1788912650703,\"connectEnd\":1788912650663,\"responseEnd\":1788912650704,\"requestStart\":1788912650664,\"domLoading\":1788912650706,\"redirectStart\":0,\"loadEventEnd\":1788912650735,\"domComplete\":1788912650735,\"navigationStart\":1788912650663,\"loadEventStart\":1788912650735,\"domContentLoadedEventEnd\":1788912650718,\"unloadEventStart\":1788912650704,\"redirectEnd\":0,\"domInteractive\":1788912650718,\"fetchStart\":1788912650663,\"domContentLoadedEventStart\":1788912650718}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "912x1368",
+    "perf": "{\"connectStart\":1788912652032,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912652077,\"domainLookupStart\":1788912652032,\"domainLookupEnd\":1788912652032,\"responseStart\":1788912652076,\"connectEnd\":1788912652032,\"responseEnd\":1788912652078,\"requestStart\":1788912652033,\"domLoading\":1788912652079,\"redirectStart\":0,\"loadEventEnd\":1788912652105,\"domComplete\":1788912652105,\"navigationStart\":1788912652032,\"loadEventStart\":1788912652105,\"domContentLoadedEventEnd\":1788912652091,\"unloadEventStart\":1788912652077,\"redirectEnd\":0,\"domInteractive\":1788912652091,\"fetchStart\":1788912652032,\"domContentLoadedEventStart\":1788912652091}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "1024x1366",
+    "perf": "{\"connectStart\":1788912653455,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912653502,\"domainLookupStart\":1788912653455,\"domainLookupEnd\":1788912653455,\"responseStart\":1788912653501,\"connectEnd\":1788912653455,\"responseEnd\":1788912653503,\"requestStart\":1788912653455,\"domLoading\":1788912653504,\"redirectStart\":0,\"loadEventEnd\":1788912653537,\"domComplete\":1788912653537,\"navigationStart\":1788912653455,\"loadEventStart\":1788912653537,\"domContentLoadedEventEnd\":1788912653517,\"unloadEventStart\":1788912653502,\"redirectEnd\":0,\"domInteractive\":1788912653517,\"fetchStart\":1788912653455,\"domContentLoadedEventStart\":1788912653517}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "1280x800",
+    "perf": "{\"connectStart\":1788912654920,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912654959,\"domainLookupStart\":1788912654920,\"domainLookupEnd\":1788912654920,\"responseStart\":1788912654958,\"connectEnd\":1788912654920,\"responseEnd\":1788912654960,\"requestStart\":1788912654920,\"domLoading\":1788912654961,\"redirectStart\":0,\"loadEventEnd\":1788912654991,\"domComplete\":1788912654991,\"navigationStart\":1788912654920,\"loadEventStart\":1788912654991,\"domContentLoadedEventEnd\":1788912654973,\"unloadEventStart\":1788912654959,\"redirectEnd\":0,\"domInteractive\":1788912654973,\"fetchStart\":1788912654920,\"domContentLoadedEventStart\":1788912654973}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "1440x900",
+    "perf": "{\"connectStart\":1788912655406,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912655474,\"domainLookupStart\":1788912655406,\"domainLookupEnd\":1788912655406,\"responseStart\":1788912655470,\"connectEnd\":1788912655406,\"responseEnd\":1788912655473,\"requestStart\":1788912655406,\"domLoading\":1788912655475,\"redirectStart\":0,\"loadEventEnd\":1788912655499,\"domComplete\":1788912655499,\"navigationStart\":1788912655406,\"loadEventStart\":1788912655499,\"domContentLoadedEventEnd\":1788912655489,\"unloadEventStart\":1788912655474,\"redirectEnd\":0,\"domInteractive\":1788912655489,\"fetchStart\":1788912655406,\"domContentLoadedEventStart\":1788912655489}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "1728x1117",
+    "perf": "{\"connectStart\":1788912655958,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912655998,\"domainLookupStart\":1788912655958,\"domainLookupEnd\":1788912655958,\"responseStart\":1788912655996,\"connectEnd\":1788912655958,\"responseEnd\":1788912655997,\"requestStart\":1788912655959,\"domLoading\":1788912656000,\"redirectStart\":0,\"loadEventEnd\":1788912656028,\"domComplete\":1788912656028,\"navigationStart\":1788912655958,\"loadEventStart\":1788912656028,\"domContentLoadedEventEnd\":1788912656013,\"unloadEventStart\":1788912655998,\"redirectEnd\":0,\"domInteractive\":1788912656013,\"fetchStart\":1788912655958,\"domContentLoadedEventStart\":1788912656013}"
+  },
+  {
+    "route": "/licensing",
+    "viewport": "1920x1080",
+    "perf": "{\"connectStart\":1788912656604,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912656650,\"domainLookupStart\":1788912656604,\"domainLookupEnd\":1788912656604,\"responseStart\":1788912656647,\"connectEnd\":1788912656604,\"responseEnd\":1788912656648,\"requestStart\":1788912656605,\"domLoading\":1788912656651,\"redirectStart\":0,\"loadEventEnd\":1788912656678,\"domComplete\":1788912656678,\"navigationStart\":1788912656604,\"loadEventStart\":1788912656678,\"domContentLoadedEventEnd\":1788912656665,\"unloadEventStart\":1788912656650,\"redirectEnd\":0,\"domInteractive\":1788912656665,\"fetchStart\":1788912656604,\"domContentLoadedEventStart\":1788912656665}"
+  },
+  {
+    "route": "/products",
+    "viewport": "320x568",
+    "perf": "{\"connectStart\":1788912657312,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912657354,\"domainLookupStart\":1788912657312,\"domainLookupEnd\":1788912657312,\"responseStart\":1788912657353,\"connectEnd\":1788912657312,\"responseEnd\":1788912657354,\"requestStart\":1788912657312,\"domLoading\":1788912657356,\"redirectStart\":0,\"loadEventEnd\":1788912657386,\"domComplete\":1788912657386,\"navigationStart\":1788912657311,\"loadEventStart\":1788912657386,\"domContentLoadedEventEnd\":1788912657375,\"unloadEventStart\":1788912657354,\"redirectEnd\":0,\"domInteractive\":1788912657375,\"fetchStart\":1788912657312,\"domContentLoadedEventStart\":1788912657375}"
+  },
+  {
+    "route": "/products",
+    "viewport": "568x320",
+    "perf": "{\"connectStart\":1788912658419,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912658464,\"domainLookupStart\":1788912658419,\"domainLookupEnd\":1788912658419,\"responseStart\":1788912658463,\"connectEnd\":1788912658419,\"responseEnd\":1788912658465,\"requestStart\":1788912658419,\"domLoading\":1788912658466,\"redirectStart\":0,\"loadEventEnd\":1788912658489,\"domComplete\":1788912658489,\"navigationStart\":1788912658419,\"loadEventStart\":1788912658489,\"domContentLoadedEventEnd\":1788912658478,\"unloadEventStart\":1788912658464,\"redirectEnd\":0,\"domInteractive\":1788912658478,\"fetchStart\":1788912658419,\"domContentLoadedEventStart\":1788912658478}"
+  },
+  {
+    "route": "/products",
+    "viewport": "360x800",
+    "perf": "{\"connectStart\":1788912659547,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912659594,\"domainLookupStart\":1788912659547,\"domainLookupEnd\":1788912659547,\"responseStart\":1788912659593,\"connectEnd\":1788912659547,\"responseEnd\":1788912659594,\"requestStart\":1788912659547,\"domLoading\":1788912659595,\"redirectStart\":0,\"loadEventEnd\":1788912659622,\"domComplete\":1788912659622,\"navigationStart\":1788912659547,\"loadEventStart\":1788912659622,\"domContentLoadedEventEnd\":1788912659606,\"unloadEventStart\":1788912659594,\"redirectEnd\":0,\"domInteractive\":1788912659606,\"fetchStart\":1788912659547,\"domContentLoadedEventStart\":1788912659606}"
+  },
+  {
+    "route": "/products",
+    "viewport": "800x360",
+    "perf": "{\"connectStart\":1788912660731,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912660776,\"domainLookupStart\":1788912660731,\"domainLookupEnd\":1788912660731,\"responseStart\":1788912660775,\"connectEnd\":1788912660731,\"responseEnd\":1788912660776,\"requestStart\":1788912660731,\"domLoading\":1788912660777,\"redirectStart\":0,\"loadEventEnd\":1788912660808,\"domComplete\":1788912660808,\"navigationStart\":1788912660731,\"loadEventStart\":1788912660808,\"domContentLoadedEventEnd\":1788912660788,\"unloadEventStart\":1788912660776,\"redirectEnd\":0,\"domInteractive\":1788912660788,\"fetchStart\":1788912660731,\"domContentLoadedEventStart\":1788912660788}"
+  },
+  {
+    "route": "/products",
+    "viewport": "375x812",
+    "perf": "{\"connectStart\":1788912661945,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912661989,\"domainLookupStart\":1788912661945,\"domainLookupEnd\":1788912661945,\"responseStart\":1788912661988,\"connectEnd\":1788912661945,\"responseEnd\":1788912661989,\"requestStart\":1788912661945,\"domLoading\":1788912661990,\"redirectStart\":0,\"loadEventEnd\":1788912662020,\"domComplete\":1788912662020,\"navigationStart\":1788912661945,\"loadEventStart\":1788912662020,\"domContentLoadedEventEnd\":1788912662004,\"unloadEventStart\":1788912661989,\"redirectEnd\":0,\"domInteractive\":1788912662004,\"fetchStart\":1788912661945,\"domContentLoadedEventStart\":1788912662004}"
+  },
+  {
+    "route": "/products",
+    "viewport": "812x375",
+    "perf": "{\"connectStart\":1788912663107,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912663162,\"domainLookupStart\":1788912663107,\"domainLookupEnd\":1788912663107,\"responseStart\":1788912663158,\"connectEnd\":1788912663107,\"responseEnd\":1788912663161,\"requestStart\":1788912663107,\"domLoading\":1788912663163,\"redirectStart\":0,\"loadEventEnd\":1788912663210,\"domComplete\":1788912663210,\"navigationStart\":1788912663107,\"loadEventStart\":1788912663210,\"domContentLoadedEventEnd\":1788912663176,\"unloadEventStart\":1788912663162,\"redirectEnd\":0,\"domInteractive\":1788912663176,\"fetchStart\":1788912663107,\"domContentLoadedEventStart\":1788912663176}"
+  },
+  {
+    "route": "/products",
+    "viewport": "390x844",
+    "perf": "{\"connectStart\":1788912664316,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912664359,\"domainLookupStart\":1788912664316,\"domainLookupEnd\":1788912664316,\"responseStart\":1788912664358,\"connectEnd\":1788912664316,\"responseEnd\":1788912664359,\"requestStart\":1788912664316,\"domLoading\":1788912664360,\"redirectStart\":0,\"loadEventEnd\":1788912664387,\"domComplete\":1788912664387,\"navigationStart\":1788912664316,\"loadEventStart\":1788912664387,\"domContentLoadedEventEnd\":1788912664370,\"unloadEventStart\":1788912664359,\"redirectEnd\":0,\"domInteractive\":1788912664370,\"fetchStart\":1788912664316,\"domContentLoadedEventStart\":1788912664370}"
+  },
+  {
+    "route": "/products",
+    "viewport": "844x390",
+    "perf": "{\"connectStart\":1788912665459,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912665505,\"domainLookupStart\":1788912665459,\"domainLookupEnd\":1788912665459,\"responseStart\":1788912665503,\"connectEnd\":1788912665459,\"responseEnd\":1788912665505,\"requestStart\":1788912665460,\"domLoading\":1788912665506,\"redirectStart\":0,\"loadEventEnd\":1788912665537,\"domComplete\":1788912665537,\"navigationStart\":1788912665459,\"loadEventStart\":1788912665537,\"domContentLoadedEventEnd\":1788912665517,\"unloadEventStart\":1788912665505,\"redirectEnd\":0,\"domInteractive\":1788912665517,\"fetchStart\":1788912665459,\"domContentLoadedEventStart\":1788912665517}"
+  },
+  {
+    "route": "/products",
+    "viewport": "412x915",
+    "perf": "{\"connectStart\":1788912666672,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912666713,\"domainLookupStart\":1788912666672,\"domainLookupEnd\":1788912666672,\"responseStart\":1788912666712,\"connectEnd\":1788912666672,\"responseEnd\":1788912666714,\"requestStart\":1788912666672,\"domLoading\":1788912666714,\"redirectStart\":0,\"loadEventEnd\":1788912666733,\"domComplete\":1788912666733,\"navigationStart\":1788912666672,\"loadEventStart\":1788912666733,\"domContentLoadedEventEnd\":1788912666724,\"unloadEventStart\":1788912666713,\"redirectEnd\":0,\"domInteractive\":1788912666724,\"fetchStart\":1788912666672,\"domContentLoadedEventStart\":1788912666724}"
+  },
+  {
+    "route": "/products",
+    "viewport": "915x412",
+    "perf": "{\"connectStart\":1788912667862,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912667905,\"domainLookupStart\":1788912667862,\"domainLookupEnd\":1788912667862,\"responseStart\":1788912667904,\"connectEnd\":1788912667862,\"responseEnd\":1788912667906,\"requestStart\":1788912667863,\"domLoading\":1788912667907,\"redirectStart\":0,\"loadEventEnd\":1788912667932,\"domComplete\":1788912667932,\"navigationStart\":1788912667862,\"loadEventStart\":1788912667932,\"domContentLoadedEventEnd\":1788912667918,\"unloadEventStart\":1788912667905,\"redirectEnd\":0,\"domInteractive\":1788912667918,\"fetchStart\":1788912667862,\"domContentLoadedEventStart\":1788912667918}"
+  },
+  {
+    "route": "/products",
+    "viewport": "430x932",
+    "perf": "{\"connectStart\":1788912669039,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912669080,\"domainLookupStart\":1788912669039,\"domainLookupEnd\":1788912669039,\"responseStart\":1788912669079,\"connectEnd\":1788912669039,\"responseEnd\":1788912669080,\"requestStart\":1788912669039,\"domLoading\":1788912669081,\"redirectStart\":0,\"loadEventEnd\":1788912669107,\"domComplete\":1788912669107,\"navigationStart\":1788912669038,\"loadEventStart\":1788912669107,\"domContentLoadedEventEnd\":1788912669090,\"unloadEventStart\":1788912669080,\"redirectEnd\":0,\"domInteractive\":1788912669090,\"fetchStart\":1788912669039,\"domContentLoadedEventStart\":1788912669090}"
+  },
+  {
+    "route": "/products",
+    "viewport": "932x430",
+    "perf": "{\"connectStart\":1788912670247,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912670294,\"domainLookupStart\":1788912670247,\"domainLookupEnd\":1788912670247,\"responseStart\":1788912670293,\"connectEnd\":1788912670247,\"responseEnd\":1788912670294,\"requestStart\":1788912670248,\"domLoading\":1788912670295,\"redirectStart\":0,\"loadEventEnd\":1788912670324,\"domComplete\":1788912670324,\"navigationStart\":1788912670247,\"loadEventStart\":1788912670324,\"domContentLoadedEventEnd\":1788912670306,\"unloadEventStart\":1788912670294,\"redirectEnd\":0,\"domInteractive\":1788912670306,\"fetchStart\":1788912670247,\"domContentLoadedEventStart\":1788912670306}"
+  },
+  {
+    "route": "/products",
+    "viewport": "768x1024",
+    "perf": "{\"connectStart\":1788912671444,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912671485,\"domainLookupStart\":1788912671444,\"domainLookupEnd\":1788912671444,\"responseStart\":1788912671484,\"connectEnd\":1788912671444,\"responseEnd\":1788912671485,\"requestStart\":1788912671444,\"domLoading\":1788912671486,\"redirectStart\":0,\"loadEventEnd\":1788912671504,\"domComplete\":1788912671504,\"navigationStart\":1788912671443,\"loadEventStart\":1788912671504,\"domContentLoadedEventEnd\":1788912671495,\"unloadEventStart\":1788912671485,\"redirectEnd\":0,\"domInteractive\":1788912671495,\"fetchStart\":1788912671444,\"domContentLoadedEventStart\":1788912671495}"
+  },
+  {
+    "route": "/products",
+    "viewport": "820x1180",
+    "perf": "{\"connectStart\":1788912672731,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912672771,\"domainLookupStart\":1788912672731,\"domainLookupEnd\":1788912672731,\"responseStart\":1788912672770,\"connectEnd\":1788912672731,\"responseEnd\":1788912672772,\"requestStart\":1788912672732,\"domLoading\":1788912672773,\"redirectStart\":0,\"loadEventEnd\":1788912672799,\"domComplete\":1788912672799,\"navigationStart\":1788912672731,\"loadEventStart\":1788912672799,\"domContentLoadedEventEnd\":1788912672783,\"unloadEventStart\":1788912672771,\"redirectEnd\":0,\"domInteractive\":1788912672783,\"fetchStart\":1788912672731,\"domContentLoadedEventStart\":1788912672783}"
+  },
+  {
+    "route": "/products",
+    "viewport": "912x1368",
+    "perf": "{\"connectStart\":1788912674048,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912674083,\"domainLookupStart\":1788912674048,\"domainLookupEnd\":1788912674048,\"responseStart\":1788912674082,\"connectEnd\":1788912674048,\"responseEnd\":1788912674083,\"requestStart\":1788912674049,\"domLoading\":1788912674084,\"redirectStart\":0,\"loadEventEnd\":1788912674112,\"domComplete\":1788912674112,\"navigationStart\":1788912674048,\"loadEventStart\":1788912674112,\"domContentLoadedEventEnd\":1788912674094,\"unloadEventStart\":1788912674083,\"redirectEnd\":0,\"domInteractive\":1788912674094,\"fetchStart\":1788912674048,\"domContentLoadedEventStart\":1788912674094}"
+  },
+  {
+    "route": "/products",
+    "viewport": "1024x1366",
+    "perf": "{\"connectStart\":1788912675428,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912675472,\"domainLookupStart\":1788912675428,\"domainLookupEnd\":1788912675428,\"responseStart\":1788912675471,\"connectEnd\":1788912675428,\"responseEnd\":1788912675473,\"requestStart\":1788912675429,\"domLoading\":1788912675473,\"redirectStart\":0,\"loadEventEnd\":1788912675494,\"domComplete\":1788912675494,\"navigationStart\":1788912675428,\"loadEventStart\":1788912675494,\"domContentLoadedEventEnd\":1788912675483,\"unloadEventStart\":1788912675472,\"redirectEnd\":0,\"domInteractive\":1788912675483,\"fetchStart\":1788912675428,\"domContentLoadedEventStart\":1788912675483}"
+  },
+  {
+    "route": "/products",
+    "viewport": "1280x800",
+    "perf": "{\"connectStart\":1788912676804,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912676856,\"domainLookupStart\":1788912676804,\"domainLookupEnd\":1788912676804,\"responseStart\":1788912676855,\"connectEnd\":1788912676804,\"responseEnd\":1788912676857,\"requestStart\":1788912676805,\"domLoading\":1788912676858,\"redirectStart\":0,\"loadEventEnd\":1788912676912,\"domComplete\":1788912676912,\"navigationStart\":1788912676804,\"loadEventStart\":1788912676912,\"domContentLoadedEventEnd\":1788912676869,\"unloadEventStart\":1788912676856,\"redirectEnd\":0,\"domInteractive\":1788912676869,\"fetchStart\":1788912676804,\"domContentLoadedEventStart\":1788912676869}"
+  },
+  {
+    "route": "/products",
+    "viewport": "1440x900",
+    "perf": "{\"connectStart\":1788912677215,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912677252,\"domainLookupStart\":1788912677215,\"domainLookupEnd\":1788912677215,\"responseStart\":1788912677249,\"connectEnd\":1788912677215,\"responseEnd\":1788912677251,\"requestStart\":1788912677216,\"domLoading\":1788912677253,\"redirectStart\":0,\"loadEventEnd\":1788912677278,\"domComplete\":1788912677278,\"navigationStart\":1788912677215,\"loadEventStart\":1788912677278,\"domContentLoadedEventEnd\":1788912677264,\"unloadEventStart\":1788912677252,\"redirectEnd\":0,\"domInteractive\":1788912677264,\"fetchStart\":1788912677215,\"domContentLoadedEventStart\":1788912677264}"
+  },
+  {
+    "route": "/products",
+    "viewport": "1728x1117",
+    "perf": "{\"connectStart\":1788912677628,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912677667,\"domainLookupStart\":1788912677628,\"domainLookupEnd\":1788912677628,\"responseStart\":1788912677666,\"connectEnd\":1788912677628,\"responseEnd\":1788912677668,\"requestStart\":1788912677629,\"domLoading\":1788912677668,\"redirectStart\":0,\"loadEventEnd\":1788912677694,\"domComplete\":1788912677694,\"navigationStart\":1788912677628,\"loadEventStart\":1788912677694,\"domContentLoadedEventEnd\":1788912677679,\"unloadEventStart\":1788912677667,\"redirectEnd\":0,\"domInteractive\":1788912677679,\"fetchStart\":1788912677628,\"domContentLoadedEventStart\":1788912677679}"
+  },
+  {
+    "route": "/products",
+    "viewport": "1920x1080",
+    "perf": "{\"connectStart\":1788912678136,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912678173,\"domainLookupStart\":1788912678136,\"domainLookupEnd\":1788912678136,\"responseStart\":1788912678172,\"connectEnd\":1788912678136,\"responseEnd\":1788912678173,\"requestStart\":1788912678136,\"domLoading\":1788912678174,\"redirectStart\":0,\"loadEventEnd\":1788912678210,\"domComplete\":1788912678210,\"navigationStart\":1788912678136,\"loadEventStart\":1788912678210,\"domContentLoadedEventEnd\":1788912678184,\"unloadEventStart\":1788912678173,\"redirectEnd\":0,\"domInteractive\":1788912678184,\"fetchStart\":1788912678136,\"domContentLoadedEventStart\":1788912678184}"
+  },
+  {
+    "route": "/services",
+    "viewport": "320x568",
+    "perf": "{\"connectStart\":1788912678690,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912678750,\"domainLookupStart\":1788912678690,\"domainLookupEnd\":1788912678690,\"responseStart\":1788912678749,\"connectEnd\":1788912678690,\"responseEnd\":1788912678751,\"requestStart\":1788912678690,\"domLoading\":1788912678751,\"redirectStart\":0,\"loadEventEnd\":1788912678779,\"domComplete\":1788912678779,\"navigationStart\":1788912678690,\"loadEventStart\":1788912678779,\"domContentLoadedEventEnd\":1788912678775,\"unloadEventStart\":1788912678750,\"redirectEnd\":0,\"domInteractive\":1788912678775,\"fetchStart\":1788912678690,\"domContentLoadedEventStart\":1788912678775}"
+  },
+  {
+    "route": "/services",
+    "viewport": "568x320",
+    "perf": "{\"connectStart\":1788912679849,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912679890,\"domainLookupStart\":1788912679849,\"domainLookupEnd\":1788912679849,\"responseStart\":1788912679889,\"connectEnd\":1788912679849,\"responseEnd\":1788912679891,\"requestStart\":1788912679849,\"domLoading\":1788912679892,\"redirectStart\":0,\"loadEventEnd\":1788912679921,\"domComplete\":1788912679921,\"navigationStart\":1788912679849,\"loadEventStart\":1788912679921,\"domContentLoadedEventEnd\":1788912679904,\"unloadEventStart\":1788912679890,\"redirectEnd\":0,\"domInteractive\":1788912679904,\"fetchStart\":1788912679849,\"domContentLoadedEventStart\":1788912679904}"
+  },
+  {
+    "route": "/services",
+    "viewport": "360x800",
+    "perf": "{\"connectStart\":1788912681021,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912681078,\"domainLookupStart\":1788912681021,\"domainLookupEnd\":1788912681021,\"responseStart\":1788912681077,\"connectEnd\":1788912681021,\"responseEnd\":1788912681079,\"requestStart\":1788912681022,\"domLoading\":1788912681080,\"redirectStart\":0,\"loadEventEnd\":1788912681119,\"domComplete\":1788912681118,\"navigationStart\":1788912681021,\"loadEventStart\":1788912681119,\"domContentLoadedEventEnd\":1788912681093,\"unloadEventStart\":1788912681078,\"redirectEnd\":0,\"domInteractive\":1788912681093,\"fetchStart\":1788912681021,\"domContentLoadedEventStart\":1788912681093}"
+  },
+  {
+    "route": "/services",
+    "viewport": "800x360",
+    "perf": "{\"connectStart\":1788912682249,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912682302,\"domainLookupStart\":1788912682249,\"domainLookupEnd\":1788912682249,\"responseStart\":1788912682301,\"connectEnd\":1788912682249,\"responseEnd\":1788912682303,\"requestStart\":1788912682249,\"domLoading\":1788912682303,\"redirectStart\":0,\"loadEventEnd\":1788912682328,\"domComplete\":1788912682328,\"navigationStart\":1788912682249,\"loadEventStart\":1788912682328,\"domContentLoadedEventEnd\":1788912682317,\"unloadEventStart\":1788912682302,\"redirectEnd\":0,\"domInteractive\":1788912682317,\"fetchStart\":1788912682249,\"domContentLoadedEventStart\":1788912682317}"
+  },
+  {
+    "route": "/services",
+    "viewport": "375x812",
+    "perf": "{\"connectStart\":1788912683455,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912683506,\"domainLookupStart\":1788912683455,\"domainLookupEnd\":1788912683455,\"responseStart\":1788912683505,\"connectEnd\":1788912683455,\"responseEnd\":1788912683507,\"requestStart\":1788912683455,\"domLoading\":1788912683507,\"redirectStart\":0,\"loadEventEnd\":1788912683536,\"domComplete\":1788912683536,\"navigationStart\":1788912683455,\"loadEventStart\":1788912683536,\"domContentLoadedEventEnd\":1788912683521,\"unloadEventStart\":1788912683506,\"redirectEnd\":0,\"domInteractive\":1788912683521,\"fetchStart\":1788912683455,\"domContentLoadedEventStart\":1788912683521}"
+  },
+  {
+    "route": "/services",
+    "viewport": "812x375",
+    "perf": "{\"connectStart\":1788912684642,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912684706,\"domainLookupStart\":1788912684642,\"domainLookupEnd\":1788912684642,\"responseStart\":1788912684705,\"connectEnd\":1788912684642,\"responseEnd\":1788912684708,\"requestStart\":1788912684642,\"domLoading\":1788912684707,\"redirectStart\":0,\"loadEventEnd\":1788912684742,\"domComplete\":1788912684742,\"navigationStart\":1788912684642,\"loadEventStart\":1788912684742,\"domContentLoadedEventEnd\":1788912684725,\"unloadEventStart\":1788912684706,\"redirectEnd\":0,\"domInteractive\":1788912684725,\"fetchStart\":1788912684642,\"domContentLoadedEventStart\":1788912684725}"
+  },
+  {
+    "route": "/services",
+    "viewport": "390x844",
+    "perf": "{\"connectStart\":1788912685892,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912685944,\"domainLookupStart\":1788912685892,\"domainLookupEnd\":1788912685892,\"responseStart\":1788912685942,\"connectEnd\":1788912685892,\"responseEnd\":1788912685945,\"requestStart\":1788912685892,\"domLoading\":1788912685945,\"redirectStart\":0,\"loadEventEnd\":1788912685974,\"domComplete\":1788912685974,\"navigationStart\":1788912685892,\"loadEventStart\":1788912685974,\"domContentLoadedEventEnd\":1788912685957,\"unloadEventStart\":1788912685944,\"redirectEnd\":0,\"domInteractive\":1788912685957,\"fetchStart\":1788912685892,\"domContentLoadedEventStart\":1788912685957}"
+  },
+  {
+    "route": "/services",
+    "viewport": "844x390",
+    "perf": "{\"connectStart\":1788912687045,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912687098,\"domainLookupStart\":1788912687045,\"domainLookupEnd\":1788912687045,\"responseStart\":1788912687097,\"connectEnd\":1788912687045,\"responseEnd\":1788912687099,\"requestStart\":1788912687045,\"domLoading\":1788912687100,\"redirectStart\":0,\"loadEventEnd\":1788912687130,\"domComplete\":1788912687130,\"navigationStart\":1788912687045,\"loadEventStart\":1788912687130,\"domContentLoadedEventEnd\":1788912687113,\"unloadEventStart\":1788912687098,\"redirectEnd\":0,\"domInteractive\":1788912687113,\"fetchStart\":1788912687045,\"domContentLoadedEventStart\":1788912687113}"
+  },
+  {
+    "route": "/services",
+    "viewport": "412x915",
+    "perf": "{\"connectStart\":1788912688265,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912688321,\"domainLookupStart\":1788912688265,\"domainLookupEnd\":1788912688265,\"responseStart\":1788912688320,\"connectEnd\":1788912688265,\"responseEnd\":1788912688321,\"requestStart\":1788912688265,\"domLoading\":1788912688322,\"redirectStart\":0,\"loadEventEnd\":1788912688354,\"domComplete\":1788912688354,\"navigationStart\":1788912688265,\"loadEventStart\":1788912688354,\"domContentLoadedEventEnd\":1788912688335,\"unloadEventStart\":1788912688321,\"redirectEnd\":0,\"domInteractive\":1788912688335,\"fetchStart\":1788912688265,\"domContentLoadedEventStart\":1788912688335}"
+  },
+  {
+    "route": "/services",
+    "viewport": "915x412",
+    "perf": "{\"connectStart\":1788912689474,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912689534,\"domainLookupStart\":1788912689474,\"domainLookupEnd\":1788912689474,\"responseStart\":1788912689533,\"connectEnd\":1788912689474,\"responseEnd\":1788912689535,\"requestStart\":1788912689474,\"domLoading\":1788912689535,\"redirectStart\":0,\"loadEventEnd\":1788912689559,\"domComplete\":1788912689559,\"navigationStart\":1788912689474,\"loadEventStart\":1788912689559,\"domContentLoadedEventEnd\":1788912689548,\"unloadEventStart\":1788912689534,\"redirectEnd\":0,\"domInteractive\":1788912689548,\"fetchStart\":1788912689474,\"domContentLoadedEventStart\":1788912689548}"
+  },
+  {
+    "route": "/services",
+    "viewport": "430x932",
+    "perf": "{\"connectStart\":1788912690702,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912690753,\"domainLookupStart\":1788912690702,\"domainLookupEnd\":1788912690702,\"responseStart\":1788912690752,\"connectEnd\":1788912690702,\"responseEnd\":1788912690755,\"requestStart\":1788912690702,\"domLoading\":1788912690754,\"redirectStart\":0,\"loadEventEnd\":1788912690786,\"domComplete\":1788912690786,\"navigationStart\":1788912690702,\"loadEventStart\":1788912690786,\"domContentLoadedEventEnd\":1788912690768,\"unloadEventStart\":1788912690753,\"redirectEnd\":0,\"domInteractive\":1788912690768,\"fetchStart\":1788912690702,\"domContentLoadedEventStart\":1788912690768}"
+  },
+  {
+    "route": "/services",
+    "viewport": "932x430",
+    "perf": "{\"connectStart\":1788912691890,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912691945,\"domainLookupStart\":1788912691890,\"domainLookupEnd\":1788912691890,\"responseStart\":1788912691943,\"connectEnd\":1788912691890,\"responseEnd\":1788912691946,\"requestStart\":1788912691891,\"domLoading\":1788912691946,\"redirectStart\":0,\"loadEventEnd\":1788912691981,\"domComplete\":1788912691981,\"navigationStart\":1788912691890,\"loadEventStart\":1788912691981,\"domContentLoadedEventEnd\":1788912691960,\"unloadEventStart\":1788912691945,\"redirectEnd\":0,\"domInteractive\":1788912691960,\"fetchStart\":1788912691890,\"domContentLoadedEventStart\":1788912691960}"
+  },
+  {
+    "route": "/services",
+    "viewport": "768x1024",
+    "perf": "{\"connectStart\":1788912693163,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912693217,\"domainLookupStart\":1788912693163,\"domainLookupEnd\":1788912693163,\"responseStart\":1788912693216,\"connectEnd\":1788912693163,\"responseEnd\":1788912693217,\"requestStart\":1788912693163,\"domLoading\":1788912693218,\"redirectStart\":0,\"loadEventEnd\":1788912693240,\"domComplete\":1788912693240,\"navigationStart\":1788912693163,\"loadEventStart\":1788912693240,\"domContentLoadedEventEnd\":1788912693230,\"unloadEventStart\":1788912693217,\"redirectEnd\":0,\"domInteractive\":1788912693230,\"fetchStart\":1788912693163,\"domContentLoadedEventStart\":1788912693230}"
+  },
+  {
+    "route": "/services",
+    "viewport": "820x1180",
+    "perf": "{\"connectStart\":1788912694466,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912694522,\"domainLookupStart\":1788912694466,\"domainLookupEnd\":1788912694466,\"responseStart\":1788912694521,\"connectEnd\":1788912694466,\"responseEnd\":1788912694523,\"requestStart\":1788912694467,\"domLoading\":1788912694524,\"redirectStart\":0,\"loadEventEnd\":1788912694552,\"domComplete\":1788912694552,\"navigationStart\":1788912694466,\"loadEventStart\":1788912694552,\"domContentLoadedEventEnd\":1788912694537,\"unloadEventStart\":1788912694522,\"redirectEnd\":0,\"domInteractive\":1788912694537,\"fetchStart\":1788912694466,\"domContentLoadedEventStart\":1788912694537}"
+  },
+  {
+    "route": "/services",
+    "viewport": "912x1368",
+    "perf": "{\"connectStart\":1788912695751,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912695822,\"domainLookupStart\":1788912695751,\"domainLookupEnd\":1788912695751,\"responseStart\":1788912695821,\"connectEnd\":1788912695751,\"responseEnd\":1788912695823,\"requestStart\":1788912695752,\"domLoading\":1788912695824,\"redirectStart\":0,\"loadEventEnd\":1788912695858,\"domComplete\":1788912695858,\"navigationStart\":1788912695751,\"loadEventStart\":1788912695858,\"domContentLoadedEventEnd\":1788912695837,\"unloadEventStart\":1788912695822,\"redirectEnd\":0,\"domInteractive\":1788912695837,\"fetchStart\":1788912695751,\"domContentLoadedEventStart\":1788912695837}"
+  },
+  {
+    "route": "/services",
+    "viewport": "1024x1366",
+    "perf": "{\"connectStart\":1788912697118,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912697168,\"domainLookupStart\":1788912697118,\"domainLookupEnd\":1788912697118,\"responseStart\":1788912697167,\"connectEnd\":1788912697118,\"responseEnd\":1788912697169,\"requestStart\":1788912697119,\"domLoading\":1788912697169,\"redirectStart\":0,\"loadEventEnd\":1788912697200,\"domComplete\":1788912697200,\"navigationStart\":1788912697118,\"loadEventStart\":1788912697200,\"domContentLoadedEventEnd\":1788912697182,\"unloadEventStart\":1788912697168,\"redirectEnd\":0,\"domInteractive\":1788912697182,\"fetchStart\":1788912697118,\"domContentLoadedEventStart\":1788912697182}"
+  },
+  {
+    "route": "/services",
+    "viewport": "1280x800",
+    "perf": "{\"connectStart\":1788912698469,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912698524,\"domainLookupStart\":1788912698469,\"domainLookupEnd\":1788912698469,\"responseStart\":1788912698522,\"connectEnd\":1788912698469,\"responseEnd\":1788912698524,\"requestStart\":1788912698470,\"domLoading\":1788912698525,\"redirectStart\":0,\"loadEventEnd\":1788912698555,\"domComplete\":1788912698555,\"navigationStart\":1788912698469,\"loadEventStart\":1788912698555,\"domContentLoadedEventEnd\":1788912698539,\"unloadEventStart\":1788912698524,\"redirectEnd\":0,\"domInteractive\":1788912698539,\"fetchStart\":1788912698469,\"domContentLoadedEventStart\":1788912698539}"
+  },
+  {
+    "route": "/services",
+    "viewport": "1440x900",
+    "perf": "{\"connectStart\":1788912698921,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912698982,\"domainLookupStart\":1788912698921,\"domainLookupEnd\":1788912698921,\"responseStart\":1788912698979,\"connectEnd\":1788912698921,\"responseEnd\":1788912698980,\"requestStart\":1788912698921,\"domLoading\":1788912698983,\"redirectStart\":0,\"loadEventEnd\":1788912699016,\"domComplete\":1788912699016,\"navigationStart\":1788912698920,\"loadEventStart\":1788912699016,\"domContentLoadedEventEnd\":1788912699000,\"unloadEventStart\":1788912698982,\"redirectEnd\":0,\"domInteractive\":1788912699000,\"fetchStart\":1788912698921,\"domContentLoadedEventStart\":1788912699000}"
+  },
+  {
+    "route": "/services",
+    "viewport": "1728x1117",
+    "perf": "{\"connectStart\":1788912699444,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912699507,\"domainLookupStart\":1788912699444,\"domainLookupEnd\":1788912699444,\"responseStart\":1788912699503,\"connectEnd\":1788912699444,\"responseEnd\":1788912699505,\"requestStart\":1788912699444,\"domLoading\":1788912699508,\"redirectStart\":0,\"loadEventEnd\":1788912699532,\"domComplete\":1788912699532,\"navigationStart\":1788912699444,\"loadEventStart\":1788912699532,\"domContentLoadedEventEnd\":1788912699521,\"unloadEventStart\":1788912699507,\"redirectEnd\":0,\"domInteractive\":1788912699521,\"fetchStart\":1788912699444,\"domContentLoadedEventStart\":1788912699521}"
+  },
+  {
+    "route": "/services",
+    "viewport": "1920x1080",
+    "perf": "{\"connectStart\":1788912700043,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912700098,\"domainLookupStart\":1788912700043,\"domainLookupEnd\":1788912700043,\"responseStart\":1788912700094,\"connectEnd\":1788912700043,\"responseEnd\":1788912700096,\"requestStart\":1788912700044,\"domLoading\":1788912700099,\"redirectStart\":0,\"loadEventEnd\":1788912700124,\"domComplete\":1788912700124,\"navigationStart\":1788912700043,\"loadEventStart\":1788912700124,\"domContentLoadedEventEnd\":1788912700115,\"unloadEventStart\":1788912700098,\"redirectEnd\":0,\"domInteractive\":1788912700115,\"fetchStart\":1788912700043,\"domContentLoadedEventStart\":1788912700115}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "320x568",
+    "perf": "{\"connectStart\":1788912700664,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912700714,\"domainLookupStart\":1788912700664,\"domainLookupEnd\":1788912700664,\"responseStart\":1788912700711,\"connectEnd\":1788912700664,\"responseEnd\":1788912700713,\"requestStart\":1788912700665,\"domLoading\":1788912700716,\"redirectStart\":0,\"loadEventEnd\":1788912700739,\"domComplete\":1788912700739,\"navigationStart\":1788912700664,\"loadEventStart\":1788912700739,\"domContentLoadedEventEnd\":1788912700730,\"unloadEventStart\":1788912700714,\"redirectEnd\":0,\"domInteractive\":1788912700730,\"fetchStart\":1788912700664,\"domContentLoadedEventStart\":1788912700730}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "568x320",
+    "perf": "{\"connectStart\":1788912701779,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912701831,\"domainLookupStart\":1788912701779,\"domainLookupEnd\":1788912701779,\"responseStart\":1788912701830,\"connectEnd\":1788912701779,\"responseEnd\":1788912701832,\"requestStart\":1788912701780,\"domLoading\":1788912701832,\"redirectStart\":0,\"loadEventEnd\":1788912701865,\"domComplete\":1788912701865,\"navigationStart\":1788912701779,\"loadEventStart\":1788912701865,\"domContentLoadedEventEnd\":1788912701846,\"unloadEventStart\":1788912701831,\"redirectEnd\":0,\"domInteractive\":1788912701846,\"fetchStart\":1788912701779,\"domContentLoadedEventStart\":1788912701846}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "360x800",
+    "perf": "{\"connectStart\":1788912702963,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912703016,\"domainLookupStart\":1788912702963,\"domainLookupEnd\":1788912702963,\"responseStart\":1788912703015,\"connectEnd\":1788912702963,\"responseEnd\":1788912703017,\"requestStart\":1788912702963,\"domLoading\":1788912703018,\"redirectStart\":0,\"loadEventEnd\":1788912703051,\"domComplete\":1788912703051,\"navigationStart\":1788912702963,\"loadEventStart\":1788912703051,\"domContentLoadedEventEnd\":1788912703034,\"unloadEventStart\":1788912703016,\"redirectEnd\":0,\"domInteractive\":1788912703034,\"fetchStart\":1788912702963,\"domContentLoadedEventStart\":1788912703034}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "800x360",
+    "perf": "{\"connectStart\":1788912704171,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912704221,\"domainLookupStart\":1788912704171,\"domainLookupEnd\":1788912704171,\"responseStart\":1788912704219,\"connectEnd\":1788912704171,\"responseEnd\":1788912704222,\"requestStart\":1788912704171,\"domLoading\":1788912704222,\"redirectStart\":0,\"loadEventEnd\":1788912704246,\"domComplete\":1788912704246,\"navigationStart\":1788912704171,\"loadEventStart\":1788912704246,\"domContentLoadedEventEnd\":1788912704235,\"unloadEventStart\":1788912704221,\"redirectEnd\":0,\"domInteractive\":1788912704235,\"fetchStart\":1788912704171,\"domContentLoadedEventStart\":1788912704235}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "375x812",
+    "perf": "{\"connectStart\":1788912705357,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912705404,\"domainLookupStart\":1788912705357,\"domainLookupEnd\":1788912705357,\"responseStart\":1788912705403,\"connectEnd\":1788912705357,\"responseEnd\":1788912705405,\"requestStart\":1788912705357,\"domLoading\":1788912705405,\"redirectStart\":0,\"loadEventEnd\":1788912705434,\"domComplete\":1788912705434,\"navigationStart\":1788912705357,\"loadEventStart\":1788912705434,\"domContentLoadedEventEnd\":1788912705417,\"unloadEventStart\":1788912705404,\"redirectEnd\":0,\"domInteractive\":1788912705417,\"fetchStart\":1788912705357,\"domContentLoadedEventStart\":1788912705417}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "812x375",
+    "perf": "{\"connectStart\":1788912706524,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912706576,\"domainLookupStart\":1788912706524,\"domainLookupEnd\":1788912706524,\"responseStart\":1788912706573,\"connectEnd\":1788912706524,\"responseEnd\":1788912706575,\"requestStart\":1788912706524,\"domLoading\":1788912706577,\"redirectStart\":0,\"loadEventEnd\":1788912706612,\"domComplete\":1788912706612,\"navigationStart\":1788912706524,\"loadEventStart\":1788912706612,\"domContentLoadedEventEnd\":1788912706591,\"unloadEventStart\":1788912706576,\"redirectEnd\":0,\"domInteractive\":1788912706591,\"fetchStart\":1788912706524,\"domContentLoadedEventStart\":1788912706591}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "390x844",
+    "perf": "{\"connectStart\":1788912707710,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912707753,\"domainLookupStart\":1788912707710,\"domainLookupEnd\":1788912707710,\"responseStart\":1788912707752,\"connectEnd\":1788912707710,\"responseEnd\":1788912707754,\"requestStart\":1788912707710,\"domLoading\":1788912707754,\"redirectStart\":0,\"loadEventEnd\":1788912707782,\"domComplete\":1788912707782,\"navigationStart\":1788912707710,\"loadEventStart\":1788912707782,\"domContentLoadedEventEnd\":1788912707766,\"unloadEventStart\":1788912707753,\"redirectEnd\":0,\"domInteractive\":1788912707766,\"fetchStart\":1788912707710,\"domContentLoadedEventStart\":1788912707766}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "844x390",
+    "perf": "{\"connectStart\":1788912708856,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912708903,\"domainLookupStart\":1788912708856,\"domainLookupEnd\":1788912708856,\"responseStart\":1788912708902,\"connectEnd\":1788912708856,\"responseEnd\":1788912708904,\"requestStart\":1788912708856,\"domLoading\":1788912708904,\"redirectStart\":0,\"loadEventEnd\":1788912708935,\"domComplete\":1788912708935,\"navigationStart\":1788912708855,\"loadEventStart\":1788912708935,\"domContentLoadedEventEnd\":1788912708917,\"unloadEventStart\":1788912708903,\"redirectEnd\":0,\"domInteractive\":1788912708917,\"fetchStart\":1788912708856,\"domContentLoadedEventStart\":1788912708917}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "412x915",
+    "perf": "{\"connectStart\":1788912710040,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912710091,\"domainLookupStart\":1788912710040,\"domainLookupEnd\":1788912710040,\"responseStart\":1788912710090,\"connectEnd\":1788912710040,\"responseEnd\":1788912710092,\"requestStart\":1788912710040,\"domLoading\":1788912710093,\"redirectStart\":0,\"loadEventEnd\":1788912710124,\"domComplete\":1788912710124,\"navigationStart\":1788912710039,\"loadEventStart\":1788912710124,\"domContentLoadedEventEnd\":1788912710108,\"unloadEventStart\":1788912710091,\"redirectEnd\":0,\"domInteractive\":1788912710108,\"fetchStart\":1788912710040,\"domContentLoadedEventStart\":1788912710108}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "915x412",
+    "perf": "{\"connectStart\":1788912711194,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912711244,\"domainLookupStart\":1788912711194,\"domainLookupEnd\":1788912711194,\"responseStart\":1788912711242,\"connectEnd\":1788912711194,\"responseEnd\":1788912711245,\"requestStart\":1788912711195,\"domLoading\":1788912711245,\"redirectStart\":0,\"loadEventEnd\":1788912711271,\"domComplete\":1788912711271,\"navigationStart\":1788912711194,\"loadEventStart\":1788912711271,\"domContentLoadedEventEnd\":1788912711258,\"unloadEventStart\":1788912711244,\"redirectEnd\":0,\"domInteractive\":1788912711258,\"fetchStart\":1788912711194,\"domContentLoadedEventStart\":1788912711258}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "430x932",
+    "perf": "{\"connectStart\":1788912712361,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912712403,\"domainLookupStart\":1788912712361,\"domainLookupEnd\":1788912712361,\"responseStart\":1788912712402,\"connectEnd\":1788912712361,\"responseEnd\":1788912712404,\"requestStart\":1788912712361,\"domLoading\":1788912712405,\"redirectStart\":0,\"loadEventEnd\":1788912712432,\"domComplete\":1788912712432,\"navigationStart\":1788912712361,\"loadEventStart\":1788912712432,\"domContentLoadedEventEnd\":1788912712416,\"unloadEventStart\":1788912712403,\"redirectEnd\":0,\"domInteractive\":1788912712416,\"fetchStart\":1788912712361,\"domContentLoadedEventStart\":1788912712416}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "932x430",
+    "perf": "{\"connectStart\":1788912713506,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912713556,\"domainLookupStart\":1788912713506,\"domainLookupEnd\":1788912713506,\"responseStart\":1788912713555,\"connectEnd\":1788912713506,\"responseEnd\":1788912713557,\"requestStart\":1788912713507,\"domLoading\":1788912713557,\"redirectStart\":0,\"loadEventEnd\":1788912713590,\"domComplete\":1788912713590,\"navigationStart\":1788912713506,\"loadEventStart\":1788912713590,\"domContentLoadedEventEnd\":1788912713570,\"unloadEventStart\":1788912713556,\"redirectEnd\":0,\"domInteractive\":1788912713570,\"fetchStart\":1788912713506,\"domContentLoadedEventStart\":1788912713570}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "768x1024",
+    "perf": "{\"connectStart\":1788912714722,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912714778,\"domainLookupStart\":1788912714722,\"domainLookupEnd\":1788912714722,\"responseStart\":1788912714777,\"connectEnd\":1788912714722,\"responseEnd\":1788912714780,\"requestStart\":1788912714722,\"domLoading\":1788912714779,\"redirectStart\":0,\"loadEventEnd\":1788912714804,\"domComplete\":1788912714804,\"navigationStart\":1788912714722,\"loadEventStart\":1788912714804,\"domContentLoadedEventEnd\":1788912714793,\"unloadEventStart\":1788912714778,\"redirectEnd\":0,\"domInteractive\":1788912714793,\"fetchStart\":1788912714722,\"domContentLoadedEventStart\":1788912714793}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "820x1180",
+    "perf": "{\"connectStart\":1788912715978,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912716023,\"domainLookupStart\":1788912715978,\"domainLookupEnd\":1788912715978,\"responseStart\":1788912716023,\"connectEnd\":1788912715978,\"responseEnd\":1788912716024,\"requestStart\":1788912715978,\"domLoading\":1788912716025,\"redirectStart\":0,\"loadEventEnd\":1788912716052,\"domComplete\":1788912716052,\"navigationStart\":1788912715978,\"loadEventStart\":1788912716052,\"domContentLoadedEventEnd\":1788912716036,\"unloadEventStart\":1788912716023,\"redirectEnd\":0,\"domInteractive\":1788912716036,\"fetchStart\":1788912715978,\"domContentLoadedEventStart\":1788912716036}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "912x1368",
+    "perf": "{\"connectStart\":1788912717219,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912717261,\"domainLookupStart\":1788912717219,\"domainLookupEnd\":1788912717219,\"responseStart\":1788912717260,\"connectEnd\":1788912717219,\"responseEnd\":1788912717261,\"requestStart\":1788912717219,\"domLoading\":1788912717262,\"redirectStart\":0,\"loadEventEnd\":1788912717293,\"domComplete\":1788912717293,\"navigationStart\":1788912717219,\"loadEventStart\":1788912717293,\"domContentLoadedEventEnd\":1788912717276,\"unloadEventStart\":1788912717261,\"redirectEnd\":0,\"domInteractive\":1788912717276,\"fetchStart\":1788912717219,\"domContentLoadedEventStart\":1788912717276}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "1024x1366",
+    "perf": "{\"connectStart\":1788912718457,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912718503,\"domainLookupStart\":1788912718457,\"domainLookupEnd\":1788912718457,\"responseStart\":1788912718502,\"connectEnd\":1788912718457,\"responseEnd\":1788912718504,\"requestStart\":1788912718457,\"domLoading\":1788912718504,\"redirectStart\":0,\"loadEventEnd\":1788912718524,\"domComplete\":1788912718524,\"navigationStart\":1788912718457,\"loadEventStart\":1788912718524,\"domContentLoadedEventEnd\":1788912718515,\"unloadEventStart\":1788912718503,\"redirectEnd\":0,\"domInteractive\":1788912718515,\"fetchStart\":1788912718457,\"domContentLoadedEventStart\":1788912718515}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "1280x800",
+    "perf": "{\"connectStart\":1788912719753,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912719794,\"domainLookupStart\":1788912719753,\"domainLookupEnd\":1788912719753,\"responseStart\":1788912719793,\"connectEnd\":1788912719753,\"responseEnd\":1788912719795,\"requestStart\":1788912719754,\"domLoading\":1788912719795,\"redirectStart\":0,\"loadEventEnd\":1788912719823,\"domComplete\":1788912719823,\"navigationStart\":1788912719753,\"loadEventStart\":1788912719823,\"domContentLoadedEventEnd\":1788912719808,\"unloadEventStart\":1788912719794,\"redirectEnd\":0,\"domInteractive\":1788912719808,\"fetchStart\":1788912719753,\"domContentLoadedEventStart\":1788912719808}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "1440x900",
+    "perf": "{\"connectStart\":1788912720328,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912720376,\"domainLookupStart\":1788912720328,\"domainLookupEnd\":1788912720328,\"responseStart\":1788912720375,\"connectEnd\":1788912720328,\"responseEnd\":1788912720377,\"requestStart\":1788912720329,\"domLoading\":1788912720378,\"redirectStart\":0,\"loadEventEnd\":1788912720409,\"domComplete\":1788912720409,\"navigationStart\":1788912720328,\"loadEventStart\":1788912720409,\"domContentLoadedEventEnd\":1788912720390,\"unloadEventStart\":1788912720376,\"redirectEnd\":0,\"domInteractive\":1788912720390,\"fetchStart\":1788912720328,\"domContentLoadedEventStart\":1788912720390}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "1728x1117",
+    "perf": "{\"connectStart\":1788912720977,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912721032,\"domainLookupStart\":1788912720977,\"domainLookupEnd\":1788912720977,\"responseStart\":1788912721029,\"connectEnd\":1788912720977,\"responseEnd\":1788912721030,\"requestStart\":1788912720977,\"domLoading\":1788912721033,\"redirectStart\":0,\"loadEventEnd\":1788912721060,\"domComplete\":1788912721060,\"navigationStart\":1788912720977,\"loadEventStart\":1788912721060,\"domContentLoadedEventEnd\":1788912721045,\"unloadEventStart\":1788912721032,\"redirectEnd\":0,\"domInteractive\":1788912721045,\"fetchStart\":1788912720977,\"domContentLoadedEventStart\":1788912721045}"
+  },
+  {
+    "route": "/solutions",
+    "viewport": "1920x1080",
+    "perf": "{\"connectStart\":1788912721762,\"secureConnectionStart\":0,\"unloadEventEnd\":1788912721808,\"domainLookupStart\":1788912721762,\"domainLookupEnd\":1788912721762,\"responseStart\":1788912721807,\"connectEnd\":1788912721762,\"responseEnd\":1788912721809,\"requestStart\":1788912721762,\"domLoading\":1788912721810,\"redirectStart\":0,\"loadEventEnd\":1788912721836,\"domComplete\":1788912721836,\"navigationStart\":1788912721762,\"loadEventStart\":1788912721836,\"domContentLoadedEventEnd\":1788912721821,\"unloadEventStart\":1788912721808,\"redirectEnd\":0,\"domInteractive\":1788912721821,\"fetchStart\":1788912721762,\"domContentLoadedEventStart\":1788912721821}"
+  }
+]

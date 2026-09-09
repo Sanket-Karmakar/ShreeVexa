@@ -4,7 +4,7 @@
 
 .hero {
   position: relative;
-  min-height: 85vh;
+  min-height: 85dvh;
   display: flex;
   background-color: #0d1424;
   color: white;

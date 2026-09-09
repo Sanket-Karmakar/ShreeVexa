@@ -129,10 +129,12 @@
 }
 
 .mobileMenu {
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 80px;
   left: 0;
   width: 100%;
+  height: calc(100dvh - 80px);
+  overflow-y: auto;
   background-color: rgba(11, 17, 32, 0.98);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);

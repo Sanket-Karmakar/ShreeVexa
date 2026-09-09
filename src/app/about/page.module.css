@@ -4,7 +4,7 @@
 
 .hero {
   position: relative;
-  min-height: 80vh;
+  min-height: 80dvh;
   display: flex;
   background-color: #0d1424;
   color: white;
@@ -280,6 +280,9 @@
 }
 
 @media (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+  }
   .introGrid {
     grid-template-columns: 1fr;
     gap: 4rem;
