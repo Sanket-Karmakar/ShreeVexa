@@ -439,7 +439,9 @@
     justify-content: flex-start;
   }
   .heroRight {
-    display: none;
+    min-height: 300px;
+    width: 100%;
+    display: block;
   }
   .title {
     font-size: 3.5rem;

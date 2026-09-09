@@ -55,6 +55,12 @@
   text-transform: uppercase;
 }
 
+.heroRight {
+  min-height: 300px;
+  width: 100%;
+  display: block;
+}
+
 .heroLine {
   display: block;
   width: 40px;

@@ -120,4 +120,9 @@ ul {
   .container {
     text-align: center;
   }
+  /* Center align logos and icons within centered containers on mobile */
+  [class*="cardIcon"], [class*="whyIcon"], [class*="statIcon"], [class*="valueIcon"], [class*="categoryIcon"], [class*="serviceIcon"], [class*="solutionIcon"], [class*="methodIconWrapper"], [class*="officeImagePlaceholder"], [class*="partnerIcon"] {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }
