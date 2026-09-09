@@ -4,85 +4,134 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Search, Menu, X } from 'lucide-react';
+import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import styles from './Navbar.module.css';
+import { navReveal, drawerReveal, staggerContainer, staggerItem, buttonInteraction } from '@/lib/motion';
+
+const navLinks = [
+  { path: '/', label: 'Home' },
+  { path: '/about', label: 'About Us' },
+  { path: '/products', label: 'Products' },
+  { path: '/brands', label: 'Brands' },
+  { path: '/licensing', label: 'Software Licensing' },
+  { path: '/solutions', label: 'Solutions' },
+  { path: '/services', label: 'Services' },
+  { path: '/contact', label: 'Contact' },
+];
 
 export default function Navbar() {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { scrollY } = useScroll();
 
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
+  const navShadow = useTransform(scrollY, [0, 50], ["none", "0 10px 30px rgba(0,0,0,0.4)"]);
+  const navBg = useTransform(scrollY, [0, 50], ["rgba(11, 17, 32, 1)", "rgba(11, 17, 32, 0.9)"]);
+  const navBlur = useTransform(scrollY, [0, 50], ["blur(0px)", "blur(12px)"]);
 
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false);
-  };
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-    };
+    if (isMobileMenuOpen) document.body.style.overflow = 'hidden';
+    else document.body.style.overflow = '';
+    return () => { document.body.style.overflow = ''; };
   }, [isMobileMenuOpen]);
 
   return (
-    <header className={styles.header}>
-      <div className={`container ${styles.navContainer}`}>
-        <Link href="/" className={styles.logo}>
-          <div className={styles.logoIcon}>
-            <div className={styles.hex}>
-              <div className={styles.hexInner}>S</div>
+    <>
+      <motion.header 
+        className={styles.header}
+        variants={navReveal}
+        initial="hidden"
+        animate="visible"
+        style={{
+          boxShadow: navShadow,
+          backgroundColor: navBg,
+          backdropFilter: navBlur,
+        }}
+      >
+        <div className={`container ${styles.navContainer}`}>
+          <Link href="/" className={styles.logo}>
+            <div className={styles.logoIcon}>
+              <div className={styles.hex}>
+                <div className={styles.hexInner}>S</div>
+              </div>
             </div>
-          </div>
-          <div className={styles.logoText}>
-            <span className={styles.logoBrand}>SHREE<span className={styles.logoAccent}>VEXA</span></span>
-            <span className={styles.logoSub}>IT SOLUTIONS</span>
-          </div>
-        </Link>
-
-        <nav className={styles.navLinks}>
-          <Link href="/" className={`${styles.navLink} ${pathname === '/' ? styles.active : ''}`}>Home</Link>
-          <Link href="/about" className={`${styles.navLink} ${pathname === '/about' ? styles.active : ''}`}>About Us</Link>
-          <Link href="/products" className={`${styles.navLink} ${pathname === '/products' ? styles.active : ''}`}>Products</Link>
-          <Link href="/brands" className={`${styles.navLink} ${pathname === '/brands' ? styles.active : ''}`}>Brands</Link>
-          <Link href="/licensing" className={`${styles.navLink} ${pathname === '/licensing' ? styles.active : ''}`}>Software Licensing</Link>
-          <Link href="/solutions" className={`${styles.navLink} ${pathname === '/solutions' ? styles.active : ''}`}>Solutions</Link>
-          <Link href="/services" className={`${styles.navLink} ${pathname === '/services' ? styles.active : ''}`}>Services</Link>
-          <Link href="/contact" className={`${styles.navLink} ${pathname === '/contact' ? styles.active : ''}`}>Contact</Link>
-        </nav>
-
-        <div className={styles.actions}>
-          <button className={styles.iconBtn} aria-label="Search">
-            <Search size={20} />
-          </button>
-          <Link href="/contact" className="btn-primary">
-            Get in Touch <span className={styles.arrow}>→</span>
+            <div className={styles.logoText}>
+              <span className={styles.logoBrand}>SHREE<span className={styles.logoAccent}>VEXA</span></span>
+              <span className={styles.logoSub}>IT SOLUTIONS</span>
+            </div>
           </Link>
-          <button className={styles.mobileMenuBtn} onClick={toggleMobileMenu} aria-label="Toggle menu">
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-      </div>
 
-      {/* Mobile Menu Overlay */}
-      <div className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.mobileMenuOpen : ''}`}>
-        <div className="container">
-          <nav className={styles.mobileNavLinks}>
-            <Link href="/" className={`${styles.mobileNavLink} ${pathname === '/' ? styles.active : ''}`} onClick={closeMobileMenu}>Home</Link>
-            <Link href="/about" className={`${styles.mobileNavLink} ${pathname === '/about' ? styles.active : ''}`} onClick={closeMobileMenu}>About Us</Link>
-            <Link href="/products" className={`${styles.mobileNavLink} ${pathname === '/products' ? styles.active : ''}`} onClick={closeMobileMenu}>Products</Link>
-            <Link href="/brands" className={`${styles.mobileNavLink} ${pathname === '/brands' ? styles.active : ''}`} onClick={closeMobileMenu}>Brands</Link>
-            <Link href="/licensing" className={`${styles.mobileNavLink} ${pathname === '/licensing' ? styles.active : ''}`} onClick={closeMobileMenu}>Software Licensing</Link>
-            <Link href="/solutions" className={`${styles.mobileNavLink} ${pathname === '/solutions' ? styles.active : ''}`} onClick={closeMobileMenu}>Solutions</Link>
-            <Link href="/services" className={`${styles.mobileNavLink} ${pathname === '/services' ? styles.active : ''}`} onClick={closeMobileMenu}>Services</Link>
-            <Link href="/contact" className={`${styles.mobileNavLink} ${pathname === '/contact' ? styles.active : ''}`} onClick={closeMobileMenu}>Contact</Link>
+          <nav className={styles.navLinks}>
+            {navLinks.map((link) => (
+              <Link key={link.path} href={link.path} className={`${styles.navLink} ${pathname === link.path ? styles.active : ''}`}>
+                {link.label}
+                {pathname === link.path && (
+                  <motion.div layoutId="navUnderline" className={styles.activeUnderline} />
+                )}
+              </Link>
+            ))}
           </nav>
+
+          <div className={styles.actions}>
+            <button className={styles.iconBtn} aria-label="Search">
+              <Search size={20} />
+            </button>
+            <Link href="/contact">
+              <motion.div className="btn-primary" variants={buttonInteraction} whileHover="hover" whileTap="tap">
+                Get in Touch <span className={styles.arrow}>→</span>
+              </motion.div>
+            </Link>
+            <button className={styles.mobileMenuBtn} onClick={toggleMobileMenu} aria-label="Toggle menu">
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
-      </div>
-    </header>
+      </motion.header>
+
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <>
+            <motion.div 
+              className={styles.mobileOverlay}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              onClick={closeMobileMenu}
+            />
+            <motion.div 
+              className={styles.mobileDrawer}
+              variants={drawerReveal}
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+            >
+              <div className="container">
+                <motion.nav 
+                  className={styles.mobileNavLinks}
+                  variants={staggerContainer}
+                  initial="hidden"
+                  animate="visible"
+                >
+                  {navLinks.map((link) => (
+                    <motion.div key={link.path} variants={staggerItem}>
+                      <Link 
+                        href={link.path} 
+                        className={`${styles.mobileNavLink} ${pathname === link.path ? styles.active : ''}`} 
+                        onClick={closeMobileMenu}
+                      >
+                        {link.label}
+                      </Link>
+                    </motion.div>
+                  ))}
+                </motion.nav>
+              </div>
+            </motion.div>
+          </>
+        )}
+      </AnimatePresence>
+    </>
   );
 }

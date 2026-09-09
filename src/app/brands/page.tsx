@@ -1,6 +1,20 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, ShoppingCart, Info } from "lucide-react";
 import styles from "./page.module.css";
+import { 
+  EASING,
+  fadeUp,
+  staggerContainer,
+  staggerItem,
+  heroContainer,
+  heroItem,
+  logoHover,
+  VIEWPORT,
+  buttonInteraction 
+} from "@/lib/motion";
 
 const brands = [
   "Dell", "HP", "Lenovo", "ASUS", "Acer", "Apple", "Logitech", "Microsoft", 
@@ -15,57 +29,92 @@ export default function Brands() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroLeft}>
-          <div className={styles.heroContent}>
-            <div className={styles.heroTagContainer}>
+          <motion.div 
+            className={styles.heroContent}
+            variants={heroContainer}
+            initial="hidden"
+            animate="visible"
+          >
+            <motion.div variants={heroItem} className={styles.heroTagContainer}>
               <span className={styles.heroTag}>OUR BRANDS</span>
               <span className={styles.heroLine}></span>
-            </div>
-            <h1 className={styles.title}>
+            </motion.div>
+            <motion.h1 variants={heroItem} className={styles.title}>
               Trusted Global<br />
               Brands for a<br />
               <span className={styles.accent}>Stronger Tomorrow.</span>
-            </h1>
-            <p className={styles.desc}>
+            </motion.h1>
+            <motion.p variants={heroItem} className={styles.desc}>
               Explore a wide range of leading global IT brands available for resale to meet your business and technology needs.
-            </p>
-            <div className={styles.heroActions}>
-              <Link href="/contact" className="btn-primary">
-                Request a Quote <ArrowRight size={18} />
+            </motion.p>
+            <motion.div variants={heroItem} className={styles.heroActions}>
+              <Link href="/contact">
+                <motion.div className="btn-primary" variants={buttonInteraction} whileHover="hover" whileTap="tap">
+                  Request a Quote <ArrowRight size={18} />
+                </motion.div>
               </Link>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
         <div className={styles.heroRight}>
-          <img src="/brands-hero-image.jpg" alt="Global IT Brands" className={styles.heroImage} />
+          <motion.div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
+            <motion.img 
+              src="/brands-hero-image.jpg" 
+              alt="Global IT Brands" 
+              className={styles.heroImage} 
+              initial={{ scale: 1.05 }}
+              animate={{ scale: 1.00 }}
+              transition={{ duration: 0.9, ease: EASING }}
+            />
+          </motion.div>
         </div>
       </section>
 
       {/* Trust Badges */}
-      <section className={styles.trustBanner}>
+      <motion.section 
+        className={styles.trustBanner}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={VIEWPORT}
+      >
         <div className="container">
-          <div className={styles.trustGrid}>
-            <div className={styles.trustItem}>
+          <motion.div 
+            className={styles.trustGrid}
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={VIEWPORT}
+          >
+            <motion.div className={styles.trustItem} variants={staggerItem}>
               <CheckCircle2 className={styles.trustIcon} size={24} />
               <span>Wide Range of Global Brands</span>
-            </div>
-            <div className={styles.trustItem}>
+            </motion.div>
+            <motion.div className={styles.trustItem} variants={staggerItem}>
               <CheckCircle2 className={styles.trustIcon} size={24} />
               <span>Quality Products</span>
-            </div>
-            <div className={styles.trustItem}>
+            </motion.div>
+            <motion.div className={styles.trustItem} variants={staggerItem}>
               <CheckCircle2 className={styles.trustIcon} size={24} />
               <span>Competitive Pricing</span>
-            </div>
-            <div className={styles.trustItem}>
+            </motion.div>
+            <motion.div className={styles.trustItem} variants={staggerItem}>
               <ShoppingCart className={styles.trustIcon} size={24} />
               <span>Corporate Procurement Orders</span>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Brands Grid */}
-      <section className="section" style={{ backgroundColor: '#f8fafc' }}>
+      <motion.section 
+        className="section" 
+        style={{ backgroundColor: '#f8fafc' }}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={VIEWPORT}
+      >
         <div className="container">
           <div className={styles.sectionHeader}>
             <div className={styles.headerLeft}>
@@ -82,17 +131,28 @@ export default function Brands() {
             </div>
           </div>
 
-          <div className={styles.brandGrid}>
+          <motion.div 
+            className={styles.brandGrid}
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={VIEWPORT}
+          >
             {brands.map((brand, idx) => (
-              <div key={idx} className={styles.brandCard}>
+              <motion.div 
+                key={idx} 
+                className={styles.brandCard} 
+                variants={staggerItem}
+                whileHover={logoHover.hover}
+              >
                 <span className={styles.brandName}>{brand}</span>
-              </div>
+              </motion.div>
             ))}
-            <div className={styles.brandCardAction}>
+            <motion.div className={styles.brandCardAction} variants={staggerItem} whileHover={{ scale: 1.03 }}>
               <span>Many More Brands Available on Request.</span>
               <ArrowRight size={20} />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
           
           <div className={styles.disclaimer}>
             <Info size={20} className={styles.infoIcon} />
@@ -101,10 +161,16 @@ export default function Brands() {
             </p>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* CTA Section */}
-      <section className={styles.cta}>
+      <motion.section 
+        className={styles.cta}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={VIEWPORT}
+      >
         <div className="container">
           <div className={styles.ctaInner}>
             <div className={styles.ctaContent}>
@@ -113,12 +179,14 @@ export default function Brands() {
               <p>Get in touch with our team for product availability, pricing and bulk orders.</p>
             </div>
             <div className={styles.ctaActions}>
-              <a href="#" className="btn-primary" style={{ background: '#25D366' }}>Chat on WhatsApp</a>
-              <a href="/contact" className="btn-primary" style={{ background: 'white', color: 'var(--text-main)' }}>Request a Quote</a>
+              <motion.a href="#" className="btn-primary" style={{ background: '#25D366' }} variants={buttonInteraction} whileHover="hover" whileTap="tap">Chat on WhatsApp</motion.a>
+              <Link href="/contact">
+                <motion.div className="btn-primary" style={{ background: 'white', color: 'var(--text-main)' }} variants={buttonInteraction} whileHover="hover" whileTap="tap">Request a Quote</motion.div>
+              </Link>
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }

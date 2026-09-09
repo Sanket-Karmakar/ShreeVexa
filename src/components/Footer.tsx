@@ -2,13 +2,21 @@
 
 import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, ArrowUp } from 'lucide-react';
+import { motion } from 'framer-motion';
 import styles from './Footer.module.css';
+import { footerReveal, staggerItem, VIEWPORT, buttonInteraction } from '@/lib/motion';
 
 export default function Footer() {
   return (
-    <footer className={styles.footer}>
+    <motion.footer 
+      className={styles.footer}
+      variants={footerReveal}
+      initial="hidden"
+      whileInView="visible"
+      viewport={VIEWPORT}
+    >
       <div className={`container ${styles.footerContainer}`}>
-        <div className={styles.brandCol}>
+        <motion.div className={styles.brandCol} variants={staggerItem}>
           <Link href="/" className={styles.logo}>
             <div className={styles.logoIcon}>
               <div className={styles.hex}>
@@ -26,9 +34,9 @@ export default function Footer() {
           <div className={styles.social}>
             {/* Social links removed due to missing icons */}
           </div>
-        </div>
+        </motion.div>
 
-        <div className={styles.linksCol}>
+        <motion.div className={styles.linksCol} variants={staggerItem}>
           <h4 className={styles.colTitle}>Quick Links</h4>
           <ul className={styles.linkList}>
             <li><Link href="/">Home</Link></li>
@@ -40,9 +48,9 @@ export default function Footer() {
             <li><Link href="/services">Services</Link></li>
             <li><Link href="/contact">Contact</Link></li>
           </ul>
-        </div>
+        </motion.div>
 
-        <div className={styles.linksCol}>
+        <motion.div className={styles.linksCol} variants={staggerItem}>
           <h4 className={styles.colTitle}>Our Solutions</h4>
           <ul className={styles.linkList}>
             <li><Link href="/solutions">End-user Computing</Link></li>
@@ -54,9 +62,9 @@ export default function Footer() {
             <li><Link href="/solutions">Retail & Warehousing</Link></li>
             <li><Link href="/solutions">More Solutions</Link></li>
           </ul>
-        </div>
+        </motion.div>
 
-        <div className={styles.contactCol}>
+        <motion.div className={styles.contactCol} variants={staggerItem}>
           <h4 className={styles.colTitle}>Contact Us</h4>
           <ul className={styles.contactList}>
             <li>
@@ -76,10 +84,10 @@ export default function Footer() {
               <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
             </li>
           </ul>
-        </div>
+        </motion.div>
       </div>
 
-      <div className={styles.bottomBar}>
+      <motion.div className={styles.bottomBar} variants={staggerItem}>
         <div className={`container ${styles.bottomContainer}`}>
           <p>© 2026 Shreevexa IT Solutions. All Rights Reserved.</p>
           <div className={styles.bottomLinks}>
@@ -89,15 +97,18 @@ export default function Footer() {
             <span className={styles.separator}>|</span>
             <Link href="/sitemap">Sitemap</Link>
           </div>
-          <button 
+          <motion.button 
             className={styles.backToTop}
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             aria-label="Back to top"
+            variants={buttonInteraction}
+            whileHover="hover"
+            whileTap="tap"
           >
             <ArrowUp size={16} />
-          </button>
+          </motion.button>
         </div>
-      </div>
-    </footer>
+      </motion.div>
+    </motion.footer>
   );
 }

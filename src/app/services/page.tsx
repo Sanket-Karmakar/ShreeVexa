@@ -1,6 +1,20 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { ArrowRight, Settings, Wrench, Headphones, Network, Shield, Printer, Database, Lightbulb, Blocks, CheckCircle2, Clock, HeartHandshake } from "lucide-react";
 import styles from "./page.module.css";
+import { 
+  EASING,
+  fadeUp,
+  staggerContainer,
+  staggerItem,
+  heroContainer,
+  heroItem,
+  cardHover,
+  VIEWPORT,
+  buttonInteraction 
+} from "@/lib/motion";
 
 const services = [
   { 
@@ -74,32 +88,55 @@ export default function Services() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-          <div className={styles.heroContent}>
-            <div className={styles.heroTagContainer}>
+          <motion.div 
+            className={styles.heroContent}
+            variants={heroContainer}
+            initial="hidden"
+            animate="visible"
+          >
+            <motion.div variants={heroItem} className={styles.heroTagContainer}>
               <span className={styles.heroTag}>OUR SERVICES</span>
               <span className={styles.heroLine}></span>
-            </div>
-            <h1 className={styles.title}>
+            </motion.div>
+            <motion.h1 variants={heroItem} className={styles.title}>
               Reliable IT Services<br />
               for a <span className={styles.accent}>Smarter<br />Tomorrow.</span>
-            </h1>
-            <p className={styles.desc}>
+            </motion.h1>
+            <motion.p variants={heroItem} className={styles.desc}>
               From setup to support, we deliver end-to-end IT services to keep your business running smoothly, securely and efficiently.
-            </p>
-            <div className={styles.heroActions}>
-              <Link href="/contact" className="btn-primary">
-                Talk to Our Team <ArrowRight size={18} />
+            </motion.p>
+            <motion.div variants={heroItem} className={styles.heroActions}>
+              <Link href="/contact">
+                <motion.div className="btn-primary" variants={buttonInteraction} whileHover="hover" whileTap="tap">
+                  Talk to Our Team <ArrowRight size={18} />
+                </motion.div>
               </Link>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
         <div className={styles.heroRight}>
-          <img src="/services-hero-image.jpg" alt="Reliable IT Services" className={styles.heroImage} />
+          <motion.div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
+            <motion.img 
+              src="/services-hero-image.jpg" 
+              alt="Reliable IT Services" 
+              className={styles.heroImage} 
+              initial={{ scale: 1.05 }}
+              animate={{ scale: 1.00 }}
+              transition={{ duration: 0.9, ease: EASING }}
+            />
+          </motion.div>
         </div>
       </section>
 
       {/* Services Grid */}
-      <section className="section" style={{ backgroundColor: '#f8fafc' }}>
+      <motion.section 
+        className="section" 
+        style={{ backgroundColor: '#f8fafc' }}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={VIEWPORT}
+      >
         <div className="container">
           <div className={styles.sectionHeader}>
             <div className={styles.headerLeft}>
@@ -110,17 +147,30 @@ export default function Services() {
               <p className={styles.headerDesc} style={{ marginBottom: '1.5rem' }}>
                 We offer a wide range of IT services designed to ensure seamless operations, minimal downtime and maximum productivity.
               </p>
-              <Link href="/contact" className="btn-outline">
-                Need a Custom Service? <ArrowRight size={16} />
+              <Link href="/contact">
+                <motion.div className="btn-outline" variants={buttonInteraction} whileHover="hover" whileTap="tap">
+                  Need a Custom Service? <ArrowRight size={16} />
+                </motion.div>
               </Link>
             </div>
           </div>
 
-          <div className={styles.servicesGrid}>
+          <motion.div 
+            className={styles.servicesGrid}
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={VIEWPORT}
+          >
             {services.map((srv, idx) => {
               const Icon = srv.icon;
               return (
-                <div key={idx} className={styles.serviceCard}>
+                <motion.div 
+                  key={idx} 
+                  className={styles.serviceCard}
+                  variants={staggerItem}
+                  whileHover={cardHover.hover}
+                >
                   <div className={styles.cardHeader}>
                     <div className={styles.cardIcon} style={{ color: srv.color }}>
                       <Icon size={36} strokeWidth={1.5} />
@@ -141,57 +191,75 @@ export default function Services() {
                   <Link href="/contact" className={styles.cardLink} style={{ color: srv.color }}>
                     Learn More <ArrowRight size={16} />
                   </Link>
-                </div>
+                </motion.div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Why Choose Our Services */}
-      <section className="section">
+      <motion.section 
+        className="section"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={VIEWPORT}
+      >
         <div className="container">
           <div className={styles.whyGrid}>
             <div className={styles.whyContent}>
               <span className={styles.sectionTag}>WHY CHOOSE OUR SERVICES</span>
               <h2 className="section-title">Service Excellence<br/>You Can Trust.</h2>
             </div>
-            <div className={styles.whyFeatures}>
-              <div className={styles.whyFeature}>
+            <motion.div 
+              className={styles.whyFeatures}
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={VIEWPORT}
+            >
+              <motion.div className={styles.whyFeature} variants={staggerItem}>
                 <div className={styles.whyIcon}><CheckCircle2 size={24} /></div>
                 <div>
                   <h4>Skilled Professionals</h4>
                   <p>Experienced & certified team.</p>
                 </div>
-              </div>
-              <div className={styles.whyFeature}>
+              </motion.div>
+              <motion.div className={styles.whyFeature} variants={staggerItem}>
                 <div className={styles.whyIcon}><Clock size={24} /></div>
                 <div>
                   <h4>Quick Response</h4>
                   <p>Fast and reliable support.</p>
                 </div>
-              </div>
-              <div className={styles.whyFeature}>
+              </motion.div>
+              <motion.div className={styles.whyFeature} variants={staggerItem}>
                 <div className={styles.whyIcon}><Settings size={24} /></div>
                 <div>
                   <h4>Cost Effective</h4>
                   <p>Maximize value for your investment.</p>
                 </div>
-              </div>
-              <div className={styles.whyFeature}>
+              </motion.div>
+              <motion.div className={styles.whyFeature} variants={staggerItem}>
                 <div className={styles.whyIcon}><HeartHandshake size={24} /></div>
                 <div>
                   <h4>Long-Term Support</h4>
                   <p>We&apos;re with you at every step.</p>
                 </div>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* CTA Section */}
-      <section className={styles.cta}>
+      <motion.section 
+        className={styles.cta}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={VIEWPORT}
+      >
         <div className="container">
           <div className={styles.ctaInner}>
             <div className={styles.ctaContent}>
@@ -200,12 +268,12 @@ export default function Services() {
               <p>Partner with Shreevexa IT Solutions for seamless IT services and continuous support.</p>
             </div>
             <div className={styles.ctaActions}>
-              <a href="#" className="btn-primary" style={{ background: '#25D366' }}>Chat on WhatsApp</a>
-              <a href="tel:+919876543210" className="btn-primary" style={{ background: 'white', color: 'var(--text-main)' }}>Request a Call</a>
+              <motion.a href="#" className="btn-primary" style={{ background: '#25D366' }} variants={buttonInteraction} whileHover="hover" whileTap="tap">Chat on WhatsApp</motion.a>
+              <motion.a href="tel:+919876543210" className="btn-primary" style={{ background: 'white', color: 'var(--text-main)' }} variants={buttonInteraction} whileHover="hover" whileTap="tap">Request a Call</motion.a>
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }

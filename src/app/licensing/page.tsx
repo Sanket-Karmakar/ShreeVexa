@@ -1,6 +1,20 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, Shield, Cloud, HardDrive, Mail, LayoutGrid, Monitor, FileText, Lock, Briefcase } from "lucide-react";
 import styles from "./page.module.css";
+import { 
+  EASING,
+  fadeUp,
+  staggerContainer,
+  staggerItem,
+  heroContainer,
+  heroItem,
+  cardHover,
+  VIEWPORT,
+  buttonInteraction 
+} from "@/lib/motion";
 
 const softwareList = [
   { name: "Microsoft 365", desc: "Productivity tools for modern work.", icon: LayoutGrid, color: "#e87a25" },
@@ -23,57 +37,92 @@ export default function Licensing() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroLeft}>
-          <div className={styles.heroContent}>
-            <div className={styles.heroTagContainer}>
+          <motion.div 
+            className={styles.heroContent}
+            variants={heroContainer}
+            initial="hidden"
+            animate="visible"
+          >
+            <motion.div variants={heroItem} className={styles.heroTagContainer}>
               <span className={styles.heroTag}>SOFTWARE LICENSING</span>
               <span className={styles.heroLine}></span>
-            </div>
-            <h1 className={styles.title}>
+            </motion.div>
+            <motion.h1 variants={heroItem} className={styles.title}>
               Genuine Software.<br />
               Greater Productivity.<br />
               <span className={styles.accent}>A Smarter Tomorrow.</span>
-            </h1>
-            <p className={styles.desc}>
+            </motion.h1>
+            <motion.p variants={heroItem} className={styles.desc}>
               Get genuine software licenses from leading global providers to empower your business with secure, reliable and future-ready solutions.
-            </p>
-            <div className={styles.heroActions}>
-              <Link href="/contact" className="btn-primary">
-                Request a Quote <ArrowRight size={18} />
+            </motion.p>
+            <motion.div variants={heroItem} className={styles.heroActions}>
+              <Link href="/contact">
+                <motion.div className="btn-primary" variants={buttonInteraction} whileHover="hover" whileTap="tap">
+                  Request a Quote <ArrowRight size={18} />
+                </motion.div>
               </Link>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
         <div className={styles.heroRight}>
-          <img src="/licensing-hero-image.jpg" alt="Software Licensing Solutions" className={styles.heroImage} />
+          <motion.div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
+            <motion.img 
+              src="/licensing-hero-image.jpg" 
+              alt="Software Licensing Solutions" 
+              className={styles.heroImage} 
+              initial={{ scale: 1.05 }}
+              animate={{ scale: 1.00 }}
+              transition={{ duration: 0.9, ease: EASING }}
+            />
+          </motion.div>
         </div>
       </section>
 
       {/* Trust Banner */}
-      <section className={styles.trustBanner}>
+      <motion.section 
+        className={styles.trustBanner}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={VIEWPORT}
+      >
         <div className="container">
-          <div className={styles.trustGrid}>
-            <div className={styles.trustItem}>
+          <motion.div 
+            className={styles.trustGrid}
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={VIEWPORT}
+          >
+            <motion.div className={styles.trustItem} variants={staggerItem}>
               <CheckCircle2 className={styles.trustIcon} size={24} />
               <span>Genuine Licenses from Global Providers</span>
-            </div>
-            <div className={styles.trustItem}>
+            </motion.div>
+            <motion.div className={styles.trustItem} variants={staggerItem}>
               <CheckCircle2 className={styles.trustIcon} size={24} />
               <span>Enquiry Based Licensing Only</span>
-            </div>
-            <div className={styles.trustItem}>
+            </motion.div>
+            <motion.div className={styles.trustItem} variants={staggerItem}>
               <CheckCircle2 className={styles.trustIcon} size={24} />
               <span>Wide Range of Software</span>
-            </div>
-            <div className={styles.trustItem}>
+            </motion.div>
+            <motion.div className={styles.trustItem} variants={staggerItem}>
               <CheckCircle2 className={styles.trustIcon} size={24} />
               <span>Dedicated Support</span>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Licensing Grid */}
-      <section className="section" style={{ backgroundColor: '#f8fafc' }}>
+      <motion.section 
+        className="section" 
+        style={{ backgroundColor: '#f8fafc' }}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={VIEWPORT}
+      >
         <div className="container">
           <div className={styles.sectionHeader}>
             <div className={styles.headerLeft}>
@@ -90,11 +139,22 @@ export default function Licensing() {
             </div>
           </div>
 
-          <div className={styles.licenseGrid}>
+          <motion.div 
+            className={styles.licenseGrid}
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={VIEWPORT}
+          >
             {softwareList.map((sw, idx) => {
               const Icon = sw.icon;
               return (
-                <div key={idx} className={styles.licenseCard}>
+                <motion.div 
+                  key={idx} 
+                  className={styles.licenseCard}
+                  variants={staggerItem}
+                  whileHover={cardHover.hover}
+                >
                   <div className={styles.cardIcon} style={{ color: sw.color }}>
                     <Icon size={40} strokeWidth={1.5} />
                   </div>
@@ -103,15 +163,21 @@ export default function Licensing() {
                   <Link href="/contact" className={styles.btnOutlineBlue}>
                     Enquire Now <ArrowRight size={16} />
                   </Link>
-                </div>
+                </motion.div>
               );
             })}
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Process Section */}
-      <section className="section">
+      <motion.section 
+        className="section"
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={VIEWPORT}
+      >
         <div className="container" style={{ maxWidth: '1350px' }}>
           <div className={styles.processHeader}>
             <div className={styles.heroTagContainer} style={{ justifyContent: 'center' }}>
@@ -121,40 +187,52 @@ export default function Licensing() {
             <h2 className="section-title" style={{ textAlign: 'center' }}>Simple Steps to<br/>Get Your Software License.</h2>
           </div>
           
-          <div className={styles.processSteps}>
-            <div className={styles.step}>
+          <motion.div 
+            className={styles.processSteps}
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={VIEWPORT}
+          >
+            <motion.div className={styles.step} variants={staggerItem}>
               <div className={styles.stepNum}>1</div>
               <div className={styles.stepContent}>
                 <h4>Share Your Requirement</h4>
               </div>
-            </div>
+            </motion.div>
             <div className={styles.stepArrow}></div>
-            <div className={styles.step}>
+            <motion.div className={styles.step} variants={staggerItem}>
               <div className={styles.stepNum}>2</div>
               <div className={styles.stepContent}>
                 <h4>Get Best Options</h4>
               </div>
-            </div>
+            </motion.div>
             <div className={styles.stepArrow}></div>
-            <div className={styles.step}>
+            <motion.div className={styles.step} variants={staggerItem}>
               <div className={styles.stepNum}>3</div>
               <div className={styles.stepContent}>
                 <h4>Receive Quotation</h4>
               </div>
-            </div>
+            </motion.div>
             <div className={styles.stepArrow}></div>
-            <div className={styles.step}>
+            <motion.div className={styles.step} variants={staggerItem}>
               <div className={styles.stepNum}>4</div>
               <div className={styles.stepContent}>
                 <h4>License Activation</h4>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* CTA Section */}
-      <section className={styles.cta}>
+      <motion.section 
+        className={styles.cta}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={VIEWPORT}
+      >
         <div className="container">
           <div className={styles.ctaInner}>
             <div className={styles.ctaContent}>
@@ -163,12 +241,14 @@ export default function Licensing() {
               <p>Our team will help you with the best licensing options based on your business requirements.</p>
             </div>
             <div className={styles.ctaActions}>
-              <a href="#" className="btn-primary" style={{ background: '#25D366' }}>Chat on WhatsApp</a>
-              <a href="/contact" className="btn-primary" style={{ background: 'white', color: 'var(--text-main)' }}>Request a Quote</a>
+              <motion.a href="#" className="btn-primary" style={{ background: '#25D366' }} variants={buttonInteraction} whileHover="hover" whileTap="tap">Chat on WhatsApp</motion.a>
+              <Link href="/contact">
+                <motion.div className="btn-primary" style={{ background: 'white', color: 'var(--text-main)' }} variants={buttonInteraction} whileHover="hover" whileTap="tap">Request a Quote</motion.div>
+              </Link>
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }

@@ -1,6 +1,20 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 import styles from "./page.module.css";
-import { CheckCircle2, Laptop, Server, MonitorSmartphone, Shield, Headphones, Users, ArrowRight, Building2, Terminal } from "lucide-react";
+import { CheckCircle2, Laptop, Server, MonitorSmartphone, Shield, Headphones, Users, ArrowRight, Building2 } from "lucide-react";
+import { 
+  EASING,
+  fadeUp,
+  staggerContainer,
+  staggerItem,
+  heroContainer,
+  heroItem,
+  cardHover,
+  VIEWPORT,
+  buttonInteraction 
+} from "@/lib/motion";
 
 export default function Home() {
   return (
@@ -8,33 +22,42 @@ export default function Home() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.heroLeft}>
-          <div className={styles.heroContent}>
-            <span className={styles.subtitle}>SMART TECHNOLOGY.</span>
-            <h1 className={styles.title}>
+          <motion.div 
+            className={styles.heroContent}
+            variants={heroContainer}
+            initial="hidden"
+            animate="visible"
+          >
+            <motion.span variants={heroItem} className={styles.subtitle}>SMART TECHNOLOGY.</motion.span>
+            <motion.h1 variants={heroItem} className={styles.title}>
               STRONGER<br />
               BUSINESSES.<br />
               <span className={styles.accent}>BRIGHTER<br />TOMORROW.</span>
-            </h1>
-            <p className={styles.desc}>
+            </motion.h1>
+            <motion.p variants={heroItem} className={styles.desc}>
               At Shreevexa IT Solutions, we deliver reliable IT products and services that help businesses grow, scale and stay ahead.
-            </p>
+            </motion.p>
             
-            <div className={styles.features}>
+            <motion.div variants={heroItem} className={styles.features}>
               <div className={styles.feature}><CheckCircle2 size={16} className={styles.icon} /> Trusted Partner</div>
               <div className={styles.feature}><CheckCircle2 size={16} className={styles.icon} /> Innovative Solutions</div>
               <div className={styles.feature}><CheckCircle2 size={16} className={styles.icon} /> End-to-End Support</div>
-            </div>
+            </motion.div>
 
-            <div className={styles.heroActions}>
-              <Link href="/contact" className="btn-primary">
-                Get in Touch <ArrowRight size={16} />
+            <motion.div variants={heroItem} className={styles.heroActions}>
+              <Link href="/contact">
+                <motion.div className="btn-primary" variants={buttonInteraction} whileHover="hover" whileTap="tap">
+                  Get in Touch <ArrowRight size={16} />
+                </motion.div>
               </Link>
-              <Link href="/services" className={styles.btnOutlineHero}>
-                Explore Our Services
+              <Link href="/services">
+                <motion.div className={styles.btnOutlineHero} variants={buttonInteraction} whileHover="hover" whileTap="tap">
+                  Explore Our Services
+                </motion.div>
               </Link>
-            </div>
+            </motion.div>
             
-            <div className={styles.socialProof}>
+            <motion.div variants={heroItem} className={styles.socialProof}>
               <div className={styles.avatars}>
                 <div className={styles.avatar}></div>
                 <div className={styles.avatar}></div>
@@ -45,16 +68,34 @@ export default function Home() {
                 <strong>250+</strong>
                 <span>Happy Clients</span>
               </div>
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
         <div className={styles.heroRight}>
-          <img src="/hero-image.jpg" alt="Smart IT Technology" className={styles.heroImage} />
+          <motion.div
+            style={{ width: '100%', height: '100%', overflow: 'hidden' }}
+          >
+            <motion.img 
+              src="/hero-image.jpg" 
+              alt="Smart IT Technology" 
+              className={styles.heroImage}
+              initial={{ scale: 1.05 }}
+              animate={{ scale: 1.00 }}
+              transition={{ duration: 0.9, ease: EASING }}
+            />
+          </motion.div>
         </div>
       </section>
 
       {/* Services Overview */}
-      <section className="section" style={{ backgroundColor: '#ffffff' }}>
+      <motion.section 
+        className="section" 
+        style={{ backgroundColor: '#ffffff' }}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={VIEWPORT}
+      >
         <div className="container">
           <div className={styles.sectionHeader}>
             <div className={styles.headerLeft}>
@@ -69,79 +110,104 @@ export default function Home() {
             </div>
           </div>
 
-          <div className={styles.servicesGrid}>
-            <div className={styles.serviceCard}>
+          <motion.div 
+            className={styles.servicesGrid}
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={VIEWPORT}
+          >
+            <motion.div className={styles.serviceCard} variants={staggerItem} whileHover={cardHover.hover}>
               <div className={styles.cardIcon} style={{ background: '#e0f2fe', color: '#0ea5e9' }}><Laptop size={24} /></div>
               <h3>End-user Computing</h3>
               <p>Laptops, desktops, peripherals & more.</p>
               <ArrowRight size={16} className={styles.cardArrow} />
-            </div>
-            <div className={styles.serviceCard}>
+            </motion.div>
+            <motion.div className={styles.serviceCard} variants={staggerItem} whileHover={cardHover.hover}>
               <div className={styles.cardIcon} style={{ background: '#dcfce7', color: '#22c55e' }}><Server size={24} /></div>
               <h3>IT Setup & Infrastructure</h3>
               <p>Servers, networking, cloud & security.</p>
               <ArrowRight size={16} className={styles.cardArrow} />
-            </div>
-            <div className={styles.serviceCard}>
+            </motion.div>
+            <motion.div className={styles.serviceCard} variants={staggerItem} whileHover={cardHover.hover}>
               <div className={styles.cardIcon} style={{ background: '#f3e8ff', color: '#a855f7' }}><MonitorSmartphone size={24} /></div>
               <h3>Conference Room Solutions</h3>
               <p>Video conferencing, collaboration tools.</p>
               <ArrowRight size={16} className={styles.cardArrow} />
-            </div>
-            <div className={styles.serviceCard}>
+            </motion.div>
+            <motion.div className={styles.serviceCard} variants={staggerItem} whileHover={cardHover.hover}>
               <div className={styles.cardIcon} style={{ background: '#ffedd5', color: '#f97316' }}><Headphones size={24} /></div>
               <h3>Service Offering</h3>
               <p>Rentals, AMC, managed print & logistics.</p>
               <ArrowRight size={16} className={styles.cardArrow} />
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
 
       {/* Why Choose Us */}
-      <section className="section" style={{ backgroundColor: '#f8fafc' }}>
+      <motion.section 
+        className="section" 
+        style={{ backgroundColor: '#f8fafc' }}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={VIEWPORT}
+      >
         <div className="container">
           <div className={styles.whyGrid}>
             <div className={styles.whyContent}>
               <span className={styles.sectionTag}>WHY CHOOSE SHREEVEXA</span>
               <h2 className={styles.sectionTitleLarge}>More Than Technology.<br/>A Partner in Your Growth.</h2>
             </div>
-            <div className={styles.whyFeatures}>
-              <div className={styles.whyFeature}>
+            <motion.div 
+              className={styles.whyFeatures}
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={VIEWPORT}
+            >
+              <motion.div className={styles.whyFeature} variants={staggerItem}>
                 <div className={styles.whyIcon}><Users size={24} /></div>
                 <div>
                   <h4>Client-Focused Approach</h4>
                   <p>Your goals, our priority.</p>
                 </div>
-              </div>
-              <div className={styles.whyFeature}>
+              </motion.div>
+              <motion.div className={styles.whyFeature} variants={staggerItem}>
                 <div className={styles.whyIcon}><Shield size={24} /></div>
                 <div>
                   <h4>Transparent Process</h4>
                   <p>Clear communication at every step.</p>
                 </div>
-              </div>
-              <div className={styles.whyFeature}>
+              </motion.div>
+              <motion.div className={styles.whyFeature} variants={staggerItem}>
                 <div className={styles.whyIcon}><Building2 size={24} /></div>
                 <div>
                   <h4>Innovative Solutions</h4>
                   <p>Modern ideas for real results.</p>
                 </div>
-              </div>
-              <div className={styles.whyFeature}>
+              </motion.div>
+              <motion.div className={styles.whyFeature} variants={staggerItem}>
                 <div className={styles.whyIcon}><Headphones size={24} /></div>
                 <div>
                   <h4>Dedicated Support</h4>
                   <p>We&apos;re always here to help.</p>
                 </div>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       {/* CTA Section */}
-      <section className={styles.cta}>
+      <motion.section 
+        className={styles.cta}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={VIEWPORT}
+      >
         <div className="container">
           <div className={styles.ctaInner}>
             <div className={styles.ctaLeft}>
@@ -151,16 +217,25 @@ export default function Home() {
                 <p>Get in touch with us today and take the first step towards your digital success.</p>
               </div>
               <div className={styles.ctaActions}>
-                <a href="#" className={styles.btnWhatsApp}>Chat on WhatsApp</a>
-                <a href="tel:+919876543210" className={styles.btnCall}>Call Now</a>
+                <motion.a href="#" className={styles.btnWhatsApp} variants={buttonInteraction} whileHover="hover" whileTap="tap">Chat on WhatsApp</motion.a>
+                <motion.a href="tel:+919876543210" className={styles.btnCall} variants={buttonInteraction} whileHover="hover" whileTap="tap">Call Now</motion.a>
               </div>
             </div>
             <div className={styles.ctaRight}>
-              <img src="/cta-image.jpg" alt="IT Collaboration" className={styles.ctaImage} />
+              <motion.div style={{ width: '100%', height: '100%', overflow: 'hidden', borderRadius: '24px' }}>
+                <motion.img 
+                  src="/cta-image.jpg" 
+                  alt="IT Collaboration" 
+                  className={styles.ctaImage} 
+                  initial={{ scale: 1 }}
+                  whileHover={{ scale: 1.03 }}
+                  transition={{ duration: 0.35, ease: EASING }}
+                />
+              </motion.div>
             </div>
           </div>
         </div>
-      </section>
+      </motion.section>
     </div>
   );
 }
