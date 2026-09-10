@@ -124,9 +124,7 @@ export default function About() {
               variants={staggerItem}
               imageSrc="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600&h=400"
               imageAlt="Our Mission"
-              icon={<Target size={24} color="#3b82f6" />}
-              iconStyle={{ background: '#f0f5ff' }}
-              title={<h3>Our Mission</h3>}
+              title={<h3 style={{ textAlign: 'center' }}>Our Mission</h3>}
               description={<p>To deliver innovative and reliable IT solutions that empower businesses and create lasting value. We are committed to solving complex challenges with intuitive technology, ensuring our clients stay ahead in an ever-evolving digital landscape.</p>}
             />
             
@@ -134,9 +132,7 @@ export default function About() {
               variants={staggerItem}
               imageSrc="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=600&h=400"
               imageAlt="Our Vision"
-              icon={<Eye size={24} color="#10b981" />}
-              iconStyle={{ background: '#ecfdf5' }}
-              title={<h3>Our Vision</h3>}
+              title={<h3 style={{ textAlign: 'center' }}>Our Vision</h3>}
               description={<p>To be a leading IT solutions provider, recognized for innovation, trust and customer success. We envision a future where technology seamlessly bridges the gap between ambition and achievement for organizations worldwide.</p>}
             />
 
@@ -144,9 +140,7 @@ export default function About() {
               variants={staggerItem}
               imageSrc="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600&h=400"
               imageAlt="Our Values"
-              icon={<Diamond size={24} color="#a855f7" />}
-              iconStyle={{ background: '#f5f3ff' }}
-              title={<h3>Our Values</h3>}
+              title={<h3 style={{ textAlign: 'center' }}>Our Values</h3>}
               description={
                 <ul className={styles.valuesList}>
                   <li><Award size={16} className={styles.valueIcon} /> Integrity in everything we do</li>
