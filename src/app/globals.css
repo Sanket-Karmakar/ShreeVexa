@@ -16,18 +16,22 @@
   --radius-image: 24px;
   --radius-icon: 999px;
 
-  --spacing-card-padding: 24px;
-  --spacing-img-content: 24px;
+  --spacing-card-padding: 32px;
+  --spacing-card-padding-sm: 24px;
+  --spacing-img-content: 32px;
   --spacing-icon-title: 20px;
   --spacing-title-desc: 12px;
   --spacing-desc-footer: 24px;
 
-  --border-card: 1px solid rgba(15,23,42,0.08);
+  --spacing-section-y: 120px;
+  --spacing-section-y-sm: 80px;
+
+  --border-card: 1px solid rgba(15,23,42,0.06);
 
   --shadow-card-default: 0 4px 10px rgba(0,0,0,0.02);
-  --shadow-card-hover: 0 12px 24px rgba(0,0,0,0.06);
+  --shadow-card-hover: 0 12px 30px rgba(0,0,0,0.08);
 
-  --easing-card: cubic-bezier(0.22, 1, 0.36, 1);
+  --easing-card: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 * {
@@ -105,13 +109,14 @@ ul {
 }
 
 .section {
-  padding: 5rem 0;
+  padding: var(--spacing-section-y) 0;
 }
 
 .section-title {
   font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.15;
   color: var(--secondary);
 }
 
@@ -124,13 +129,17 @@ ul {
 
 @media (max-width: 1024px) {
   .section {
-    padding: 4rem 0;
+    padding: var(--spacing-section-y-sm) 0;
   }
 }
 
 @media (max-width: 768px) {
+  :root {
+    --spacing-card-padding: var(--spacing-card-padding-sm);
+    --spacing-img-content: var(--spacing-card-padding-sm);
+  }
   .section {
-    padding: 3rem 0;
+    padding: var(--spacing-section-y-sm) 0;
   }
   .section-title {
     font-size: 2rem;

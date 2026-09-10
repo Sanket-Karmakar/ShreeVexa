@@ -2,7 +2,7 @@
 
 import React, { ReactNode, useState } from "react";
 import Image from "next/image";
-import { motion, Variants } from "framer-motion";
+import { motion, Variants, TargetAndTransition } from "framer-motion";
 import { ImageIcon } from "lucide-react";
 import styles from "./Card.module.css";
 
@@ -22,7 +22,7 @@ interface CardProps {
   style?: React.CSSProperties;
   
   variants?: Variants;
-  whileHover?: string | any;
+  whileHover?: string | TargetAndTransition;
   onClick?: () => void;
 }
 
@@ -42,6 +42,7 @@ export function Card({
   onClick
 }: CardProps) {
   const [imgError, setImgError] = useState(false);
+  const [imgLoaded, setImgLoaded] = useState(false);
   
   const getRatioClass = () => {
     switch (imageRatio) {
@@ -70,14 +71,24 @@ export function Card({
       {imageSrc && (
         <div className={`${styles.imageWrapper} ${getRatioClass()}`}>
           {!imgError ? (
-            <Image
-              src={imageSrc}
-              alt={imageAlt}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              className={styles.image}
-              onError={() => setImgError(true)}
-            />
+            <>
+              {!imgLoaded && (
+                <motion.div 
+                  className={styles.skeleton}
+                  animate={{ opacity: [0.3, 0.7, 0.3] }}
+                  transition={{ duration: 1.5, repeat: Infinity, ease: "linear" }}
+                />
+              )}
+              <Image
+                src={imageSrc}
+                alt={imageAlt}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className={`${styles.image} ${imgLoaded ? styles.imageLoaded : ''}`}
+                onLoad={() => setImgLoaded(true)}
+                onError={() => setImgError(true)}
+              />
+            </>
           ) : (
             <div className={styles.fallbackPlaceholder}>
                <ImageIcon size={48} className={styles.fallbackIcon} />

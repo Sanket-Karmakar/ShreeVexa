@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { Variants } from "framer-motion";
 
-export const EASING: [number, number, number, number] = [0.22, 1, 0.36, 1];
+export const EASING: [number, number, number, number] = [0.16, 1, 0.3, 1];
 export const VIEWPORT = { once: true, amount: 0.2 };
 
 // Profiles

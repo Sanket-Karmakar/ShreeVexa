@@ -43,7 +43,23 @@
 
 .image {
   object-fit: cover;
-  transition: transform 0.5s var(--easing-card);
+  object-position: center;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s var(--easing-card);
+}
+
+.imageLoaded {
+  opacity: 1;
+}
+
+.skeleton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--border-light);
+  z-index: 1;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -62,8 +78,8 @@
 }
 
 .fallbackIcon {
-  color: #94a3b8;
-  opacity: 0.5;
+  color: var(--text-muted);
+  opacity: 1;
 }
 
 .content {

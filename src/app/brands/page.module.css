@@ -68,8 +68,8 @@
 .title {
   font-size: 4.5rem;
   font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 2rem;
+  line-height: 1.15;
+  margin-bottom: 2.5rem;
   letter-spacing: -1px;
   color: white;
 }
@@ -154,8 +154,8 @@
 
 .brandGrid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
   margin-bottom: 3rem;
 }
 
@@ -189,7 +189,7 @@
   background: #eff6ff !important;
   height: 100px;
   padding: 0 1.5rem;
-  grid-column: span 3;
+  grid-column: span 4;
   color: var(--primary);
   font-weight: 600;
   cursor: pointer;
@@ -267,6 +267,21 @@
   gap: 1rem;
 }
 
+@media (max-width: 1440px) {
+  .brandGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1280px) {
+  .brandGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .brandCardAction {
+    grid-column: span 3;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero {
     flex-direction: column;
@@ -294,10 +309,10 @@
     padding: 3rem 2rem;
   }
   .brandGrid {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
   .brandCardAction {
-    grid-column: span 2;
+    grid-column: span 3;
   }
 }
 
@@ -310,11 +325,21 @@
   }
   .brandGrid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
   .brandCardAction {
     grid-column: span 2;
   }
   .heroActions, .ctaActions {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 430px) {
+  .brandGrid {
+    grid-template-columns: 1fr;
+  }
+  .brandCardAction {
+    grid-column: span 1;
   }
 }
