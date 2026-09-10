@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Laptop, Server, Shield, MonitorSmartphone, Printer, CreditCard, HardDrive, Presentation, Lightbulb, Building2, GraduationCap, Stethoscope, Store, Factory, Landmark, Target, Settings, Users, Star } from "lucide-react";
+import { ArrowRight, Laptop, Server, Shield, MonitorSmartphone, Printer, CreditCard, HardDrive, Presentation, Lightbulb, Building2, GraduationCap, Stethoscope, Store, Factory, Landmark, Target, Settings, Users, Star, Monitor, Keyboard, Mouse, Headphones, Camera, Scan, BatteryCharging, Projector, Tv, Network, Cctv, Fingerprint, Lock, Barcode } from "lucide-react";
 import styles from "./page.module.css";
 import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
 import { Card } from "@/components/Card";
@@ -17,6 +17,31 @@ const solutions = [
   { name: "Storage & Data Solutions", desc: "Store, manage and protect your valuable data.", icon: HardDrive, color: "#0ea5e9", image: "/images/services_detailed/data_backup_1789021339071.jpg" },
   { name: "Smart Classroom Solutions", desc: "Technology-enabled learning environments.", icon: Presentation, color: "#14b8a6", image: "/images/services_detailed/it_consulting_1789021538083.jpg" },
   { name: "Custom IT Solutions", desc: "Tailored solutions to match your unique needs.", icon: Lightbulb, color: "#eab308", image: "/images/services_detailed/custom_it_1789021644380.jpg" }
+];
+
+const productsCategories = [
+  { name: "Laptops", icon: Laptop },
+  { name: "Desktop Computers", icon: Monitor },
+  { name: "Workstations", icon: Server },
+  { name: "Monitors", icon: Tv },
+  { name: "Keyboards", icon: Keyboard },
+  { name: "Mouse", icon: Mouse },
+  { name: "Headsets", icon: Headphones },
+  { name: "Webcams", icon: Camera },
+  { name: "Printers", icon: Printer },
+  { name: "Scanners", icon: Scan },
+  { name: "UPS", icon: BatteryCharging },
+  { name: "Projectors", icon: Projector },
+  { name: "Interactive Displays", icon: Presentation },
+  { name: "Networking", icon: Network },
+  { name: "Storage", icon: HardDrive },
+  { name: "Servers", icon: Server },
+  { name: "CCTV & Surveillance", icon: Cctv },
+  { name: "Biometric Attendance Systems", icon: Fingerprint },
+  { name: "Access Control Systems", icon: Lock },
+  { name: "Barcode Scanners", icon: Barcode },
+  { name: "POS Machines", icon: CreditCard },
+  { name: "Smart Meeting Room Solutions", icon: Presentation },
 ];
 
 const industries = [
@@ -186,6 +211,49 @@ export default function Solutions() {
               />
             </motion.div>
           </div>
+        </div>
+      </motion.section>
+
+      {/* Products Categories Grid */}
+      <motion.section 
+        className="section" 
+        style={{ backgroundColor: '#ffffff' }}
+        variants={fadeUp}
+        initial="hidden"
+        whileInView="visible"
+        viewport={VIEWPORT}
+      >
+        <div className="container">
+          <div className={styles.processHeader}>
+            <span className={styles.sectionTag}>OUR PRODUCTS</span>
+            <h2 className="section-title">Explore Our Product Range.</h2>
+          </div>
+          <motion.div 
+            className={styles.categoriesGrid}
+            variants={staggerContainer}
+            initial="hidden"
+            whileInView="visible"
+            viewport={VIEWPORT}
+          >
+            {productsCategories.map((cat, index) => {
+              const Icon = cat.icon;
+              return (
+                <Card 
+                  key={index} 
+                  className={styles.categoryCard}
+                  variants={staggerItem}
+                  whileHover={cardHover.hover}
+                >
+                  <div className={styles.cardInner}>
+                    <div className={styles.iconWrapper}>
+                      <Icon size={36} strokeWidth={1.5} className={styles.categoryIcon} />
+                    </div>
+                    <h3 className={styles.categoryTitle}>{cat.name}</h3>
+                  </div>
+                </Card>
+              );
+            })}
+          </motion.div>
         </div>
       </motion.section>
 

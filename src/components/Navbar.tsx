@@ -11,10 +11,9 @@ import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
 const navLinks = [
   { path: '/', label: 'Home' },
   { path: '/about', label: 'About Us' },
-  { path: '/products', label: 'Products' },
+  { path: '/solutions', label: 'Solutions & Products' },
   { path: '/brands', label: 'Brands' },
   { path: '/licensing', label: 'Software Licensing' },
-  { path: '/solutions', label: 'Solutions' },
   { path: '/services', label: 'Services' },
 ];
 
