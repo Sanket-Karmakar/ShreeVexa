@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Search, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 import styles from './Navbar.module.css';
 import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
@@ -74,9 +74,6 @@ export default function Navbar() {
           </nav>
 
           <div className={styles.actions}>
-            <button className={styles.iconBtn} aria-label="Search">
-              <Search size={20} />
-            </button>
             <Link href="/contact">
               <motion.div className="btn-primary" variants={buttonInteraction} whileHover="hover" whileTap="tap">
                 Get in Touch <span className={styles.arrow}>→</span>
