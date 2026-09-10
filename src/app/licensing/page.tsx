@@ -145,8 +145,9 @@ export default function Licensing() {
                   key={idx} 
                   variants={staggerItem}
                   whileHover={cardHover.hover}
+                  style={{ textAlign: 'center' }}
                   icon={<Icon size={40} strokeWidth={1.5} />}
-                  iconStyle={{ color: sw.color, background: 'rgba(0,0,0,0.03)' }}
+                  iconStyle={{ color: sw.color, background: 'transparent' }}
                   title={<h3>{sw.name}</h3>}
                   description={<p className={styles.licenseDesc}>{sw.desc}</p>}
                 >

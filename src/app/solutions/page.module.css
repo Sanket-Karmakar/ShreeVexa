@@ -129,7 +129,7 @@
 
 .solutionsGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 
@@ -265,22 +265,7 @@
   color: var(--primary);
 }
 
-@media (max-width: 1440px) {
-  .solutionsGrid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
 @media (max-width: 1280px) {
-  .solutionsGrid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .solutionsGrid > *:last-child:nth-child(3n + 1) {
-    grid-column: 1 / -1;
-  }
-  .solutionsGrid > *:last-child:nth-child(3n + 2) {
-    grid-column: 1 / span 2;
-  }
   .categoryCard {
     width: calc((100% - (3 * 1.5rem)) / 4);
   }

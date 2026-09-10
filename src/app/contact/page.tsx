@@ -189,54 +189,6 @@ export default function Contact() {
       </motion.section>
 
 
-      {/* FAQs */}
-      <motion.section 
-        className="section"
-        variants={fadeUp}
-        initial="hidden"
-        whileInView="visible"
-        viewport={VIEWPORT}
-      >
-        <div className="container">
-          <div className={styles.faqHeader}>
-            <h2 className="section-title">FAQ</h2>
-            <p className={styles.sectionDesc}>Find quick answers to common queries.</p>
-          </div>
-          
-          <motion.div 
-            className={styles.faqGrid}
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={VIEWPORT}
-          >
-            <Card className={styles.faqItem} variants={staggerItem} whileHover={cardHover.hover}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
-                <h4>What are your working hours?</h4>
-                <Plus size={20} className={styles.faqIcon} />
-              </div>
-            </Card>
-            <Card className={styles.faqItem} variants={staggerItem} whileHover={cardHover.hover}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
-                <h4>Can I request a product demo?</h4>
-                <Plus size={20} className={styles.faqIcon} />
-              </div>
-            </Card>
-            <Card className={styles.faqItem} variants={staggerItem} whileHover={cardHover.hover}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
-                <h4>Do you provide support after purchase?</h4>
-                <Plus size={20} className={styles.faqIcon} />
-              </div>
-            </Card>
-            <Card className={styles.faqItem} variants={staggerItem} whileHover={cardHover.hover}>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
-                <h4>Do you offer onsite support?</h4>
-                <Plus size={20} className={styles.faqIcon} />
-              </div>
-            </Card>
-          </motion.div>
-        </div>
-      </motion.section>
 
       {/* CTA Section */}
       <motion.section 
