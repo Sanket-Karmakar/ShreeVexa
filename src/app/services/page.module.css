@@ -128,48 +128,6 @@
   gap: 1.5rem;
 }
 
-.serviceCard {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 12px;
-  border: 1px solid var(--border-light);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-}
-
-.serviceCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,102,255,0.08);
-  border-color: rgba(0,102,255,0.2);
-}
-
-.cardHeader {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.cardIcon {
-  width: 64px;
-  height: 64px;
-  border-radius: 12px;
-  background: rgba(0,0,0,0.03);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.cardHeader h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--secondary);
-  line-height: 1.3;
-}
-
 .cardDesc {
   color: var(--text-muted);
   font-size: 0.9375rem;
@@ -223,49 +181,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-}
-
-.whyFeature {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background: white;
-  padding: 2.5rem;
-  border-radius: 12px;
-  border: 1px solid var(--border-light);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-  transition: all 0.3s ease;
-}
-
-.whyFeature:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,102,255,0.08);
-  border-color: rgba(0,102,255,0.2);
-}
-
-.whyIcon {
-  color: var(--primary);
-  background: rgba(0, 102, 255, 0.1);
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.5rem;
-}
-
-.whyFeature h4 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  color: var(--secondary);
-  font-weight: 700;
-}
-
-.whyFeature p {
-  color: var(--text-muted);
-  font-size: 0.9375rem;
-  line-height: 1.6;
 }
 
 /* CTA */

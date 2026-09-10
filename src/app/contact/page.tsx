@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock, Send, MessageSquare, Plus, ArrowRight, ShieldCheck, HeartHandshake, Zap, TrendingUp } from "lucide-react";
 import styles from "./page.module.css";
 import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
+import { Card } from "@/components/Card";
 
 export default function Contact() {
   const { fadeUp, fadeIn, staggerContainer, staggerItem, heroContainer, heroItem, navReveal, drawerReveal, footerReveal, cardHover, imageHover, buttonInteraction, logoHover } = useResponsiveMotion();
@@ -69,48 +70,60 @@ export default function Contact() {
             whileInView="visible"
             viewport={VIEWPORT}
           >
-            <motion.div className={styles.methodCard} variants={staggerItem} whileHover={cardHover.hover}>
-              <div className={styles.methodIconWrapper} style={{ color: '#0ea5e9' }}><Phone size={24} /></div>
-              <div>
-                <span className={styles.methodLabel}>Call Us</span>
-                <strong className={styles.methodValue}>+91 98765 43210</strong>
+            <Card className={styles.methodCard} variants={staggerItem} whileHover={cardHover.hover}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+                <div className={styles.methodIconWrapper} style={{ color: '#0ea5e9' }}><Phone size={24} /></div>
+                <div>
+                  <span className={styles.methodLabel}>Call Us</span>
+                  <strong className={styles.methodValue}>+91 98765 43210</strong>
+                </div>
               </div>
-            </motion.div>
-            <motion.div className={styles.methodCard} variants={staggerItem} whileHover={cardHover.hover}>
-              <div className={styles.methodIconWrapper} style={{ color: '#25D366' }}><MessageSquare size={24} /></div>
-              <div>
-                <span className={styles.methodLabel}>WhatsApp</span>
-                <strong className={styles.methodValue}>Chat with Us</strong>
+            </Card>
+            <Card className={styles.methodCard} variants={staggerItem} whileHover={cardHover.hover}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+                <div className={styles.methodIconWrapper} style={{ color: '#25D366' }}><MessageSquare size={24} /></div>
+                <div>
+                  <span className={styles.methodLabel}>WhatsApp</span>
+                  <strong className={styles.methodValue}>Chat with Us</strong>
+                </div>
               </div>
-            </motion.div>
-            <motion.div className={styles.methodCard} variants={staggerItem} whileHover={cardHover.hover}>
-              <div className={styles.methodIconWrapper} style={{ color: '#3b82f6' }}><Mail size={24} /></div>
-              <div>
-                <span className={styles.methodLabel}>Email Us</span>
-                <strong className={styles.methodValue}>info@shreevexa.com</strong>
+            </Card>
+            <Card className={styles.methodCard} variants={staggerItem} whileHover={cardHover.hover}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+                <div className={styles.methodIconWrapper} style={{ color: '#3b82f6' }}><Mail size={24} /></div>
+                <div>
+                  <span className={styles.methodLabel}>Email Us</span>
+                  <strong className={styles.methodValue}>info@shreevexa.com</strong>
+                </div>
               </div>
-            </motion.div>
-            <motion.div className={styles.methodCard} variants={staggerItem} whileHover={cardHover.hover}>
-              <div className={styles.methodIconWrapper} style={{ color: '#0088cc' }}><Send size={24} /></div>
-              <div>
-                <span className={styles.methodLabel}>Telegram</span>
-                <strong className={styles.methodValue}>Join Our Channel</strong>
+            </Card>
+            <Card className={styles.methodCard} variants={staggerItem} whileHover={cardHover.hover}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+                <div className={styles.methodIconWrapper} style={{ color: '#0088cc' }}><Send size={24} /></div>
+                <div>
+                  <span className={styles.methodLabel}>Telegram</span>
+                  <strong className={styles.methodValue}>Join Our Channel</strong>
+                </div>
               </div>
-            </motion.div>
-            <motion.div className={styles.methodCard} variants={staggerItem} whileHover={cardHover.hover}>
-              <div className={styles.methodIconWrapper} style={{ color: '#ef4444' }}><MapPin size={24} /></div>
-              <div>
-                <span className={styles.methodLabel}>Visit Us</span>
-                <strong className={styles.methodValue}>Our Office</strong>
+            </Card>
+            <Card className={styles.methodCard} variants={staggerItem} whileHover={cardHover.hover}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+                <div className={styles.methodIconWrapper} style={{ color: '#ef4444' }}><MapPin size={24} /></div>
+                <div>
+                  <span className={styles.methodLabel}>Visit Us</span>
+                  <strong className={styles.methodValue}>Our Office</strong>
+                </div>
               </div>
-            </motion.div>
-            <motion.div className={styles.methodCard} variants={staggerItem} whileHover={cardHover.hover}>
-              <div className={styles.methodIconWrapper} style={{ color: '#8b5cf6' }}><Clock size={24} /></div>
-              <div>
-                <span className={styles.methodLabel}>Working Hours</span>
-                <strong className={styles.methodValue}>Mon - Sat<br/>9:00 AM - 6:00 PM</strong>
+            </Card>
+            <Card className={styles.methodCard} variants={staggerItem} whileHover={cardHover.hover}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+                <div className={styles.methodIconWrapper} style={{ color: '#8b5cf6' }}><Clock size={24} /></div>
+                <div>
+                  <span className={styles.methodLabel}>Working Hours</span>
+                  <strong className={styles.methodValue}>Mon - Sat<br/>9:00 AM - 6:00 PM</strong>
+                </div>
               </div>
-            </motion.div>
+            </Card>
           </motion.div>
         </div>
       </motion.section>
@@ -125,8 +138,7 @@ export default function Contact() {
         viewport={VIEWPORT}
       >
         <div className="container" style={{ display: 'flex', justifyContent: 'center' }}>
-          {/* Office Info */}
-          <div className={styles.officeContainer} style={{ maxWidth: '800px', width: '100%' }}>
+          <Card className={styles.officeContainer} style={{ maxWidth: '800px', width: '100%' }}>
               <h2 className="section-title">Our Office</h2>
               <p className={styles.sectionDesc}>Feel free to visit our office for detailed discussions, product demos or consultations.</p>
               
@@ -172,7 +184,7 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Card>
           </div>
       </motion.section>
 
@@ -198,22 +210,30 @@ export default function Contact() {
             whileInView="visible"
             viewport={VIEWPORT}
           >
-            <motion.div className={styles.faqItem} variants={staggerItem}>
-              <h4>What are your working hours?</h4>
-              <Plus size={20} className={styles.faqIcon} />
-            </motion.div>
-            <motion.div className={styles.faqItem} variants={staggerItem}>
-              <h4>Can I request a product demo?</h4>
-              <Plus size={20} className={styles.faqIcon} />
-            </motion.div>
-            <motion.div className={styles.faqItem} variants={staggerItem}>
-              <h4>Do you provide support after purchase?</h4>
-              <Plus size={20} className={styles.faqIcon} />
-            </motion.div>
-            <motion.div className={styles.faqItem} variants={staggerItem}>
-              <h4>Do you offer onsite support?</h4>
-              <Plus size={20} className={styles.faqIcon} />
-            </motion.div>
+            <Card className={styles.faqItem} variants={staggerItem} whileHover={cardHover.hover}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+                <h4>What are your working hours?</h4>
+                <Plus size={20} className={styles.faqIcon} />
+              </div>
+            </Card>
+            <Card className={styles.faqItem} variants={staggerItem} whileHover={cardHover.hover}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+                <h4>Can I request a product demo?</h4>
+                <Plus size={20} className={styles.faqIcon} />
+              </div>
+            </Card>
+            <Card className={styles.faqItem} variants={staggerItem} whileHover={cardHover.hover}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+                <h4>Do you provide support after purchase?</h4>
+                <Plus size={20} className={styles.faqIcon} />
+              </div>
+            </Card>
+            <Card className={styles.faqItem} variants={staggerItem} whileHover={cardHover.hover}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+                <h4>Do you offer onsite support?</h4>
+                <Plus size={20} className={styles.faqIcon} />
+              </div>
+            </Card>
           </motion.div>
         </div>
       </motion.section>

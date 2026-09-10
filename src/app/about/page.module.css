@@ -96,7 +96,7 @@
   font-size: 0.9375rem;
   font-weight: 600;
   border-radius: 6px;
-  transition: all 0.2s ease;
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), color 0.2s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.2s cubic-bezier(0.22, 1, 0.36, 1);
   background: transparent;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -146,12 +146,9 @@
 }
 
 .statCard {
-  background: #0b1120;
-  padding: 4rem;
-  border-radius: 12px;
+  background-color: #0b1120 !important;
   text-align: center;
   min-width: 320px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
 .statCardNumber {
@@ -174,43 +171,6 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-bottom: 4rem;
-}
-
-.mvvCard {
-  background: white;
-  padding: 3rem 2.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-  border: 1px solid rgba(0,0,0,0.02);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.mvvCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-}
-
-.cardIconWrapper {
-  width: 60px;
-  height: 60px;
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.cardTitle {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  color: var(--secondary);
-}
-
-.cardDesc {
-  color: #64748b;
-  line-height: 1.6;
-  font-size: 0.9375rem;
 }
 
 .valuesList {

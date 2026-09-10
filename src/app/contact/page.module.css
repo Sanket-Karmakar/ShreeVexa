@@ -117,22 +117,10 @@
 }
 
 .methodCard {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  padding: 1.5rem;
-  border-radius: 12px;
-  border: 1px solid var(--border-light);
-  background: white;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-  transition: all 0.3s ease;
+  /* Override default card padding to be more compact */
 }
 
-.methodCard:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0,102,255,0.08);
-  border-color: rgba(0,102,255,0.2);
-}
+.methodCard :global(.Card_content__xyz) { /* if we needed to override padding, but we'll let it be default */ }
 
 .methodIconWrapper {
   width: 48px;
@@ -182,11 +170,15 @@
   gap: 4rem;
 }
 
-.formContainer, .officeContainer {
+.formContainer {
   background: white;
   padding: 3rem;
   border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+.officeContainer {
+  /* using Card defaults */
 }
 
 .formGroup {
@@ -208,7 +200,7 @@
   border-radius: 8px;
   font-family: inherit;
   font-size: 1rem;
-  transition: all 0.2s ease;
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), color 0.2s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.2s cubic-bezier(0.22, 1, 0.36, 1);
   background-color: #f8fafc;
 }
 
@@ -294,19 +286,7 @@
 }
 
 .faqItem {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  border: 1px solid var(--border-light);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.faqItem:hover {
-  border-color: var(--primary);
 }
 
 .faqItem h4 {

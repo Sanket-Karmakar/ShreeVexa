@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Settings, Wrench, Headphones, Network, Shield, Printer, Database, Lightbulb, Blocks, CheckCircle2, Clock, HeartHandshake } from "lucide-react";
 import styles from "./page.module.css";
 import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
+import { Card } from "@/components/Card";
 
 const services = [
   { 
@@ -12,63 +13,72 @@ const services = [
     desc: "Hassle-free installation and configuration of IT infrastructure.", 
     icon: Settings, 
     color: "#3b82f6",
-    features: ["Laptops & Desktops", "Servers & Networking", "Office IT Setup"]
+    features: ["Laptops & Desktops", "Servers & Networking", "Office IT Setup"],
+    image: "/images/services_detailed/it_setup_1789020896161.jpg"
   },
   { 
     name: "IT AMC & Maintenance", 
     desc: "Keep your systems running smoothly with our AMC services.", 
     icon: Wrench, 
     color: "#10b981",
-    features: ["Preventive Maintenance", "Regular Health Checks", "Reduced Downtime"]
+    features: ["Preventive Maintenance", "Regular Health Checks", "Reduced Downtime"],
+    image: "/images/services_detailed/it_amc_1789020909347.jpg"
   },
   { 
     name: "Technical Support", 
     desc: "Quick and reliable support for your day-to-day IT issues.", 
     icon: Headphones, 
     color: "#8b5cf6",
-    features: ["Remote & Onsite Support", "Hardware & Software", "Troubleshooting"]
+    features: ["Remote & Onsite Support", "Hardware & Software", "Troubleshooting"],
+    image: "/images/services_detailed/tech_support_1789021017319.jpg"
   },
   { 
     name: "Network Setup & Management", 
     desc: "Design, setup and manage secure network infrastructure.", 
     icon: Network, 
     color: "#f59e0b",
-    features: ["LAN & Wi-Fi Setup", "Network Security", "Performance Monitoring"]
+    features: ["LAN & Wi-Fi Setup", "Network Security", "Performance Monitoring"],
+    image: "/images/services_detailed/network_setup_1789021265218.jpg"
   },
   { 
     name: "Security & Surveillance", 
     desc: "Secure your premises with advanced surveillance solutions.", 
     icon: Shield, 
     color: "#ef4444",
-    features: ["CCTV Installation", "Access Control Systems", "Biometric Attendance"]
+    features: ["CCTV Installation", "Access Control Systems", "Biometric Attendance"],
+    image: "/images/services_detailed/security_1789021283629.jpg"
   },
   { 
     name: "Printing & Scanning Solutions", 
     desc: "Setup and support for efficient document management.", 
     icon: Printer, 
     color: "#6366f1",
-    features: ["Printer Installation", "Scanner Setup", "AMC & Support"]
+    features: ["Printer Installation", "Scanner Setup", "AMC & Support"],
+    image: "/images/services_detailed/printing_1789021320875.jpg"
   },
   { 
     name: "Data Backup & Recovery", 
     desc: "Protect your business data with reliable backup solutions.", 
     icon: Database, 
     color: "#0ea5e9",
-    features: ["Backup Setup", "Data Recovery Support", "Cloud & Local Backup"]
+    features: ["Backup Setup", "Data Recovery Support", "Cloud & Local Backup"],
+    image: "/images/services_detailed/data_backup_1789021339071.jpg"
   },
   { 
     name: "IT Consulting Services", 
     desc: "Expert advice to help you make the right technology decisions.", 
     icon: Lightbulb, 
     color: "#ec4899",
-    features: ["IT Infrastructure Planning", "Technology Upgrades", "Cost Optimization"]
+    features: ["IT Infrastructure Planning", "Technology Upgrades", "Cost Optimization"],
+    image: "/images/services_detailed/it_consulting_1789021538083.jpg"
   },
   { 
     name: "Custom IT Services", 
     desc: "Tailored IT services to match your unique business needs.", 
     icon: Blocks, 
     color: "#14b8a6",
-    features: ["Software Installation", "System Configuration", "Ongoing Assistance"]
+    features: ["Software Installation", "System Configuration", "Ongoing Assistance"],
+    image: "/images/services_detailed/custom_it_1789021644380.jpg"
   }
 ];
 
@@ -156,20 +166,18 @@ export default function Services() {
             {services.map((srv, idx) => {
               const Icon = srv.icon;
               return (
-                <motion.div 
+                <Card 
                   key={idx} 
-                  className={styles.serviceCard}
                   variants={staggerItem}
                   whileHover={cardHover.hover}
+                  imageSrc={srv.image}
+                  imageAlt={srv.name}
+                  imageRatio="service"
+                  icon={<Icon size={36} strokeWidth={1.5} />}
+                  iconStyle={{ color: srv.color, background: 'rgba(0,0,0,0.03)' }}
+                  title={<h3>{srv.name}</h3>}
+                  description={<p className={styles.cardDesc}>{srv.desc}</p>}
                 >
-                  <div className={styles.cardHeader}>
-                    <div className={styles.cardIcon} style={{ color: srv.color }}>
-                      <Icon size={36} strokeWidth={1.5} />
-                    </div>
-                    <h3>{srv.name}</h3>
-                  </div>
-                  <p className={styles.cardDesc}>{srv.desc}</p>
-                  
                   <ul className={styles.featureList}>
                     {srv.features.map((feat, fidx) => (
                       <li key={fidx}>
@@ -182,7 +190,7 @@ export default function Services() {
                   <Link href="/contact" className={styles.cardLink} style={{ color: srv.color }}>
                     Learn More <ArrowRight size={16} />
                   </Link>
-                </motion.div>
+                </Card>
               );
             })}
           </motion.div>
@@ -192,6 +200,7 @@ export default function Services() {
       {/* Why Choose Our Services */}
       <motion.section 
         className="section"
+        style={{ background: 'linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%)' }}
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -210,34 +219,38 @@ export default function Services() {
               whileInView="visible"
               viewport={VIEWPORT}
             >
-              <motion.div className={styles.whyFeature} variants={staggerItem}>
-                <div className={styles.whyIcon}><CheckCircle2 size={24} /></div>
-                <div>
-                  <h4>Skilled Professionals</h4>
-                  <p>Experienced & certified team.</p>
-                </div>
-              </motion.div>
-              <motion.div className={styles.whyFeature} variants={staggerItem}>
-                <div className={styles.whyIcon}><Clock size={24} /></div>
-                <div>
-                  <h4>Quick Response</h4>
-                  <p>Fast and reliable support.</p>
-                </div>
-              </motion.div>
-              <motion.div className={styles.whyFeature} variants={staggerItem}>
-                <div className={styles.whyIcon}><Settings size={24} /></div>
-                <div>
-                  <h4>Cost Effective</h4>
-                  <p>Maximize value for your investment.</p>
-                </div>
-              </motion.div>
-              <motion.div className={styles.whyFeature} variants={staggerItem}>
-                <div className={styles.whyIcon}><HeartHandshake size={24} /></div>
-                <div>
-                  <h4>Long-Term Support</h4>
-                  <p>We&apos;re with you at every step.</p>
-                </div>
-              </motion.div>
+              <Card 
+                variants={staggerItem} 
+                style={{ backgroundColor: '#eff6ff', borderColor: '#bfdbfe' }}
+                icon={<CheckCircle2 size={24} />}
+                iconStyle={{ background: '#dbeafe', color: '#2563eb' }}
+                title={<h4>Skilled Professionals</h4>}
+                description={<p>Experienced & certified team.</p>}
+              />
+              <Card 
+                variants={staggerItem} 
+                style={{ backgroundColor: '#f0fdf4', borderColor: '#bbf7d0' }}
+                icon={<Clock size={24} />}
+                iconStyle={{ background: '#dcfce7', color: '#16a34a' }}
+                title={<h4>Quick Response</h4>}
+                description={<p>Fast and reliable support.</p>}
+              />
+              <Card 
+                variants={staggerItem} 
+                style={{ backgroundColor: '#fdf4ff', borderColor: '#fbcfe8' }}
+                icon={<Settings size={24} />}
+                iconStyle={{ background: '#fae8ff', color: '#c026d3' }}
+                title={<h4>Cost Effective</h4>}
+                description={<p>Maximize value for your investment.</p>}
+              />
+              <Card 
+                variants={staggerItem} 
+                style={{ backgroundColor: '#fffbeb', borderColor: '#fde68a' }}
+                icon={<HeartHandshake size={24} />}
+                iconStyle={{ background: '#fef3c7', color: '#d97706' }}
+                title={<h4>Long-Term Support</h4>}
+                description={<p>We&apos;re with you at every step.</p>}
+              />
             </motion.div>
           </div>
         </div>

@@ -10,6 +10,24 @@
   --success: #10b981;
   --danger: #ef4444;
   --warning: #f59e0b;
+
+  /* Card Design System Tokens */
+  --radius-card: 24px;
+  --radius-image: 24px;
+  --radius-icon: 999px;
+
+  --spacing-card-padding: 24px;
+  --spacing-img-content: 24px;
+  --spacing-icon-title: 20px;
+  --spacing-title-desc: 12px;
+  --spacing-desc-footer: 24px;
+
+  --border-card: 1px solid rgba(15,23,42,0.08);
+
+  --shadow-card-default: 0 4px 10px rgba(0,0,0,0.02);
+  --shadow-card-hover: 0 12px 24px rgba(0,0,0,0.06);
+
+  --easing-card: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 * {
@@ -56,7 +74,7 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  transition: all 0.2s ease-in-out;
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), color 0.2s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.2s cubic-bezier(0.22, 1, 0.36, 1);
   text-decoration: none;
 }
 
@@ -78,7 +96,7 @@ ul {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  transition: all 0.2s ease-in-out;
+  transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.2s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), color 0.2s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.2s cubic-bezier(0.22, 1, 0.36, 1);
   text-decoration: none;
 }
 

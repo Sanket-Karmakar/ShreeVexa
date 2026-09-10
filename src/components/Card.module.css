@@ -1,0 +1,105 @@
+.card {
+  background: white;
+  border-radius: var(--radius-card);
+  border: var(--border-card);
+  box-shadow: var(--shadow-card-default);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s var(--easing-card), box-shadow 0.3s var(--easing-card), border-color 0.3s var(--easing-card);
+  height: 100%;
+  position: relative;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card-hover);
+    border-color: rgba(15,23,42,0.15);
+  }
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .card:active {
+    transform: scale(0.98);
+    opacity: 0.95;
+  }
+}
+
+.imageWrapper {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: var(--radius-image);
+  border-top-right-radius: var(--radius-image);
+  background: var(--background);
+  flex-shrink: 0;
+}
+
+.ratioProduct { aspect-ratio: 4/3; }
+.ratioService { aspect-ratio: 5/4; }
+.ratioHero { aspect-ratio: 16/9; }
+.ratioSquare { aspect-ratio: 1/1; }
+
+.image {
+  object-fit: cover;
+  transition: transform 0.5s var(--easing-card);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover .image {
+    transform: scale(1.03);
+  }
+}
+
+.fallbackPlaceholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fallbackIcon {
+  color: #94a3b8;
+  opacity: 0.5;
+}
+
+.content {
+  padding: var(--spacing-card-padding);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.hasImage .content {
+  padding-top: var(--spacing-img-content);
+}
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-icon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-bottom: var(--spacing-icon-title);
+}
+
+.title {
+  margin-bottom: var(--spacing-title-desc);
+}
+
+.description {
+  flex-grow: 1;
+}
+
+.hasFooter .description {
+  margin-bottom: var(--spacing-desc-footer);
+}
+
+.footer {
+  margin-top: auto;
+}

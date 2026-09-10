@@ -133,62 +133,16 @@
   gap: 1.5rem;
 }
 
-.solutionCard {
-  background: white;
-  padding: 2.5rem;
-  border-radius: 12px;
-  border: 1px solid var(--border-light);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.solutionCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,102,255,0.08);
-  border-color: rgba(0,102,255,0.2);
-}
-
-.cardHeader {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1rem;
-}
-
-.cardIcon {
-  width: 64px;
-  height: 64px;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.cardHeader h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  color: var(--secondary);
-  line-height: 1.3;
-}
-
-.solutionCard p {
-  color: var(--text-muted);
-  font-size: 0.9375rem;
-  line-height: 1.6;
-}
-
 .cardArrow {
   position: absolute;
   bottom: 2.5rem;
   right: 2.5rem;
   opacity: 0;
   transform: translateX(-10px);
-  transition: all 0.3s ease;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.3s cubic-bezier(0.22, 1, 0.36, 1), color 0.3s cubic-bezier(0.22, 1, 0.36, 1), background-color 0.3s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.solutionCard:hover .cardArrow {
+.solutionCardGroup:hover .cardArrow {
   opacity: 1;
   transform: translateX(0);
 }
@@ -207,49 +161,6 @@
   gap: 2rem;
 }
 
-.whyFeature {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  background: white;
-  padding: 2.5rem;
-  border-radius: 12px;
-  border: 1px solid var(--border-light);
-  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-  transition: all 0.3s ease;
-}
-
-.whyFeature:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,102,255,0.08);
-  border-color: rgba(0,102,255,0.2);
-}
-
-.whyIcon {
-  color: var(--primary);
-  background: rgba(0, 102, 255, 0.1);
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.5rem;
-}
-
-.whyFeature h4 {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  color: var(--secondary);
-  font-weight: 700;
-}
-
-.whyFeature p {
-  color: var(--text-muted);
-  font-size: 0.9375rem;
-  line-height: 1.6;
-}
-
 .processHeader {
   margin-bottom: 4rem;
   text-align: center;
@@ -264,19 +175,12 @@
   gap: 1.5rem;
 }
 
-.industryCard {
-  background: rgba(255,255,255,0.05);
+.industryContent {
   padding: 2.5rem 1.5rem;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.1);
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.industryCard:hover {
-  background: rgba(0,102,255,0.1);
-  border-color: rgba(0,102,255,0.3);
-  transform: translateY(-5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .industryIcon {
@@ -284,7 +188,7 @@
   margin-bottom: 1rem;
 }
 
-.industryCard h4 {
+.industryContent h4 {
   font-size: 1.125rem;
   font-weight: 600;
 }

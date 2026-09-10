@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Target, Eye, Diamond, Award, Users, Gem } from "lucide-react";
 import styles from "./page.module.css";
 import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
+import { Card } from "@/components/Card";
 
 export default function About() {
   const { fadeUp, fadeIn, staggerContainer, staggerItem, heroContainer, heroItem, navReveal, drawerReveal, footerReveal, cardHover, imageHover, buttonInteraction, logoHover } = useResponsiveMotion();
@@ -92,10 +93,11 @@ export default function About() {
               </Link>
             </motion.div>
             <motion.div className={styles.introStatsWrapper} variants={staggerItem}>
-              <div className={styles.statCard}>
-                <h3 className={styles.statCardNumber}>250+</h3>
-                <p className={styles.statCardLabel}>Happy Clients</p>
-              </div>
+              <Card 
+                className={styles.statCard}
+                title={<h3 className={styles.statCardNumber}>250+</h3>}
+                description={<p className={styles.statCardLabel}>Happy Clients</p>}
+              />
             </motion.div>
           </motion.div>
         </div>
@@ -118,35 +120,43 @@ export default function About() {
             whileInView="visible"
             viewport={VIEWPORT}
           >
-            <motion.div className={styles.mvvCard} variants={staggerItem}>
-              <div className={styles.cardIconWrapper} style={{ background: '#f0f5ff' }}>
-                <Target size={24} color="#3b82f6" />
-              </div>
-              <h3 className={styles.cardTitle}>Our Mission</h3>
-              <p className={styles.cardDesc}>To deliver innovative and reliable IT solutions that empower businesses and create lasting value.</p>
-            </motion.div>
+            <Card 
+              variants={staggerItem}
+              imageSrc="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=600&h=400"
+              imageAlt="Our Mission"
+              icon={<Target size={24} color="#3b82f6" />}
+              iconStyle={{ background: '#f0f5ff' }}
+              title={<h3>Our Mission</h3>}
+              description={<p>To deliver innovative and reliable IT solutions that empower businesses and create lasting value. We are committed to solving complex challenges with intuitive technology, ensuring our clients stay ahead in an ever-evolving digital landscape.</p>}
+            />
             
-            <motion.div className={styles.mvvCard} variants={staggerItem}>
-              <div className={styles.cardIconWrapper} style={{ background: '#ecfdf5' }}>
-                <Eye size={24} color="#10b981" />
-              </div>
-              <h3 className={styles.cardTitle}>Our Vision</h3>
-              <p className={styles.cardDesc}>To be a leading IT solutions provider, recognized for innovation, trust and customer success.</p>
-            </motion.div>
+            <Card 
+              variants={staggerItem}
+              imageSrc="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=600&h=400"
+              imageAlt="Our Vision"
+              icon={<Eye size={24} color="#10b981" />}
+              iconStyle={{ background: '#ecfdf5' }}
+              title={<h3>Our Vision</h3>}
+              description={<p>To be a leading IT solutions provider, recognized for innovation, trust and customer success. We envision a future where technology seamlessly bridges the gap between ambition and achievement for organizations worldwide.</p>}
+            />
 
-            <motion.div className={styles.mvvCard} variants={staggerItem}>
-              <div className={styles.cardIconWrapper} style={{ background: '#f5f3ff' }}>
-                <Diamond size={24} color="#a855f7" />
-              </div>
-              <h3 className={styles.cardTitle}>Our Values</h3>
-              <ul className={styles.valuesList}>
-                <li><Award size={16} className={styles.valueIcon} /> Integrity in everything we do</li>
-                <li><Award size={16} className={styles.valueIcon} /> Customer success is our priority</li>
-                <li><Award size={16} className={styles.valueIcon} /> Innovation for a better tomorrow</li>
-                <li><Award size={16} className={styles.valueIcon} /> Commitment to excellence</li>
-                <li><Award size={16} className={styles.valueIcon} /> Building long-term relationships</li>
-              </ul>
-            </motion.div>
+            <Card 
+              variants={staggerItem}
+              imageSrc="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600&h=400"
+              imageAlt="Our Values"
+              icon={<Diamond size={24} color="#a855f7" />}
+              iconStyle={{ background: '#f5f3ff' }}
+              title={<h3>Our Values</h3>}
+              description={
+                <ul className={styles.valuesList}>
+                  <li><Award size={16} className={styles.valueIcon} /> Integrity in everything we do</li>
+                  <li><Award size={16} className={styles.valueIcon} /> Customer success is our priority</li>
+                  <li><Award size={16} className={styles.valueIcon} /> Innovation for a better tomorrow</li>
+                  <li><Award size={16} className={styles.valueIcon} /> Commitment to excellence</li>
+                  <li><Award size={16} className={styles.valueIcon} /> Building long-term relationships</li>
+                </ul>
+              }
+            />
           </motion.div>
 
           <motion.div 
@@ -173,7 +183,7 @@ export default function About() {
             </motion.div>
             <motion.div className={styles.statItem} variants={staggerItem}>
               <div className={styles.statIcon}><Gem size={20} /></div>
-              <strong>99%</strong>
+              <strong>100%</strong>
               <span>Client Satisfaction</span>
             </motion.div>
           </motion.div>

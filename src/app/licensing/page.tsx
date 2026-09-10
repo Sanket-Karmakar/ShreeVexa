@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, Shield, Cloud, HardDrive, Mail, LayoutGrid, Monitor, FileText, Lock, Briefcase } from "lucide-react";
 import styles from "./page.module.css";
 import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
+import { Card } from "@/components/Card";
 
 const softwareList = [
   { name: "Microsoft 365", desc: "Productivity tools for modern work.", icon: LayoutGrid, color: "#e87a25" },
@@ -140,21 +141,19 @@ export default function Licensing() {
             {softwareList.map((sw, idx) => {
               const Icon = sw.icon;
               return (
-                <motion.div 
+                <Card 
                   key={idx} 
-                  className={styles.licenseCard}
                   variants={staggerItem}
                   whileHover={cardHover.hover}
+                  icon={<Icon size={40} strokeWidth={1.5} />}
+                  iconStyle={{ color: sw.color, background: 'rgba(0,0,0,0.03)' }}
+                  title={<h3>{sw.name}</h3>}
+                  description={<p className={styles.licenseDesc}>{sw.desc}</p>}
                 >
-                  <div className={styles.cardIcon} style={{ color: sw.color }}>
-                    <Icon size={40} strokeWidth={1.5} />
-                  </div>
-                  <h3>{sw.name}</h3>
-                  <p>{sw.desc}</p>
                   <Link href="/contact" className={styles.btnOutlineBlue}>
                     Enquire Now <ArrowRight size={16} />
                   </Link>
-                </motion.div>
+                </Card>
               );
             })}
           </motion.div>

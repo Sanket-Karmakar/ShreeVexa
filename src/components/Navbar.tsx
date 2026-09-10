@@ -16,7 +16,6 @@ const navLinks = [
   { path: '/licensing', label: 'Software Licensing' },
   { path: '/solutions', label: 'Solutions' },
   { path: '/services', label: 'Services' },
-  { path: '/contact', label: 'Contact' },
 ];
 
 export default function Navbar() {

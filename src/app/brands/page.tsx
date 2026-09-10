@@ -5,12 +5,28 @@ import { motion } from "framer-motion";
 import { ArrowRight, CheckCircle2, ShoppingCart, Info } from "lucide-react";
 import styles from "./page.module.css";
 import { EASING, VIEWPORT, useResponsiveMotion } from "@/lib/motion";
+import { Card } from "@/components/Card";
 
-const brands = [
-  "Dell", "HP", "Lenovo", "ASUS", "Acer", "Apple", "Logitech", "Microsoft", 
-  "Google", "Cisco", "APC", "Samsung", "LG", "Epson", "Canon", "Brother", 
-  "Hikvision", "Dahua", "Honeywell", "Zebra", "Seagate", "Western Digital", 
-  "Kingston", "SanDisk", "Intel", "AMD", "NVIDIA"
+const brandsData = [
+  { name: "Dell", domain: "dell.com", hasSvg: true },
+  { name: "HP", domain: "hp.com", hasSvg: true },
+  { name: "Lenovo", domain: "lenovo.com", hasSvg: true },
+  { name: "ASUS", domain: "asus.com", hasSvg: true },
+  { name: "Acer", domain: "acer.com", hasSvg: true },
+  { name: "Apple", domain: "apple.com", hasSvg: true },
+  { name: "Logitech", domain: "logitech.com", hasSvg: true },
+  { name: "Microsoft", domain: "microsoft.com", hasSvg: true },
+  { name: "Google", domain: "google.com", hasSvg: true },
+  { name: "Cisco", domain: "cisco.com", hasSvg: true },
+  { name: "Samsung", domain: "samsung.com", hasSvg: true },
+  { name: "LG", domain: "lg.com", hasSvg: true },
+  { name: "Epson", domain: "epson.com", hasSvg: true },
+  { name: "Canon", domain: "canon.com", hasSvg: true },
+  { name: "Seagate", domain: "seagate.com", hasSvg: true },
+  { name: "SanDisk", domain: "sandisk.com", hasSvg: true },
+  { name: "Intel", domain: "intel.com", hasSvg: true },
+  { name: "AMD", domain: "amd.com", hasSvg: true },
+  { name: "NVIDIA", domain: "nvidia.com", hasSvg: true }
 ];
 
 export default function Brands() {
@@ -129,20 +145,32 @@ export default function Brands() {
             whileInView="visible"
             viewport={VIEWPORT}
           >
-            {brands.map((brand, idx) => (
-              <motion.div 
+            {brandsData.map((brand, idx) => (
+              <Card 
                 key={idx} 
                 className={styles.brandCard} 
                 variants={staggerItem}
                 whileHover={logoHover.hover}
               >
-                <span className={styles.brandName}>{brand}</span>
-              </motion.div>
+                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', gap: '12px' }}>
+                  <img 
+                    src={brand.hasSvg ? `/brands/${brand.name.replace(/\s+/g, '')}.svg` : `https://logo.clearbit.com/${brand.domain}`} 
+                    alt={`${brand.name} Logo`} 
+                    className={styles.brandLogo}
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                  <span className={styles.brandName}>{brand.name}</span>
+                </div>
+              </Card>
             ))}
-            <motion.div className={styles.brandCardAction} variants={staggerItem} whileHover={{ scale: 1.03 }}>
-              <span>Many More Brands Available on Request.</span>
-              <ArrowRight size={20} />
-            </motion.div>
+            <Card className={styles.brandCardAction} variants={staggerItem} whileHover={{ scale: 1.03 }}>
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', width: '100%' }}>
+                <span>Many More Brands Available on Request.</span>
+                <ArrowRight size={20} />
+              </div>
+            </Card>
           </motion.div>
           
           <div className={styles.disclaimer}>
